@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b504e5c1a3c54264db8fd6e5d188794c, type: 3}
+  m_Name: Helmet 1
+  m_EditorClassIdentifier: 
+  ID: 1111
+  DisplayName: helmet 1
+  Description: helmet 1
+  Icon: {fileID: 21300000, guid: aff555a48aa2df3469840fe97b1a66b0, type: 3}
+  ItemPrefab: {fileID: 6131324041524727166, guid: 9cdc38c0e360e844f8d953f054113e24, type: 3}
+  MaxStackSize: 1
+  GoldValue: 100
+  ItemTier: 0
+  StatusEffects: {fileID: 0}
+  ItemType: 5
+  Recipes:
+  - _requiredItems:
+    - {fileID: 11400000, guid: 68e49940d379c114eb2c662222e9d137, type: 2}
+    _amountResources: 03000000
+    _craftPrefab:
+    - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
+    _craftedItem: {fileID: 0}
