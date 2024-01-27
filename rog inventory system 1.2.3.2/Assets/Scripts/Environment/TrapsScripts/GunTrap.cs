@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class GunTrap : GunData
 {
-    protected override void Start()
-    {
-        
-    }
-
     protected override void Update()
     {
-        
+        Shoot();
     }
 
-    private void FixedUpdate()
-    {
-        if (_timeBtwShots <= 0)
-            Shoot();
+    protected override void DirectionForShoot() { }
 
-        else
-            _timeBtwShots -= Time.deltaTime;
+    protected override void Shoot()
+    {
+        base.Shoot();
     }
 }

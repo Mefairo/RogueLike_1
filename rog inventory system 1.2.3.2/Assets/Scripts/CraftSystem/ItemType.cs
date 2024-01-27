@@ -15,6 +15,7 @@ public class ItemType
         Bottle,
         Helmet,
         Chest,
+        Belt,
         Boots
     }
 

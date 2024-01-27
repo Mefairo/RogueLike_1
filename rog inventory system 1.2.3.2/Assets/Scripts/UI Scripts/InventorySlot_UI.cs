@@ -2,10 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using Unity.VisualScripting;
 
 public class InventorySlot_UI : MonoBehaviour
 {
     [SerializeField] protected Image itemSprite;
+    [SerializeField] protected Image _backgroundSprite;
     [SerializeField] protected TextMeshProUGUI itemCount;
     [SerializeField] protected InventorySlot assignedInventorySlot;
     [SerializeField] protected GameObject _slotHighlight;
@@ -20,6 +22,7 @@ public class InventorySlot_UI : MonoBehaviour
         ClearSlot();
 
         itemSprite.preserveAspect = true;
+        _backgroundSprite.preserveAspect = true;
 
         button = GetComponent<Button>();
         button?.onClick.AddListener(OnUISlotClick);
@@ -42,6 +45,15 @@ public class InventorySlot_UI : MonoBehaviour
             //Debug.Log("28");
             itemSprite.sprite = slot.ItemData.Icon;
             itemSprite.color = Color.white;
+
+            if(slot.ItemData.IconBackground != null)
+            {
+                _backgroundSprite.sprite = slot.ItemData.IconBackground;
+                _backgroundSprite.color = Color.white;
+            }
+
+            else
+                _backgroundSprite.color = _backgroundSprite.color.WithAlpha(0);
 
             if (slot.StackSize > 1)
             {
@@ -77,6 +89,8 @@ public class InventorySlot_UI : MonoBehaviour
         //Debug.Log("33");
         itemSprite.sprite = null;
         itemSprite.color = Color.clear;
+        _backgroundSprite.sprite = null;
+        _backgroundSprite.color = Color.clear;
         itemCount.text = "";
     }
 

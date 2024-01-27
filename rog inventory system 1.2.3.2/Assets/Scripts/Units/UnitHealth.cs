@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public abstract class UnitHealth : MonoBehaviour, IHealthChangeable
 {
-    [SerializeField] private HealthBar _healthBar;
+    [SerializeField] protected HealthBar _healthBar;
     [Space]
-    [SerializeField] private float _maxHealth;
-    [SerializeField] private float _currentHealth;
+    [SerializeField] protected float _maxHealth;
+    [SerializeField] protected float _currentHealth;
 
     public event Action<float> OnMaxHPChange;
     public event Action<float> OnCurrentHPChange;
@@ -17,7 +17,7 @@ public abstract class UnitHealth : MonoBehaviour, IHealthChangeable
     public float MaxHealth
     {
         get => _maxHealth;
-        private set
+        protected set
         {
             _maxHealth = value;
             OnMaxHPChange?.Invoke(value);
@@ -27,7 +27,7 @@ public abstract class UnitHealth : MonoBehaviour, IHealthChangeable
     public float CurrentHealth
     {
         get => _currentHealth;
-        private set
+        protected set
         {
             _currentHealth = value;
             OnCurrentHPChange?.Invoke(value);
@@ -36,12 +36,12 @@ public abstract class UnitHealth : MonoBehaviour, IHealthChangeable
         }
     }
 
-    private void Awake()
+    protected void Awake()
     {
         Initialize();
     }
 
-    private void Initialize()
+    protected void Initialize()
     {
         CurrentHealth = _maxHealth;
 
@@ -49,39 +49,18 @@ public abstract class UnitHealth : MonoBehaviour, IHealthChangeable
         _healthBar.SetHealth(_currentHealth);
     }
 
-    public void ChangeCurrentHealth(float damageValue)
-    {
-        CurrentHealth -= damageValue;
-    }
+    public abstract void ChangeCurrentHealth(float damageValue);
 
-    public void TakeTrapDamage(float damageValue)
-    {
-        CurrentHealth -= damageValue;
-    }
+    public abstract void TakeTrapDamage(float damageValue);
 
-    public void TakeUnitDamage(float damageValue)
-    {
-        CurrentHealth -= damageValue;
-    }
-    public void HealUnitDamage(float healValue)
-    {
-        CurrentHealth += healValue;
-    }
+    public abstract void TakeUnitDamage(float damageValue);
 
-    public void ChangeMaxHealth(float value)
-    {
-        MaxHealth += value;
-    }
+    public abstract void HealUnitDamage(float healValue);
 
-    private void CheckHealth(float health)
-    {
-        if (health <= 0)
-            UnitDeath();
-    }
 
-    private void UnitDeath()
-    {
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Destroy(gameObject);
-    }
+    public abstract void ChangeMaxHealth(float value);
+
+    protected abstract void CheckHealth(float health);
+
+    protected abstract void UnitDeath();
 }

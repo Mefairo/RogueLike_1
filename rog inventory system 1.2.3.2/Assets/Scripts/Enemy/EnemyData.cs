@@ -9,7 +9,7 @@ using UnityEngine.Events;
 public abstract class EnemyData : MonoBehaviour
 {
     [Header("General Stats")]
-    [SerializeField] protected Player target;
+    [SerializeField] protected Player _target;
     [SerializeField] protected StatusEffectsData _statusData;
     [SerializeField] protected UnitStats _unitStats;
     [SerializeField] protected PlayerStats _playerStats;
@@ -30,6 +30,8 @@ public abstract class EnemyData : MonoBehaviour
 
     public UnityAction OnEnemyDead;
 
+    public Player Target => _target;
+
     private void Awake()
     {
         enemyInstance = new EnemyInstance(_unitStats);
@@ -37,12 +39,12 @@ public abstract class EnemyData : MonoBehaviour
 
     protected virtual void Start()
     {
-        target = FindObjectOfType<Player>().GetComponent<Player>();
+        _target = FindObjectOfType<Player>().GetComponent<Player>();
         _playerStats = FindObjectOfType<PlayerStats>().GetComponent<PlayerStats>();
         _player = FindObjectOfType<Player>().GetComponent<Player>();
         //_statusData = GetComponent<StatusEffectsData>();
         _roundManager = FindObjectOfType<RoundManager>().GetComponent<RoundManager>();
-        _roundManager.enemiesOnScene.Add(this);
+        //_roundManager.EnemiesOnScene.Add(this);
 
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -61,12 +63,12 @@ public abstract class EnemyData : MonoBehaviour
 
         if (agent != null && agent.isActiveAndEnabled)
         {
-            agent.SetDestination(target.transform.position);
+            agent.SetDestination(_target.transform.position);
         }
     }
     protected void OnDestroy()
     {
-        _roundManager.enemiesOnScene.Remove(this);
+        //_roundManager.EnemiesOnScene.Remove(this);
 
         //OnEnemyDead?.Invoke();
         _roundManager.ConditionsForNewRound();

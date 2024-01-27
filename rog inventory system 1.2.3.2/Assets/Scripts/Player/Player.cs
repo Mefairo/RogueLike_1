@@ -8,9 +8,12 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private PlayerController _playerController;
     [SerializeField] private PlayerHealth _playerHealth;
+    [Space]
+    [SerializeField] private RoundManager _roundManager;
 
     public PlayerController PlayerController => _playerController;
     public PlayerHealth PlayerHealth => _playerHealth;  
+    public RoundManager RoundManager => _roundManager;
 
     public void LifeStealDamage(float damage)
     {

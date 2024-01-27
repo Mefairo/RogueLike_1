@@ -27,6 +27,7 @@ public class ShopKeeperDisplay : MonoBehaviour
 
     [Header("Item Preview Section")]
     [SerializeField] private Image _itemPreviewSprite;
+    [SerializeField] private Image _backgroundPreviewSprite;
     [SerializeField] private TextMeshProUGUI _itemPreviewName;
     [SerializeField] private TextMeshProUGUI _itemPreviewDescription;
 
@@ -170,9 +171,12 @@ public class ShopKeeperDisplay : MonoBehaviour
         if (_shoppingCart.ContainsKey(data))
         {
             _shoppingCart[data]--;
+
             var newString = $"- {data.DisplayName} {price}G x{_shoppingCart[data]}";
             var newImage = data.Icon;
-            _shoppingCartUI[data].SetItemText(newString, newImage);
+            var backgroundImage = data.IconBackground;/////////////////////////////
+
+            _shoppingCartUI[data].SetItemText(newString, newImage, backgroundImage);
 
             if (_shoppingCart[data] <= 0)
             {
@@ -201,6 +205,10 @@ public class ShopKeeperDisplay : MonoBehaviour
     {
         _itemPreviewSprite.sprite = null;
         _itemPreviewSprite.color = Color.clear;
+
+        _backgroundPreviewSprite.sprite = null;
+        _backgroundPreviewSprite.color = Color.clear;
+
         _itemPreviewName.text = "";
         _itemPreviewDescription.text = "";
     }
@@ -216,9 +224,12 @@ public class ShopKeeperDisplay : MonoBehaviour
         if (_shoppingCart.ContainsKey(data))
         {
             _shoppingCart[data]++;
+
             var newString = $"- {data.DisplayName} {price}G x{_shoppingCart[data]}";
             var newImage = data.Icon;
-            _shoppingCartUI[data].SetItemText(newString, newImage);
+            var backgroundImage = data.IconBackground;////////////////////////////
+
+            _shoppingCartUI[data].SetItemText(newString, newImage, backgroundImage);
         }
 
         else
@@ -228,7 +239,10 @@ public class ShopKeeperDisplay : MonoBehaviour
             var shoppingCartTextObj = Instantiate(_shoppingCartItemPrefab, _shoppingCartContentPanel.transform);
             var newString = $"- {data.DisplayName} {price}G x1";
             var newImage = data.Icon;
-            shoppingCartTextObj.SetItemText(newString, newImage);
+            var backgroundImage = data.IconBackground;//////////////////////////////
+
+            shoppingCartTextObj.SetItemText(newString, newImage, backgroundImage);
+
             _shoppingCartUI.Add(data, shoppingCartTextObj);
         }
 
@@ -270,6 +284,16 @@ public class ShopKeeperDisplay : MonoBehaviour
 
         _itemPreviewSprite.sprite = data.Icon;
         _itemPreviewSprite.color = Color.white;
+
+        if(data.IconBackground != null)
+        {
+            _backgroundPreviewSprite.sprite = data.IconBackground;
+            _backgroundPreviewSprite.color = Color.white;
+        }
+
+        else
+            _backgroundPreviewSprite.color = _backgroundPreviewSprite.color.WithAlpha(0);
+
         _itemPreviewName.text = data.DisplayName;
         _itemPreviewDescription.text = data.Description;
     }

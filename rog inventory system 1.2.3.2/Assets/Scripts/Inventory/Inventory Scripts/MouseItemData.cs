@@ -5,10 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using TMPro;
+using Unity.VisualScripting;
 
 public class MouseItemData : MonoBehaviour
 {
     public Image ItemSprite;
+    public Image BackgroundSprite;
     public TextMeshProUGUI ItemCount;
     public InventorySlot AssignedInventorySlot;
 
@@ -21,6 +23,10 @@ public class MouseItemData : MonoBehaviour
     {
         ItemSprite.color = Color.clear;
         ItemSprite.preserveAspect = true;
+
+        BackgroundSprite.color = Color.clear;
+        BackgroundSprite.preserveAspect = true;
+
         ItemCount.text = "";
 
         _playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -39,8 +45,18 @@ public class MouseItemData : MonoBehaviour
     {
         //Debug.Log("23");
         ItemSprite.sprite = AssignedInventorySlot.ItemData.Icon;
-        ItemCount.text = AssignedInventorySlot.StackSize.ToString();
         ItemSprite.color = Color.white;
+
+        if(AssignedInventorySlot.ItemData.IconBackground != null)
+        {
+            BackgroundSprite.sprite = AssignedInventorySlot.ItemData.IconBackground;
+            BackgroundSprite.color = Color.white;
+        }
+       
+        else
+            BackgroundSprite.color = BackgroundSprite.color.WithAlpha(0);
+
+        ItemCount.text = AssignedInventorySlot.StackSize.ToString();
 
     }
 
@@ -77,6 +93,8 @@ public class MouseItemData : MonoBehaviour
         ItemCount.text = "";
         ItemSprite.sprite = null;
         ItemSprite.color = Color.clear;
+        BackgroundSprite.sprite = null;
+        BackgroundSprite.color = Color.clear;
     }
 
     public static bool IsPointerOverUIObject()

@@ -18,10 +18,6 @@ public class BulletData : MonoBehaviour
     [Header("Other")]
     [SerializeField] private LayerMask _whatIsSolid;
 
-    [SerializeField] bool enemyBullet;
-
-    private Enemy _enemy;
-
     private void Start()
     {
         StartCoroutine(DestruyBulletByTime());
@@ -56,7 +52,6 @@ public class BulletData : MonoBehaviour
 
         Destroy(gameObject);
     }
-
 
     private IEnumerator DestruyBulletByTime()
     {

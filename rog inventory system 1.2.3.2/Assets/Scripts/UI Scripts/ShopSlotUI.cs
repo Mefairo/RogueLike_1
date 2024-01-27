@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ShopSlotUI : MonoBehaviour
 {
     [SerializeField] private Image _itemSprite;
+    [SerializeField] private Image _backgroundSprite;
     [SerializeField] private TextMeshProUGUI _itemName;
     [SerializeField] private TextMeshProUGUI _itemCount;
     [SerializeField] private ShopSlot _assignedItemSlot;
@@ -29,6 +31,11 @@ public class ShopSlotUI : MonoBehaviour
         _itemSprite.sprite = null;
         _itemSprite.preserveAspect = true;
         _itemSprite.color = Color.clear;
+
+        _backgroundSprite.sprite = null;
+        _backgroundSprite.preserveAspect = true;
+        _backgroundSprite.color = Color.clear;
+
         _itemName.text = "";
         _itemCount.text = "";
 
@@ -53,6 +60,16 @@ public class ShopSlotUI : MonoBehaviour
         {
             _itemSprite.sprite = _assignedItemSlot.ItemData.Icon;
             _itemSprite.color = Color.white;
+
+            if(_assignedItemSlot.ItemData.IconBackground != null)
+            {
+                _backgroundSprite.sprite = _assignedItemSlot.ItemData.IconBackground;
+                _backgroundSprite.color = Color.white;
+            }
+
+            else
+                _backgroundSprite.color = _backgroundSprite.color.WithAlpha(0);
+
             _itemCount.text = _assignedItemSlot.StackSize.ToString();
 
             var modifiedPrice = ShopKeeperDisplay.GetModifiedPrice(_assignedItemSlot.ItemData, 1, MarkUp);
@@ -62,6 +79,10 @@ public class ShopSlotUI : MonoBehaviour
         {
             _itemSprite.sprite = null;
             _itemSprite.color = Color.clear;
+
+            _backgroundSprite.sprite = null;
+            _backgroundSprite.color = Color.clear;
+
             _itemName.text = "";
             _itemCount.text = "";
         }

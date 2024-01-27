@@ -24,7 +24,7 @@ public class RoundManager : MonoBehaviour
 
     private Animator _componentAnimator;
 
-    public List<EnemyData> enemiesOnScene;
+    public List<EnemyRoundController> EnemiesOnScene;
 
     public UnityAction OnNewRoundStart;
 
@@ -82,7 +82,7 @@ public class RoundManager : MonoBehaviour
 
     public void ConditionsForNewRound()
     {
-        if (!enemiesOnScene.Any() && !_roundTimer.TimerActive)
+        if (!EnemiesOnScene.Any() && !_roundTimer.TimerActive)
         {
             _levelTransfer.gameObject.SetActive(true);
         }

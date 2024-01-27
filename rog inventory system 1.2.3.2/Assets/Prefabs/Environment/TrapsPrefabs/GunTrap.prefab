@@ -48,7 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _offset: 0
   _shotPoint: {fileID: 1059011060580247463}
-  _bullet: {fileID: -6997473235123702103, guid: 69eecbe6b34211f458a72fa8316fc494, type: 3}
+  _bulletContainer: {fileID: 0}
+  _bullet: {fileID: 2936258359791216880, guid: 69eecbe6b34211f458a72fa8316fc494, type: 3}
   _startTimeBtwShots: 1
 --- !u!1 &855823490362697391
 GameObject:
