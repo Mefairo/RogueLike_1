@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b504e5c1a3c54264db8fd6e5d188794c, type: 3}
+  m_Name: 2 Helmet 2_green
+  m_EditorClassIdentifier: 
+  ID: 112
+  DisplayName: 111
+  Description: 111
+  Icon: {fileID: 21300000, guid: a4e33c363625a4f459a487d8b8ca6698, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 6131324041524727166, guid: 34cf102e2677e694a9930d1dfb6be9aa, type: 3}
+  MaxStackSize: 1
+  GoldValue: 100
+  StatusEffects: {fileID: 0}
+  ItemType: 0
+  ItemTier: 2
+  ItemTierCount: 1
+  Recipes: []

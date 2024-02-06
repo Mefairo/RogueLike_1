@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b504e5c1a3c54264db8fd6e5d188794c, type: 3}
+  m_Name: 3 Pants 1 blue
+  m_EditorClassIdentifier: 
+  ID: -1
+  DisplayName: Pants 1
+  Description: 
+  Icon: {fileID: 21300000, guid: d17e486932b27e54aaa950e8096a1c85, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 6131324041524727166, guid: 21a10ade92a1e894dbff924e21295807, type: 3}
+  MaxStackSize: 1
+  GoldValue: 100
+  StatusEffects: {fileID: 0}
+  ItemType: 4
+  ItemTier: 3
+  ItemTierCount: 2
+  Recipes: []
