@@ -11,8 +11,8 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
     [SerializeField] protected float _startTimeBtwShots;
     [SerializeField] protected float _bulletSpeed;
     [SerializeField] protected float _lifeTime;
-    [SerializeField] protected int _armor;
-    [SerializeField] protected int _evasion;
+    [SerializeField] protected float _armor;
+    [SerializeField] protected float _evasion;
     [Space(20)]
     [Header("Initial Stats")]
     [SerializeField] protected float _initialDamage;
@@ -21,8 +21,8 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
     [SerializeField] protected float _initialStartTimeBtwShots;
     [SerializeField] protected float _initialBulletSpeed;
     [SerializeField] protected float _initialLifeTime;
-    [SerializeField] protected int _initialArmor;
-    [SerializeField] protected int _initialEvasion;
+    [SerializeField] protected float _initialArmor;
+    [SerializeField] protected float _initialEvasion;
     [Space(20)]
     [Header("Bonus Stats")]
     [SerializeField] protected float _bonusDamage;
@@ -31,8 +31,8 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
     [SerializeField] protected float _bonusAttackSpeed;
     [SerializeField] protected float _bonusBulletSpeed;
     [SerializeField] protected float _bonusLifetime;
-    [SerializeField] protected int _bonusArmor;
-    [SerializeField] protected int _bonusEvasion;
+    [SerializeField] protected float _bonusArmor;
+    [SerializeField] protected float _bonusEvasion;
 
     public float Damage
     {
@@ -88,7 +88,7 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
             //OnMaxHPChange?.Invoke(value);
         }
     }
-    public int Armor
+    public float Armor
     {
         get => _armor;
         protected set
@@ -97,7 +97,7 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
             //OnArmorChange?.Invoke(value);
         }
     }
-    public int Evasion
+    public float Evasion
     {
         get => _evasion;
         protected set
@@ -115,8 +115,8 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
     public abstract void ChangeAttackSpeed(float attackSpeed);
     public abstract void ChangeBulletSpeed(float bulletSpeed);
     public abstract void ChangeLifeTime(float lifetime);
-    public abstract void ChangeArmor(int armor);
-    public abstract void ChangeEvasion(int evasion);
+    public abstract void ChangeArmor(float armor);
+    public abstract void ChangeEvasion(float evasion);
 
 
     public  void RefreshStats()

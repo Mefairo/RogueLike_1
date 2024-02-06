@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IDefensable
 {
-    public void ChangeArmor(int armor);
-    public void ChangeEvasion(int evasion);
+    public void ChangeArmor(float armor);
+    public void ChangeEvasion(float evasion);
 }

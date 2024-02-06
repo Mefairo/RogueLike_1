@@ -46,12 +46,12 @@ public class PlayerStats : UnitStats
         LifeTime += lifetime;
     }
 
-    public override void ChangeArmor(int armor)
+    public override void ChangeArmor(float armor)
     {
         Armor += armor;
     }
 
-    public override void ChangeEvasion(int evasion)
+    public override void ChangeEvasion(float evasion)
     {
         Evasion += evasion;
     }

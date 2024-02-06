@@ -1,36 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public abstract class EquipSlot : MonoBehaviour
 {
-    [Header("Health")]
-    [SerializeField] private float[] _maxHealth;
-    [SerializeField] private float[] _currentHealth;
-    [Space]
-    [Header("Movement")]
-    [SerializeField] private float[] _moveSpeed;
-    [Space]
-    [Header("Damage")]
-    [SerializeField] private float[] _damage;
-    [SerializeField] protected float[] _critMultiply;
-    [SerializeField] protected float[] _critChance;
-    [SerializeField] protected float[] _startTimeBtwShots;
-    [Space]
-    [Header("Bullet Parametres")]
-    [SerializeField] protected float[] _bulletSpeed;
-    [SerializeField] protected float[] _lifeTime;
-    [Space]
-    [Header("Defence")]
-    [SerializeField] protected int[] _armor;
-    [SerializeField] protected int[] _evasion;
-
-    [SerializeField] private Dictionary<ItemType, float> _equipValue;
-
+    [SerializeField] private List<EquipSlotStatsList> _statsList;
 
     public void Equip(Player player, EquipSlot_UI equipSlot_UI)
     {
-        Debug.Log("eq 1");
         var itemTier = equipSlot_UI.AssignedInventorySlot.ItemData.ItemTierCount;
 
         UseEquip(player, itemTier, true);
@@ -38,90 +16,99 @@ public abstract class EquipSlot : MonoBehaviour
 
     public void UnEquip(Player player, EquipSlot_UI equipSlot_UI)
     {
-        Debug.Log("uneq 1");
         var itemTier = equipSlot_UI.AssignedInventorySlot.ItemData.ItemTierCount;
 
         UseEquip(player, itemTier, false);
     }
 
-    //protected abstract void UseEquip(Player player, int itemTier, bool equip);
-
     protected void UseEquip(Player player, int itemTier, bool equip)
     {
         if (itemTier >= 0)
         {
-            float maxHealthChange = equip ? _maxHealth[itemTier] : -_maxHealth[itemTier];
-            float currentHealthChange = equip ? _currentHealth[itemTier] : -_currentHealth[itemTier];
-
-            float speedChange = equip ? _moveSpeed[itemTier] : -_moveSpeed[itemTier];
-
-            float damageChange = equip ? _damage[itemTier] : -_damage[itemTier];
-            float critMultiplyChange = equip ? _critMultiply[itemTier] : -_critMultiply[itemTier];
-            float critChanceChange = equip ? _critChance[itemTier] : -_critChance[itemTier];
-            float attackSpeedChange = equip ? _startTimeBtwShots[itemTier] : -_startTimeBtwShots[itemTier];
-            float bulletSpeedChange = equip ? _bulletSpeed[itemTier] : -_bulletSpeed[itemTier];
-            float lifetimeChange = equip ? _lifeTime[itemTier] : -_lifeTime[itemTier];
-
-            int armorChange = equip ? _armor[itemTier] : -_armor[itemTier];
-            int evasionChange = equip ? _evasion[itemTier] : -_evasion[itemTier];
-
-
-            if (player.TryGetComponent(out IHealthChangeable healthChangeable))
+            foreach (var stat in _statsList)
             {
-                healthChangeable.ChangeMaxHealth(maxHealthChange);
-                healthChangeable.ChangeCurrentHealth(currentHealthChange);
-            }
+                switch (stat.Stats)
+                {
+                    case PlayerStatsEnum.MaxHealth:
+                        float maxHealthChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IHealthChangeable maxHPChangeable))
+                            maxHPChangeable.ChangeMaxHealth(maxHealthChange);
+                        break;
+
+                    case PlayerStatsEnum.CurrentHealth:
+                        float currentHealthChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IHealthChangeable currentHPChangeable))
+                            currentHPChangeable.ChangeCurrentHealth(currentHealthChange);
+                        break;
+
+                    case PlayerStatsEnum.MoveSpeed:
+                        float speedChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IMoveable moveSpeedChangeable))
+                            moveSpeedChangeable.ChangeMoveSpeed(speedChange);
+                        break;
+
+                    case PlayerStatsEnum.Damage:
+                        float damageChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IStatsChangeable damageChangeable))
+                            damageChangeable.ChangeDamage(damageChange);
+                        break;
+
+                    case PlayerStatsEnum.CritMultiply:
+                        float critMultiplyChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IStatsChangeable critMultyChangeable))
+                            critMultyChangeable.ChangeCritMultiply(critMultiplyChange);
+                        break;
+
+                    case PlayerStatsEnum.CritChance:
+                        float critChanceChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IStatsChangeable critChanceChangeable))
+                            critChanceChangeable.ChangeCritChance(critChanceChange);
+                        break;
+
+                    case PlayerStatsEnum.StartTimeBtwShots:
+                        float attackSpeedChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IStatsChangeable attackSpeedChangeable))
+                            attackSpeedChangeable.ChangeAttackSpeed(attackSpeedChange);
+                        break;
+
+                    case PlayerStatsEnum.BulletSpeed:
+                        float bulletSpeedChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IStatsChangeable bulletSpeedChangeable))
+                            bulletSpeedChangeable.ChangeBulletSpeed(bulletSpeedChange);
+                        break;
+
+                    case PlayerStatsEnum.Lifetime:
+                        float lifetimeChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IStatsChangeable lifetimeChangeable))
+                            lifetimeChangeable.ChangeLifeTime(lifetimeChange);
+                        break;
+
+                    case PlayerStatsEnum.Armor:
+                        float armorChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IDefensable armorChangeable))
+                            armorChangeable.ChangeArmor(armorChange);
+                        break;
+
+                    case PlayerStatsEnum.Evasion:
+                        float evasionChange = equip ? stat.ValueStat[itemTier] : -stat.ValueStat[itemTier];
+
+                        if (player.TryGetComponent(out IDefensable evasionChangeable))
+                            evasionChangeable.ChangeEvasion(evasionChange);
+                        break;
+                }
 
 
-            if (player.TryGetComponent(out IMoveable moveable))
-                moveable.ChangeMoveSpeed(speedChange);
-
-            if (player.TryGetComponent(out IStatsChangeable statsChangeable))
-            {
-                statsChangeable.ChangeDamage(damageChange);
-                statsChangeable.ChangeCritMultiply(critMultiplyChange);
-                statsChangeable.ChangeCritChance(critChanceChange);
-                statsChangeable.ChangeAttackSpeed(attackSpeedChange);
-
-                statsChangeable.ChangeBulletSpeed(bulletSpeedChange);
-                statsChangeable.ChangeLifeTime(lifetimeChange);
-            }
-
-            if (player.TryGetComponent(out IDefensable defensable))
-            {
-                defensable.ChangeArmor(armorChange);
-                defensable.ChangeEvasion(evasionChange);
             }
         }
     }
-
-    //private void ApplyEquipmentEffect(Player player, float[] values, ItemType type, int itemTier, bool equip)
-    //{
-    //    if (values != null && itemTier >= 0 && itemTier < values.Length)
-    //    {
-    //        float valueChange = equip ? values[itemTier] : -values[itemTier];
-    //        ApplyEquipmentEffect(player, type, valueChange);
-    //    }
-    //}
-
-    //private void ApplyEquipmentEffect(Player player, ItemType type, float valueChange)
-    //{
-    //    switch (type)
-    //    {
-    //        case EquipmentType.MaxHealth:
-    //            if (player.TryGetComponent(out IHealthChangeable healthChangeable))
-    //                healthChangeable.ChangeMaxHealth(valueChange);
-    //            break;
-
-    //        case EquipmentType.CurrentHealth:
-    //            if (player.TryGetComponent(out IHealthChangeable healthChangeable))
-    //                healthChangeable.ChangeCurrentHealth(valueChange);
-    //            break;
-
-    //        case EquipmentType.MoveSpeed:
-    //            if (player.TryGetComponent(out IMoveable moveable))
-    //                moveable.ChangeMoveSpeed(valueChange);
-    //            break;
-    //    }
-    //}
 }

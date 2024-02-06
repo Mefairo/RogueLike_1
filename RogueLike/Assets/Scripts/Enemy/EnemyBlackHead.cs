@@ -41,12 +41,12 @@ public class EnemyBlackHead : EntityStats
         _bonusLifetime += lifetime;
     }
 
-    public override void ChangeArmor(int armor)
+    public override void ChangeArmor(float armor)
     {
         
     }
 
-    public override void ChangeEvasion(int evasion)
+    public override void ChangeEvasion(float evasion)
     {
         
     }
