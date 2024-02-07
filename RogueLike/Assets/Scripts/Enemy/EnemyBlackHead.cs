@@ -28,7 +28,7 @@ public class EnemyBlackHead : EntityStats
 
     public override void ChangeAttackSpeed(float attackSpeed)
     {
-        _bonusAttackSpeed += attackSpeed;
+        _bonusAttackSpeed -= attackSpeed;
     }
 
     public override void ChangeBulletSpeed(float bulletSpeed)
@@ -49,5 +49,15 @@ public class EnemyBlackHead : EntityStats
     public override void ChangeEvasion(float evasion)
     {
         
+    }
+
+    public override void ChangeLifestealMultiply(float lifestealMultiply)
+    {
+    
+    }
+
+    public override void ChangeLifestealChance(float lifestealChance)
+    {
+       
     }
 }

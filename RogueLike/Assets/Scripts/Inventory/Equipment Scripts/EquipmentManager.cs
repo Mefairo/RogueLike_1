@@ -23,17 +23,14 @@ public class EquipmentManager : MonoBehaviour
         switch (equipID)
         {
             case 111:
-                Debug.Log("manager switch 1");
                 _equipHelmet_1.Equip(_player, equipSlot);
                 break;
 
             case 112:
-                Debug.Log("manager switch 2");
                 _equipHelmet_2.Equip(_player, equipSlot);
                 break;
 
             case 311:
-                Debug.Log("manager switch 2");
                 _belt_1.Equip(_player, equipSlot);
                 break;
         }
@@ -47,17 +44,14 @@ public class EquipmentManager : MonoBehaviour
         switch (equipID)
         {
             case 111:
-                Debug.Log("DISmanager switch 1");
                 _equipHelmet_1.UnEquip(_player, equipSlot);
                 break;
 
             case 112:
-                Debug.Log("DISmanager switch 2");
                 _equipHelmet_2.UnEquip(_player, equipSlot);
                 break;
 
             case 311:
-                Debug.Log("manager switch 2");
                 _belt_1.UnEquip(_player, equipSlot);
                 break;
         }

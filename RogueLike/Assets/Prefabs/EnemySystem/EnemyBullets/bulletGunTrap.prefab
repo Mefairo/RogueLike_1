@@ -106,3 +106,4 @@ MonoBehaviour:
   _whatIsSolid:
     serializedVersion: 2
     m_Bits: 192
+  _tag: 2

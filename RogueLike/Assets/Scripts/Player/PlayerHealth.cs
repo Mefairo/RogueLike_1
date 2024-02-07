@@ -8,6 +8,17 @@ using Random = UnityEngine.Random;
 public class PlayerHealth : UnitHealth
 {
     [SerializeField] private PlayerStats _playerStats;
+    [SerializeField] private BulletData _bullet;
+
+    private void OnEnable()
+    {
+        _bullet.OnLifeSteal += LifeSteal;
+    }
+
+    private void OnDisable()
+    {
+        _bullet.OnLifeSteal -= LifeSteal;
+    }
 
     public override void ChangeCurrentHealth(float damageValue)
     {
@@ -33,16 +44,19 @@ public class PlayerHealth : UnitHealth
     {
         int chanceEvasion = Random.Range(0, 100);
 
-        if (chanceEvasion > _playerStats.Evasion)
+        if (chanceEvasion < _playerStats.Evasion)
         {
             if (_playerStats.Armor > 0)
                 CurrentHealth -= damageValue / _playerStats.Armor;
 
             else
-                return;
+                CurrentHealth -= damageValue;
         }
-
-       
+        else
+        {
+            Debug.Log("evasion");
+            return;
+        }
     }
 
     protected override void CheckHealth(float health)
@@ -54,5 +68,10 @@ public class PlayerHealth : UnitHealth
     protected override void UnitDeath()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void LifeSteal(float value)
+    {
+        Debug.Log(value);
     }
 }

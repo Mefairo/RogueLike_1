@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class EnemyRedHead : EntityStats
+public class TrapStats : EntityStats
 {
+    private void Awake()
+    {
+        RefreshStats();
+    }
+
     public override void NewRoundStats()
     {
         Damage = EnemyManager.Instance.RoundManager.CountRound + _bonusDamage;
@@ -50,21 +54,21 @@ public class EnemyRedHead : EntityStats
 
     public override void ChangeArmor(float armor)
     {
-        
+
     }
 
     public override void ChangeEvasion(float evasion)
     {
-        
+
     }
 
     public override void ChangeLifestealMultiply(float lifestealMultiply)
     {
-       
+        
     }
 
     public override void ChangeLifestealChance(float lifestealChance)
     {
-        
+       
     }
 }

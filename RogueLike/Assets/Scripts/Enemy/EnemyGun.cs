@@ -31,7 +31,7 @@ public class EnemyGun : GunData
     protected override void DirectionForShoot()
     {
         //_difference = _enemy.Player.transform.position - transform.position;
-        _difference = EnemyManager.Instance.player.transform.position - transform.position;
+        _difference = EnemyManager.Instance.Player.transform.position - transform.position;
         _rotZ = Mathf.Atan2(_difference.y, _difference.x) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.Euler(0f, 0f, _rotZ + _offset);

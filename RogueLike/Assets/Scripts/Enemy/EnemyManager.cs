@@ -7,12 +7,19 @@ public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager Instance;
 
+    [Header("Player")]
     [SerializeField] private PlayerStats _playerStats;
-    [SerializeField] private RoundManager _roundManager;
+    [SerializeField] private Player _player;
+    [Space]
+    [Header("Entity")]
     [SerializeField] private List<EntityStats> _enemyList = new List<EntityStats>();
+    [SerializeField] private List<EntityStats> _trapList = new List<EntityStats>();
+    [Space]
+    [Header("Manager")]
+    [SerializeField] private RoundManager _roundManager;
 
     public RoundManager RoundManager => _roundManager;
-    public Player player;
+    public Player Player => _player;
 
     private void Awake()
     {
@@ -71,6 +78,13 @@ public class EnemyManager : MonoBehaviour
             enemy.RefreshStats();
             enemy.RefreshBonusStats();
         }
+
+        foreach (var trap in _trapList)
+        {
+            trap.RefreshStats();
+            trap.RefreshBonusStats();
+        }
+
         _playerStats.RefreshStats();
     }
 

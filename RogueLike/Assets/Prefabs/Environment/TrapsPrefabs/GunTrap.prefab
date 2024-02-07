@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2457124534731173698}
+  - component: {fileID: 7140638659234460719}
+  - component: {fileID: 2012912260378036683}
   - component: {fileID: 2115611599296086914}
   m_Layer: 0
   m_Name: GunTrap
@@ -34,6 +36,55 @@ Transform:
   - {fileID: 159307679164582033}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7140638659234460719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719494682314295236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115b84c69115d94418440d6635a0854a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _trapStats: {fileID: 2012912260378036683}
+--- !u!114 &2012912260378036683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719494682314295236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a860d07aff00d49a7128a883581e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 0
+  _critMultiply: 0
+  _critChance: 0
+  _startTimeBtwShots: 0
+  _bulletSpeed: 0
+  _lifeTime: 0
+  _armor: 0
+  _evasion: 0
+  _initialDamage: 5
+  _initialCritMultiply: 150
+  _initialCritChance: 50
+  _initialStartTimeBtwShots: 1
+  _initialBulletSpeed: 10
+  _initialLifeTime: 10
+  _initialArmor: 0
+  _initialEvasion: 0
+  _bonusDamage: 0
+  _bonusCritMultiply: 0
+  _bonusCritChance: 0
+  _bonusAttackSpeed: 0
+  _bonusBulletSpeed: 0
+  _bonusLifetime: 0
+  _bonusArmor: 0
+  _bonusEvasion: 0
 --- !u!114 &2115611599296086914
 MonoBehaviour:
   m_ObjectHideFlags: 0

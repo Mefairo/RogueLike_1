@@ -31,14 +31,24 @@ public class HealthBar : MonoBehaviour
         _unitHealth.OnCurrentHPChange -= SetHealth;
     }
 
-    public void SetMaxHealth(float health)
+    public void SetMaxHealth(float maxHealth)
     {
-        slider.maxValue = health;
+        slider.maxValue = maxHealth;
+
+        ChangeMaxHealthText(maxHealth);
     }
 
     public void SetHealth(float health)
     {
         slider.value = health;
+
+        ChangeCurrentHealthText(health);
+    }
+
+    private void ChangeMaxHealthText(float maxHealth)
+    {
+        if (_maxHPText != null)
+            _maxHPText.text = $"{maxHealth:F1}";
     }
 
     private void ChangeCurrentHealthText(float health)
@@ -47,9 +57,5 @@ public class HealthBar : MonoBehaviour
             _currentHPText.text = $"{health:F1}";
     }
 
-    private void ChangeMaxHealthText(float maxHealth)
-    {
-        if (_maxHPText != null)
-            _maxHPText.text = $"{maxHealth:F1}";
-    }
+   
 }

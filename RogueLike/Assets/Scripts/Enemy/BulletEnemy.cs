@@ -8,7 +8,7 @@ public class BulletEnemy : BulletData
 
     protected override void Start()
     {
-        StartCoroutine(DestruyBulletByTime());
+        StartCoroutine(DestroyBulletByTime());
     }
 
     protected override void Update()
@@ -22,7 +22,7 @@ public class BulletEnemy : BulletData
     {
         _damage = stats.Damage;
         _critMultiply = stats.CritMultiply;
-        _chanceCrit = stats.CritChance;
+        _critChance = stats.CritChance;
         _bulletSpeed = stats.BulletSpeed;
         _lifeTime = stats.LifeTime;
     }
@@ -32,17 +32,7 @@ public class BulletEnemy : BulletData
         transform.Translate(Vector2.up * _bulletSpeed * Time.deltaTime);
     }
 
-    protected override void HandleCollision(Collider2D collider)
-    {
-        if (collider.TryGetComponent(out IHealthChangeable damageable))
-        {
-            damageable.TakeUnitDamage(_damage);
-        }
-
-        Destroy(gameObject);
-    }
-
-    protected override IEnumerator DestruyBulletByTime()
+    protected override IEnumerator DestroyBulletByTime()
     {
         yield return new WaitForSeconds(_lifeTime);
 

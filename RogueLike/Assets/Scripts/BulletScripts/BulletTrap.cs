@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class BulletTrap : BulletData
 {
+    public TagValueType _tag;
+
     protected override void Start()
     {
-        StartCoroutine(DestruyBulletByTime());
+        StartCoroutine(DestroyBulletByTime());
     }
 
     protected override void Update()
@@ -14,11 +17,20 @@ public class BulletTrap : BulletData
         MoveBullet();
 
         base.Update();
+    }
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            _damage++;
-        }
+    public void InitializeBullet(EntityStats stats)
+    {
+        _damage = stats.Damage;
+        _critMultiply = stats.CritMultiply;
+        _critChance = stats.CritChance;
+        _bulletSpeed = stats.BulletSpeed;
+        _lifeTime = stats.LifeTime;
+    }
+
+    protected override void CheckCollision()
+    {
+        base.CheckCollision();
     }
 
     protected override void MoveBullet()
@@ -26,17 +38,7 @@ public class BulletTrap : BulletData
         transform.Translate(Vector2.up * _bulletSpeed * Time.deltaTime);
     }
 
-    protected override void HandleCollision(Collider2D collider)
-    {
-        if (collider.TryGetComponent(out IHealthChangeable damageable))
-        {
-            damageable.TakeUnitDamage(_damage);
-        }
-
-        Destroy(gameObject);
-    }
-
-    protected override IEnumerator DestruyBulletByTime()
+    protected override IEnumerator DestroyBulletByTime()
     {
         yield return new WaitForSeconds(_lifeTime);
 

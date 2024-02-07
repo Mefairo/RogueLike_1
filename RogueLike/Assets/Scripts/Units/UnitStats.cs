@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
+public abstract class UnitStats : MonoBehaviour, IStatsChangeable, IDefensable
 {
     [Header("Current Stats")]
     [SerializeField] protected float _damage;
@@ -13,6 +13,9 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
     [SerializeField] protected float _lifeTime;
     [SerializeField] protected float _armor;
     [SerializeField] protected float _evasion;
+    [SerializeField] protected float _lifestealMultiply;
+    [SerializeField] protected float _lifestealChance;
+
     [Space(20)]
     [Header("Initial Stats")]
     [SerializeField] protected float _initialDamage;
@@ -23,6 +26,9 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
     [SerializeField] protected float _initialLifeTime;
     [SerializeField] protected float _initialArmor;
     [SerializeField] protected float _initialEvasion;
+    [SerializeField] protected float _initialLifestealMultiply;
+    [SerializeField] protected float _initialLifestealChance;
+
     [Space(20)]
     [Header("Bonus Stats")]
     [SerializeField] protected float _bonusDamage;
@@ -33,6 +39,8 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
     [SerializeField] protected float _bonusLifetime;
     [SerializeField] protected float _bonusArmor;
     [SerializeField] protected float _bonusEvasion;
+    [SerializeField] protected float _bonusLifestealMultiply;
+    [SerializeField] protected float _bonusLifestealChance;
 
     public float Damage
     {
@@ -106,6 +114,25 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
             //OnEvasionChange?.Invoke(value);
         }
     }
+    public float LifestealMultiply
+    {
+        get => _lifestealMultiply;
+        protected set
+        {
+            _lifestealMultiply = value;
+            //OnEvasionChange?.Invoke(value);
+        }
+    }
+    public float LifestealChance
+    {
+        get => _lifestealChance;
+        protected set
+        {
+            _lifestealChance = value;
+            //OnEvasionChange?.Invoke(value);
+        }
+    }
+
 
 
 
@@ -117,9 +144,11 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
     public abstract void ChangeLifeTime(float lifetime);
     public abstract void ChangeArmor(float armor);
     public abstract void ChangeEvasion(float evasion);
+    public abstract void ChangeLifestealMultiply(float lifestealMultiply);
+    public abstract void ChangeLifestealChance(float lifestealChance);
 
 
-    public  void RefreshStats()
+    public void RefreshStats()
     {
         Damage = _initialDamage;
         CritMultiply = _initialCritMultiply;
@@ -129,8 +158,10 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
         LifeTime = _initialLifeTime;
         Armor = _initialArmor;
         Evasion = _initialEvasion;
+        LifestealMultiply = _initialLifestealMultiply;
+        LifestealChance = _initialLifestealChance;
     }
-    public  void RefreshBonusStats()
+    public void RefreshBonusStats()
     {
         _bonusDamage = 0;
         _bonusCritMultiply = 0;
@@ -140,5 +171,7 @@ public abstract class UnitStats: MonoBehaviour, IStatsChangeable, IDefensable
         _bonusLifetime = 0;
         _bonusArmor = 0;
         _bonusEvasion = 0;
+        _bonusLifestealMultiply = 0;
+        _bonusLifestealChance = 0;
     }
 }

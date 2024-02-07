@@ -10,5 +10,8 @@ public interface IStatsChangeable
     public void ChangeAttackSpeed(float attackSpeed);
     public void ChangeBulletSpeed(float bulletSpeed);
     public void ChangeLifeTime(float lifetime);
+    public void ChangeLifestealMultiply(float lifestealMulty);
+    public void ChangeLifestealChance(float lifestealChance);
+
     public void RefreshStats();
 }

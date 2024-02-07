@@ -33,7 +33,7 @@ public class PlayerStats : UnitStats
 
     public override void ChangeAttackSpeed(float attackSpeed)
     {
-        StartTimeBtwShots += attackSpeed;
+        StartTimeBtwShots -= attackSpeed;
     }
 
     public override void ChangeBulletSpeed(float bulletSpeed)
@@ -54,5 +54,15 @@ public class PlayerStats : UnitStats
     public override void ChangeEvasion(float evasion)
     {
         Evasion += evasion;
+    }
+
+    public override void ChangeLifestealMultiply(float lifestealMultiply)
+    {
+        LifestealChance += lifestealMultiply;
+    }
+
+    public override void ChangeLifestealChance(float lifestealChance)
+    {
+        LifestealChance += lifestealChance;
     }
 }
