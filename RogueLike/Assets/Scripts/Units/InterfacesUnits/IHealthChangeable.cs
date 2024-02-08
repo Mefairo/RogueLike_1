@@ -9,4 +9,5 @@ public interface IHealthChangeable
     public void TakeUnitDamage(float value);
     public void HealUnitDamage(float value);
     public void ChangeMaxHealth(float value);
+    public void LifeSteal(float value);
 }

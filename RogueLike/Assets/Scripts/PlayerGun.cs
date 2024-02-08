@@ -29,7 +29,10 @@ public class PlayerGun : GunData
                 BulletPlayer bulletPlayer = bullet_1.GetComponent<BulletPlayer>();
 
                 if (bulletPlayer != null)
+                {
                     bulletPlayer.InitializeBullet(_player.PlayerStats);
+                    bulletPlayer.InitOwner(_player);
+                }
 
                 _timeBtwShots = _player.PlayerStats.StartTimeBtwShots;
             }

@@ -704,6 +704,7 @@ GameObject:
   - component: {fileID: 2519089986321393249}
   - component: {fileID: 6285284611033394367}
   - component: {fileID: 5013861255077028304}
+  - component: {fileID: -8873885877488711091}
   m_Layer: 8
   m_Name: EnemyManeken
   m_TagString: Enemy
@@ -792,8 +793,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthBar: {fileID: 1537175744686133701}
-  _maxHealth: 10
-  _currentHealth: 10
+  _maxHealth: 100
+  _currentHealth: 100
+  _enemyStats: {fileID: -8873885877488711091}
 --- !u!58 &6285284611033394367
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -856,3 +858,45 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-8873885877488711091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762070542328839167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc05b32626ffe83449ffb917c57337be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 0
+  _critMultiply: 0
+  _critChance: 0
+  _startTimeBtwShots: 0
+  _bulletSpeed: 0
+  _lifeTime: 0
+  _armor: 0
+  _evasion: 0
+  _lifestealMultiply: 0
+  _lifestealChance: 0
+  _initialDamage: 0
+  _initialCritMultiply: 0
+  _initialCritChance: 0
+  _initialStartTimeBtwShots: 0
+  _initialBulletSpeed: 0
+  _initialLifeTime: 0
+  _initialArmor: 0
+  _initialEvasion: 0
+  _initialLifestealMultiply: 0.5
+  _initialLifestealChance: 100
+  _bonusDamage: 0
+  _bonusCritMultiply: 0
+  _bonusCritChance: 0
+  _bonusAttackSpeed: 0
+  _bonusBulletSpeed: 0
+  _bonusLifetime: 0
+  _bonusArmor: 0
+  _bonusEvasion: 0
+  _bonusLifestealMultiply: 0
+  _bonusLifestealChance: 0

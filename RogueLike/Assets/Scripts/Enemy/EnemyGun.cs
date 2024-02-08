@@ -19,7 +19,10 @@ public class EnemyGun : GunData
             BulletEnemy bulletEnemy = bullet_1.GetComponent<BulletEnemy>();
 
             if (bulletEnemy != null)
+            {
                 bulletEnemy.InitializeBullet(_enemy.EnemyStats);
+                bulletEnemy.InitOwner(_enemy);
+            }
 
             _timeBtwShots = _enemy.EnemyStats.StartTimeBtwShots;
         }

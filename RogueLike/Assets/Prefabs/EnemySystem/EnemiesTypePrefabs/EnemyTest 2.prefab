@@ -937,7 +937,7 @@ MonoBehaviour:
   _gun: {fileID: 1039039453521768953}
   _enemyRoundController: {fileID: 6920353713248153746}
   _enemyStats: {fileID: 6632073085727106967}
-  _player: {fileID: 0}
+  _health: {fileID: 2519089986321393249}
 --- !u!114 &6632073085727106967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -956,18 +956,30 @@ MonoBehaviour:
   _startTimeBtwShots: 0
   _bulletSpeed: 0
   _lifeTime: 0
+  _armor: 0
+  _evasion: 0
+  _lifestealMultiply: 0
+  _lifestealChance: 0
   _initialDamage: 2
   _initialCritMultiply: 200
   _initialCritChance: 100
   _initialStartTimeBtwShots: 1
   _initialBulletSpeed: 15
   _initialLifeTime: 5
+  _initialArmor: 0
+  _initialEvasion: 0
+  _initialLifestealMultiply: 0
+  _initialLifestealChance: 0
   _bonusDamage: 0
   _bonusCritMultiply: 0
   _bonusCritChance: 0
   _bonusAttackSpeed: 0
   _bonusBulletSpeed: 0
   _bonusLifetime: 0
+  _bonusArmor: 0
+  _bonusEvasion: 0
+  _bonusLifestealMultiply: 0
+  _bonusLifestealChance: 0
 --- !u!114 &2519089986321393249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,6 +995,7 @@ MonoBehaviour:
   _healthBar: {fileID: 1537175744686133701}
   _maxHealth: 10
   _currentHealth: 10
+  _enemyStats: {fileID: 6632073085727106967}
 --- !u!114 &916447912305714019
 MonoBehaviour:
   m_ObjectHideFlags: 0

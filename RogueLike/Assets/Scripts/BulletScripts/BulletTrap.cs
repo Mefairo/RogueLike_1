@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class BulletTrap : BulletData
 {
-    public TagValueType _tag;
-
     protected override void Start()
     {
         StartCoroutine(DestroyBulletByTime());
@@ -17,15 +15,6 @@ public class BulletTrap : BulletData
         MoveBullet();
 
         base.Update();
-    }
-
-    public void InitializeBullet(EntityStats stats)
-    {
-        _damage = stats.Damage;
-        _critMultiply = stats.CritMultiply;
-        _critChance = stats.CritChance;
-        _bulletSpeed = stats.BulletSpeed;
-        _lifeTime = stats.LifeTime;
     }
 
     protected override void CheckCollision()
@@ -41,6 +30,19 @@ public class BulletTrap : BulletData
     protected override IEnumerator DestroyBulletByTime()
     {
         yield return new WaitForSeconds(_lifeTime);
+
+        Destroy(gameObject);
+    }
+
+    protected override void HandleCollision(Collider2D collider)
+    {
+        float damage = SetDamage();
+
+        if (collider.TryGetComponent(out IHealthChangeable damageable))
+        {
+            damageable.TakeUnitDamage(damage);
+            //_enemy..LifeSteal(damage);
+        }
 
         Destroy(gameObject);
     }

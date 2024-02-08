@@ -17,13 +17,20 @@ public abstract class BulletData : MonoBehaviour
     [SerializeField] protected float _distance;
     [SerializeField] protected LayerMask _whatIsSolid;
 
-    public UnityAction<float> OnLifeSteal;
-
     protected abstract void Start();
 
     protected virtual void Update()
     {
         CheckCollision();
+    }
+
+    public void InitializeBullet(UnitStats stats)
+    {
+        _damage = stats.Damage;
+        _critMultiply = stats.CritMultiply;
+        _critChance = stats.CritChance;
+        _bulletSpeed = stats.BulletSpeed;
+        _lifeTime = stats.LifeTime;      
     }
 
     protected abstract void MoveBullet();
@@ -50,23 +57,7 @@ public abstract class BulletData : MonoBehaviour
         }
     }
 
-    protected virtual void HandleCollision(Collider2D collider)
-    {
-        float damage = SetDamage();
-
-        if (collider.TryGetComponent(out IHealthChangeable damageable))
-        {
-            damageable.TakeUnitDamage(damage);
-        }
-
-        OnLifeSteal?.Invoke(damage);
-        Destroy(gameObject);
-    }
-
-    protected virtual void LifeSteal(float damage)
-    {
-
-    }
+    protected abstract void HandleCollision(Collider2D collider);
 
     protected abstract IEnumerator DestroyBulletByTime();
 }

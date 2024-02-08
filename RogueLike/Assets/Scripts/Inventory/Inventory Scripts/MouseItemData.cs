@@ -16,7 +16,6 @@ public class MouseItemData : MonoBehaviour
 
     [SerializeField] private int _dropOffset;
     [SerializeField] private Transform _pointDrop;
-    private Transform _playerTransform;
 
 
     private void Awake()
@@ -28,10 +27,6 @@ public class MouseItemData : MonoBehaviour
         //BackgroundSprite.preserveAspect = true;
 
         ItemCount.text = "";
-
-        _playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        if (_playerTransform == null)
-            Debug.Log("Player not found");
     }
 
     public void UpdateMouseSlot(InventorySlot invSlot)

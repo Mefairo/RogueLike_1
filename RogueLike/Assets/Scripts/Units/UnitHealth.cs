@@ -29,9 +29,8 @@ public abstract class UnitHealth : MonoBehaviour, IHealthChangeable
         get => _currentHealth;
         protected set
         {
-            _currentHealth = value;
             _currentHealth = Mathf.Clamp(value, 0f, _maxHealth);
-            OnCurrentHPChange?.Invoke(value);
+            OnCurrentHPChange?.Invoke(_currentHealth);
 
             if (_currentHealth <= 0)
                 CheckHealth(value);
@@ -52,17 +51,12 @@ public abstract class UnitHealth : MonoBehaviour, IHealthChangeable
     }
 
     public abstract void ChangeCurrentHealth(float damageValue);
-
     public abstract void TakeTrapDamage(float damageValue);
-
     public abstract void TakeUnitDamage(float damageValue);
-
     public abstract void HealUnitDamage(float healValue);
-
-
     public abstract void ChangeMaxHealth(float value);
+    public abstract void LifeSteal(float value);
 
     protected abstract void CheckHealth(float health);
-
     protected abstract void UnitDeath();
 }

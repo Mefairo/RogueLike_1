@@ -54,7 +54,10 @@ public class HealthBar : MonoBehaviour
     private void ChangeCurrentHealthText(float health)
     {
         if (_currentHPText != null)
+        {
+            Debug.Log("hp");
             _currentHPText.text = $"{health:F1}";
+        }
     }
 
    

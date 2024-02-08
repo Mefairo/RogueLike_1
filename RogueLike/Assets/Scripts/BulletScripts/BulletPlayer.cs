@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class BulletPlayer : BulletData
 {
+    private Player _player;
+
     protected override void Start()
     {
         StartCoroutine(DestroyBulletByTime());
@@ -17,15 +19,6 @@ public class BulletPlayer : BulletData
         base.Update();
     }
 
-    public void InitializeBullet(PlayerStats stats)
-    {
-        _damage = stats.Damage;
-        _critMultiply = stats.CritMultiply;
-        _critChance = stats.CritChance;
-        _bulletSpeed = stats.BulletSpeed;
-        _lifeTime = stats.LifeTime;
-    }
-
     protected override void MoveBullet()
     {
         transform.Translate(Vector2.up * _bulletSpeed * Time.deltaTime);
@@ -36,5 +29,23 @@ public class BulletPlayer : BulletData
         yield return new WaitForSeconds(_lifeTime);
 
         Destroy(gameObject);
+    }
+
+    protected override void HandleCollision(Collider2D collider)
+    {
+        float damage = SetDamage();
+
+        if (collider.TryGetComponent(out IHealthChangeable damageable))
+        {
+            damageable.TakeUnitDamage(damage);
+            _player.PlayerHealth.LifeSteal(damage);
+        }
+
+        Destroy(gameObject);
+    }
+
+    public void InitOwner(Player player)
+    {
+        _player = player;
     }
 }
