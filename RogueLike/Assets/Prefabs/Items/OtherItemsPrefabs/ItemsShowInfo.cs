@@ -1,30 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ItemsShowInfo : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI _nameText;
+    [SerializeField] private TextMeshProUGUI _itemTypeText;
+    [SerializeField] private TextMeshProUGUI _descriptionText;
+    [SerializeField] private TextMeshProUGUI _statsNameText;
+    [SerializeField] private TextMeshProUGUI _statsValueText;
 
-
-    private void OnEnable()
+    public void ShowInfo(InventorySlot_UI slot)
     {
-        InventorySlot_UI.OnItemShowInfo += ShowInfo;
-        InventorySlot_UI.OnItemHideInfo += HideInfo;
+        InventoryItemData item = slot.AssignedInventorySlot.ItemData;
+
+        if (item != null)
+        {
+            gameObject.SetActive(true);
+
+            _nameText.text = item.DisplayName;
+            _itemTypeText.text = item.ItemType.ToString();
+            _descriptionText.text = item.Description;
+
+            SetStatsText(slot);
+        }
     }
 
-    private void OnDisable()
+    public void HideInfo()
     {
-        InventorySlot_UI.OnItemShowInfo -= ShowInfo;
-        InventorySlot_UI.OnItemHideInfo -= HideInfo;
+        gameObject.SetActive(false);
     }
 
-    private void ShowInfo()
+    private void SetStatsText(InventorySlot_UI slot)
     {
-        Debug.Log("show 1");
-    }
+        InventoryItemData item = slot.AssignedInventorySlot.ItemData;
 
-    private void HideInfo()
-    {
-        Debug.Log("hide 1");
+        string statsText = "";
+        string statsValue = "";
+
+        foreach (var stat in item.StatsList)
+        {
+            statsText += $"{stat.Stats}: \n";
+            statsValue += $"{stat.ValueStat[item.ItemTierCount]}\n";
+        }
+
+        _statsNameText.text = statsText;
+        _statsValueText.text = statsValue;
     }
 }

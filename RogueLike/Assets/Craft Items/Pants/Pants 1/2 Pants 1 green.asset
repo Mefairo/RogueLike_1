@@ -15,6 +15,7 @@ MonoBehaviour:
   ID: -1
   DisplayName: Pants 1
   Description: 
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: cb42dfa501be05443ac9e428b9c2e66a, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 2e3f593887bf49747b568ef472c25d48, type: 3}
@@ -22,6 +23,13 @@ MonoBehaviour:
   GoldValue: 100
   StatusEffects: {fileID: 0}
   ItemType: 4
-  ItemTier: 2
   ItemTierCount: 1
+  StatsList:
+  - _stats: 0
+    _valueStat:
+    - 10
+    - 20
+    - 30
+    - 40
+    - 50
   Recipes: []

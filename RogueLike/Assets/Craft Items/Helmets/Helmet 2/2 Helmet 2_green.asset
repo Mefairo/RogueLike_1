@@ -15,6 +15,7 @@ MonoBehaviour:
   ID: 112
   DisplayName: 111
   Description: 111
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: a4e33c363625a4f459a487d8b8ca6698, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 34cf102e2677e694a9930d1dfb6be9aa, type: 3}
@@ -22,6 +23,13 @@ MonoBehaviour:
   GoldValue: 100
   StatusEffects: {fileID: 0}
   ItemType: 0
-  ItemTier: 2
   ItemTierCount: 1
+  StatsList:
+  - _stats: 0
+    _valueStat:
+    - 10
+    - 20
+    - 30
+    - 40
+    - 50
   Recipes: []

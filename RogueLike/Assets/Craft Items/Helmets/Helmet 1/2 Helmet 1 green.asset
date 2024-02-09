@@ -15,6 +15,7 @@ MonoBehaviour:
   ID: 111
   DisplayName: Helmet 2
   Description: helmet 2
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: 60b8468adc0205a4897f431393f580c9, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: a6d98006a975bb8458fd9d680f4781d3, type: 3}
@@ -22,8 +23,15 @@ MonoBehaviour:
   GoldValue: 200
   StatusEffects: {fileID: 0}
   ItemType: 0
-  ItemTier: 2
   ItemTierCount: 1
+  StatsList:
+  - _stats: 0
+    _valueStat:
+    - 10
+    - 20
+    - 30
+    - 40
+    - 50
   Recipes:
   - _requiredItems:
     - {fileID: 11400000, guid: d91d33a8564ec3c43acb0859f366b90e, type: 2}

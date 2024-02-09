@@ -12,6 +12,8 @@ public class InventoryItemData : ScriptableObject
     public string DisplayName;
     [TextArea(4, 4)]
     public string Description;
+    [TextArea(4, 4)]
+    public string StatsDescription;
     public Sprite Icon;
     public Sprite IconBackground;
     public GameObject ItemPrefab;
@@ -26,5 +28,6 @@ public class InventoryItemData : ScriptableObject
     [Header("Equip Parametres")]
     public ItemType ItemType;
     public int ItemTierCount;
+    public List<EquipSlotStatsList> StatsList;
 
 }

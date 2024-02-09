@@ -5,21 +5,23 @@ using UnityEngine.Events;
 
 public class EquipDisplay : InventoryDisplay
 {
-    //[Header("Equipment Slots")]
-    //[SerializeField] private EquipSlot_UI _helmetSlot;
-    //[SerializeField] private EquipSlot_UI _chestSlot;
-    //[SerializeField] private EquipSlot_UI _bootsSlot;
+    [SerializeField] private Player _player;
 
-    //[Header("Options")]
-    //[SerializeField] private Player _player;
-    //[SerializeField] private PlayerEquipmentHolder _playerEquip;
-    //[SerializeField] private EquipmentManager _equipManager;
+    public UnityAction<Player, EquipSlot_UI> OnPlayerEquip;
+    public UnityAction<Player, EquipSlot_UI> OnPlayerTakeOfEquip;
 
-    //public EquipSlot_UI HelmetSlot => _helmetSlot;
+    private EquipSlot _equipSlot = new EquipSlot();
 
-    public UnityAction<EquipSlot_UI> OnPlayerEquip;
-    public UnityAction<EquipSlot_UI> OnPlayerTakeOfEquip;
 
+    private void Awake()
+    {
+        _equipSlot.Subscribe();
+    }
+
+    private void OnDestroy()
+    {
+        _equipSlot.Unsubscribe();
+    }
 
     public override void AssignSlot(InventorySystem invToDisplay, int offset)
     {
@@ -36,7 +38,7 @@ public class EquipDisplay : InventoryDisplay
         // Если кликнуть на слот,в котором есть предмет,а у мыши нет элемента, тогда нужно поднять предмет
         if (equipSlot != null && mouseSlot == null)
         {
-            OnPlayerTakeOfEquip?.Invoke(equipSlot_UI);
+            OnPlayerTakeOfEquip?.Invoke(_player, equipSlot_UI);
 
             mouseInventoryItem.UpdateMouseSlot(equipSlot_UI.AssignedInventorySlot);
             equipSlot_UI.AssignedInventorySlot.ClearSlot();
@@ -71,8 +73,7 @@ public class EquipDisplay : InventoryDisplay
                 equipSlot_UI.AssignedInventorySlot.AssignItem(mouseInventoryItem.AssignedInventorySlot);
                 equipSlot_UI.UpdateUISlot();
 
-                OnPlayerEquip?.Invoke(equipSlot_UI);
-                //_playerEquip.EquipItem(_player, equipSlot_UI);
+                OnPlayerEquip?.Invoke(_player, equipSlot_UI);
 
                 mouseInventoryItem.ClearSlot();
                 return;
@@ -128,15 +129,14 @@ public class EquipDisplay : InventoryDisplay
         // Если предметы разные, меняем их местами
         else if (itemInClickedSlot.ItemData != itemOnMouse.ItemData)
         {
-            //Debug.Log("124");
-            OnPlayerTakeOfEquip?.Invoke(equipSlot_UI);
-            
+            OnPlayerTakeOfEquip?.Invoke(_player, equipSlot_UI);
+
             var clonedClickedSlot = new InventorySlot(itemInClickedSlot.ItemData, itemInClickedSlot.StackSize);
             equipSlot_UI.ClearSlot();
             equipSlot_UI.AssignedInventorySlot.AssignItem(itemOnMouse);
             equipSlot_UI.UpdateUISlot();
 
-            OnPlayerEquip?.Invoke(equipSlot_UI);
+            OnPlayerEquip?.Invoke(_player, equipSlot_UI);
 
             mouseInventoryItem.UpdateMouseSlot(clonedClickedSlot);
         }

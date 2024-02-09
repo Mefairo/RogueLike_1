@@ -1,31 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
-public abstract class EquipSlot : MonoBehaviour
+public class EquipSlot
 {
-    [SerializeField] private List<EquipSlotStatsList> _statsList;
-
-    public void Equip(Player player, EquipSlot_UI equipSlot_UI)
+    public void Subscribe()
     {
-        var itemTier = equipSlot_UI.AssignedInventorySlot.ItemData.ItemTierCount;
-
-        UseEquip(player, itemTier, true);
+        UIManager.Instance.EquipDisplay.OnPlayerEquip += Equip;
+        UIManager.Instance.EquipDisplay.OnPlayerTakeOfEquip += UnEquip;
     }
 
-    public void UnEquip(Player player, EquipSlot_UI equipSlot_UI)
+    public void Unsubscribe()
     {
-        var itemTier = equipSlot_UI.AssignedInventorySlot.ItemData.ItemTierCount;
-
-        UseEquip(player, itemTier, false);
+        UIManager.Instance.EquipDisplay.OnPlayerEquip -= Equip;
+        UIManager.Instance.EquipDisplay.OnPlayerTakeOfEquip -= UnEquip;
     }
 
-    protected void UseEquip(Player player, int itemTier, bool equip)
+    private void Equip(Player player, EquipSlot_UI equipSlot_UI)
     {
+        Debug.Log(equipSlot_UI.AssignedInventorySlot.ItemData.DisplayName);
+        var itemData = equipSlot_UI.AssignedInventorySlot.ItemData;
+
+        UseEquip(player, true, itemData);
+    }
+
+    private void UnEquip(Player player, EquipSlot_UI equipSlot_UI)
+    {
+        Debug.Log("unequip 1");
+        var itemData = equipSlot_UI.AssignedInventorySlot.ItemData;
+
+        UseEquip(player, false, itemData);
+    }
+
+    private void UseEquip(Player player, bool equip, InventoryItemData itemData)
+    {
+        int itemTier = itemData.ItemTierCount;
+
         if (itemTier >= 0)
         {
-            foreach (var stat in _statsList)
+            foreach (var stat in itemData.StatsList)
             {
                 switch (stat.Stats)
                 {

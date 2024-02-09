@@ -14,9 +14,7 @@ public class InventorySlot_UI : MonoBehaviour, IPointerEnterHandler, IPointerExi
     [SerializeField] protected InventorySlot assignedInventorySlot;
     [SerializeField] protected GameObject _slotHighlight;
 
-    [SerializeField] protected GameObject _window;
-    public static UnityAction OnItemShowInfo;
-    public static UnityAction OnItemHideInfo;
+    [SerializeField] protected ItemsShowInfo _panelInfo;
 
     protected Button button;
 
@@ -34,8 +32,14 @@ public class InventorySlot_UI : MonoBehaviour, IPointerEnterHandler, IPointerExi
         button?.onClick.AddListener(OnUISlotClick);
 
         ParentDisplay = transform.parent.GetComponent<InventoryDisplay>();
+    }
 
-        _window.SetActive(false);/////////////////////
+    private void Start()
+    {
+        _panelInfo = UIManager.Instance.PanelInfo;
+
+        if (_panelInfo != null)
+            _panelInfo.gameObject.SetActive(false);
     }
 
     public void Init(InventorySlot slot)
@@ -112,25 +116,11 @@ public class InventorySlot_UI : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        //ShowInfo();
-        OnItemShowInfo?.Invoke();
+        _panelInfo.ShowInfo(this);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        //HideInfo();
-        OnItemHideInfo?.Invoke();
-    }
-
-    protected void ShowInfo()
-    {
-        Debug.Log("show");
-        _window.SetActive(true);
-    }
-
-    protected void HideInfo()
-    {
-        Debug.Log("hide");
-        _window.SetActive(false);
+        _panelInfo.HideInfo();
     }
 }

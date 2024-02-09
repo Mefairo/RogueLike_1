@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 311
   DisplayName: Belt 1
-  Description: 
+  Description: Top Belt
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: 4758749bf70504f478e64796865de55d, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: ef11c3d00f1333245ad4cc1cac527e19, type: 3}
@@ -23,4 +24,19 @@ MonoBehaviour:
   StatusEffects: {fileID: 0}
   ItemType: 8
   ItemTierCount: 3
+  StatsList:
+  - _stats: 0
+    _valueStat:
+    - 10
+    - 20
+    - 30
+    - 40
+    - 50
+  - _stats: 3
+    _valueStat:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
   Recipes: []
