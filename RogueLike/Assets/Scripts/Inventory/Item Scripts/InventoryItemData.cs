@@ -1,3 +1,4 @@
+using Assets.Scripts.Inventory.Item_Scripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ public class InventoryItemData : ScriptableObject
     public Sprite Icon;
     public Sprite IconBackground;
     public GameObject ItemPrefab;
+    public DataWeaponMod ItemDataPrefab;
 
     [Header("Game Parametres")]
     public int MaxStackSize;

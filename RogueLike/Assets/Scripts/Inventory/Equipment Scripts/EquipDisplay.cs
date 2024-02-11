@@ -31,7 +31,6 @@ public class EquipDisplay : InventoryDisplay
 
     public void SlotClicked(EquipSlot_UI equipSlot_UI)
     {
-        Debug.Log("equip click");
         var equipSlot = equipSlot_UI.AssignedInventorySlot.ItemData;
         var mouseSlot = mouseInventoryItem.AssignedInventorySlot.ItemData;
 
@@ -50,8 +49,6 @@ public class EquipDisplay : InventoryDisplay
         // Если слот не содержит предмет, а мышь содержит предмет, тогда нужно положить предмет на курсоре мышки в этот пустой слот
         if (mouseSlot != null)
         {
-            Debug.Log("mouse no null");
-
             EquipItemPlayer(equipSlot_UI);
         }
 
@@ -65,11 +62,8 @@ public class EquipDisplay : InventoryDisplay
 
         if (equipSlot_UI.ItemType == mouseSlot.ItemType)
         {
-            Debug.Log("equip item");
-
             if (equipSlot == null && mouseSlot != null)
             {
-                Debug.Log("slot null");
                 equipSlot_UI.AssignedInventorySlot.AssignItem(mouseInventoryItem.AssignedInventorySlot);
                 equipSlot_UI.UpdateUISlot();
 

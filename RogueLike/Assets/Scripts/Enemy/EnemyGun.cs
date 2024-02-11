@@ -11,7 +11,7 @@ public class EnemyGun : GunData
         _enemy = GetComponentInParent<Enemy>();
     }
 
-    protected override void Shoot()
+    public override void Shoot()
     {
         if (_timeBtwShots <= 0)
         {

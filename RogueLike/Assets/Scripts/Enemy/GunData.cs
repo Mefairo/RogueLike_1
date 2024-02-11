@@ -15,24 +15,17 @@ public abstract class GunData : MonoBehaviour
     protected float _rotZ;
     protected Vector3 _difference;
 
+    public Transform ShotPoint => _shotPoint;
+    public Transform BulletContainer => _bulletContainer;
+    public BulletData Bullet => _bullet;
+
     protected virtual void Update()
     {
         DirectionForShoot();
         Shoot();
     }
 
-    protected virtual void Shoot()
-    {
-        if (_timeBtwShots <= 0)
-        {
-            BulletData bullet_1 = Instantiate(_bullet, _shotPoint.position, _shotPoint.rotation);
-
-            _timeBtwShots = _startTimeBtwShots;
-        }
-
-        else
-            _timeBtwShots -= Time.deltaTime;
-    }
+    public abstract void Shoot();
 
     protected abstract void DirectionForShoot();
 

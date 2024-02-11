@@ -19,7 +19,7 @@ public class GunTrap : GunData
 
     protected override void DirectionForShoot() { }
 
-    protected override void Shoot()
+    public override void Shoot()
     {
         if (_timeBtwShots <= 0)
         {

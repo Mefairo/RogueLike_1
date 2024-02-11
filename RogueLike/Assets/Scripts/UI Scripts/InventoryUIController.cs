@@ -10,14 +10,12 @@ public class InventoryUIController : MonoBehaviour
 
     private void OnEnable()
     {
-        Debug.Log("On enable");
         InventoryHolder.OnDinamicInventoryDisplayRequested += DisplayInventory;
         PlayerInventoryHolder.OnPlayerInventoryDisplayRequested += DisplayPlayerInventory;
     }
 
     private void OnDisable()
     {
-        Debug.Log("On disable");
         InventoryHolder.OnDinamicInventoryDisplayRequested -= DisplayInventory;
         PlayerInventoryHolder.OnPlayerInventoryDisplayRequested -= DisplayPlayerInventory;
     }
@@ -30,7 +28,6 @@ public class InventoryUIController : MonoBehaviour
 
     private void DisplayPlayerInventory(InventorySystem invToDisplay, int offset)
     {
-        Debug.Log("Open bag");
         playerBackpackPanel.gameObject.SetActive(true);
         playerBackpackPanel.RefreshDynamicInventory(invToDisplay, offset);
     }

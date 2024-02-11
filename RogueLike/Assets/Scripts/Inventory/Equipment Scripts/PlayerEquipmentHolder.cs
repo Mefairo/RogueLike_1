@@ -11,7 +11,6 @@ public class PlayerEquipmentHolder : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            Debug.Log("knopka okno");
             OnPlayerEquipmentRequested?.Invoke();
         }
     }

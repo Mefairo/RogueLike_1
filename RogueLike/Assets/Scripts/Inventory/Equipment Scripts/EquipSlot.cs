@@ -20,16 +20,17 @@ public class EquipSlot
 
     private void Equip(Player player, EquipSlot_UI equipSlot_UI)
     {
-        Debug.Log(equipSlot_UI.AssignedInventorySlot.ItemData.DisplayName);
-        var itemData = equipSlot_UI.AssignedInventorySlot.ItemData;
+        InventoryItemData itemData = equipSlot_UI.AssignedInventorySlot.ItemData;
 
         UseEquip(player, true, itemData);
+
+        if (itemData.ItemType == ItemType.Weapon_Mod)
+            Mod(player, itemData);
     }
 
     private void UnEquip(Player player, EquipSlot_UI equipSlot_UI)
     {
-        Debug.Log("unequip 1");
-        var itemData = equipSlot_UI.AssignedInventorySlot.ItemData;
+        InventoryItemData itemData = equipSlot_UI.AssignedInventorySlot.ItemData;
 
         UseEquip(player, false, itemData);
     }
@@ -125,5 +126,12 @@ public class EquipSlot
 
             }
         }
+
+    }
+
+    private void Mod(Player player, InventoryItemData itemData)
+    {
+        player.PlayerGun.InitModifierWeapon(itemData.ItemDataPrefab);
     }
 }
+

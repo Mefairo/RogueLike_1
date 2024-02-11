@@ -150,7 +150,6 @@ public abstract class UnitStats : MonoBehaviour, IStatsChangeable, IDefensable
 
     public void RefreshStats()
     {
-        Debug.Log("refresh");
         Damage = _initialDamage;
         CritMultiply = _initialCritMultiply;
         CritChance = _initialCritChance;
