@@ -18,7 +18,6 @@ public class InventoryItemData : ScriptableObject
     public Sprite Icon;
     public Sprite IconBackground;
     public GameObject ItemPrefab;
-    public DataWeaponMod ItemDataPrefab;
 
     [Header("Game Parametres")]
     public int MaxStackSize;

@@ -9,6 +9,8 @@ namespace Assets.Scripts.Inventory.Item_Scripts
 {
     public abstract class DataWeaponMod : MonoBehaviour
     {
+        [SerializeField] protected BulletPlayer _bullet;
+
         public abstract void ModifyShoot(Player player);
     }
 

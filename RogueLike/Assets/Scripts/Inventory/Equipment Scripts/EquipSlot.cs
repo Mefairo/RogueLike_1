@@ -33,6 +33,9 @@ public class EquipSlot
         InventoryItemData itemData = equipSlot_UI.AssignedInventorySlot.ItemData;
 
         UseEquip(player, false, itemData);
+
+        if (itemData.ItemType == ItemType.Weapon_Mod)
+            UnMod(player, itemData);
     }
 
     private void UseEquip(Player player, bool equip, InventoryItemData itemData)
@@ -131,7 +134,30 @@ public class EquipSlot
 
     private void Mod(Player player, InventoryItemData itemData)
     {
-        player.PlayerGun.InitModifierWeapon(itemData.ItemDataPrefab);
+        WeaponItemData weaponItemData = itemData as WeaponItemData;
+        if (weaponItemData != null)
+        {
+            player.PlayerGun.InitModifierWeapon(weaponItemData.WeaponMod);
+        }
     }
+
+    private void UnMod(Player player, InventoryItemData itemData)
+    {
+        WeaponItemData weaponItemData = itemData as WeaponItemData;
+        if (weaponItemData != null)
+        {
+            player.PlayerGun.InitModifierWeapon(null);
+        }
+    }
+
+    //private void Mod(Player player, InventoryItemData itemData)
+    //{
+    //    player.PlayerGun.InitModifierWeapon(itemData.ItemDataPrefab);
+    //}
+
+    //private void UnMod(Player player, InventoryItemData itemData)
+    //{
+    //    player.PlayerGun.InitModifierWeapon(itemData.ItemDataPrefab = null);
+    //}
 }
 

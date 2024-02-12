@@ -12,7 +12,7 @@ public class PlayerGun : GunData
 
     public Player Player => _player;
 
-    protected void Awake()
+    private void Awake()
     {
         _player = GetComponentInParent<Player>();
     }
@@ -56,7 +56,7 @@ public class PlayerGun : GunData
             _timeBtwShots -= Time.deltaTime;
     }
 
-    public void StandartShoot()
+    private void StandartShoot()
     {
         BulletData bullet_1 = Instantiate(_bullet, _shotPoint.position, _shotPoint.rotation, _bulletContainer.transform);
         BulletPlayer bulletPlayer = bullet_1.GetComponent<BulletPlayer>();

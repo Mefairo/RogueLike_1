@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b504e5c1a3c54264db8fd6e5d188794c, type: 3}
+  m_Script: {fileID: 11500000, guid: 995f033662a681544be0f38fee4f4d32, type: 3}
   m_Name: WeaponMod 2
   m_EditorClassIdentifier: 
   ID: 1112
@@ -19,7 +19,7 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: c723de6a6ba36534ea98031a97633071, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 3a4646f1f12c8b046b99e7144c1fbb82, type: 3}
-  ItemDataPrefab: {fileID: 5504963498091339335, guid: 3a4646f1f12c8b046b99e7144c1fbb82, type: 3}
+  ItemDataPrefab: {fileID: 0}
   MaxStackSize: 1
   GoldValue: 100
   StatusEffects: {fileID: 0}
@@ -27,3 +27,4 @@ MonoBehaviour:
   ItemTierCount: 0
   StatsList: []
   Recipes: []
+  WeaponMod: {fileID: 5504963498091339335, guid: 3a4646f1f12c8b046b99e7144c1fbb82, type: 3}

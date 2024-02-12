@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BulletPlayer : BulletData
 {
-    private Player _player;
+    protected Player _player;
 
     protected override void Start()
     {
