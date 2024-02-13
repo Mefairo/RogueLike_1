@@ -17,6 +17,9 @@ MonoBehaviour:
     Amount: 500
   - ItemData: {fileID: 11400000, guid: bbc7098bbcd032a4b99f51d9c72d9e45, type: 2}
     Amount: 500
+  - ItemData: {fileID: 11400000, guid: 1585b014d5e1ac64c8e100248702db07, type: 2}
+    Amount: 500
   _maxAllowedGold: 10000
   _sellMarkUp: 0
   _buyMarkUp: 0
+  _randomItems: []

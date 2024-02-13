@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Linq;
 using System;
+using static UnityEngine.Rendering.DebugUI;
 
 [System.Serializable]
 public class InventorySystem
@@ -11,8 +12,18 @@ public class InventorySystem
     [SerializeField] private List<InventorySlot> inventorySlots;
     [SerializeField] private int _gold;
 
-    public int Gold => _gold;
- 
+    public event UnityAction<int> OnChangeGold;
+
+    public int Gold
+    {
+        get => _gold;
+        set
+        {
+            _gold = value;
+            OnChangeGold?.Invoke(value);
+        }
+    }
+
     public List<InventorySlot> InventorySlots => inventorySlots;
     public int InventorySize => InventorySlots.Count;
 
@@ -105,7 +116,7 @@ public class InventorySystem
         {
             for (int i = 0; i < kvp.Value; i++)
             {
-                if (!clonedSystem.AddToInventory(kvp.Key, 1)) 
+                if (!clonedSystem.AddToInventory(kvp.Key, 1))
                     return false;
             }
         }
@@ -113,23 +124,24 @@ public class InventorySystem
         return true;
     }
 
-    public void SpendGold(int basketTotal)
+    public void SpendGold(int price)
     {
-        _gold -= basketTotal;
+        Gold -= price;
+        OnChangeGold?.Invoke(Gold);
     }
 
     public Dictionary<InventoryItemData, int> GetAllItemHeld()
     {
         var distinctItems = new Dictionary<InventoryItemData, int>();
-        
+
         foreach (var item in inventorySlots)
         {
-            if(item.ItemData == null)
+            if (item.ItemData == null)
                 continue;
 
-            if(!distinctItems.ContainsKey(item.ItemData))
+            if (!distinctItems.ContainsKey(item.ItemData))
                 distinctItems.Add(item.ItemData, item.StackSize);
-            
+
             else
                 distinctItems[item.ItemData] += item.StackSize;
         }
@@ -139,18 +151,19 @@ public class InventorySystem
 
     public void GainGold(int price)
     {
-        _gold += price;
+        Gold += price;
+        OnChangeGold?.Invoke(Gold);
     }
 
     public void RemoveItemsFromInventory(InventoryItemData data, int amount)
     {
-       if(ContainsItem(data, out List<InventorySlot> invSlot))
+        if (ContainsItem(data, out List<InventorySlot> invSlot))
         {
             foreach (var slot in invSlot)
             {
                 var stackSize = slot.StackSize;
 
-                if(stackSize > amount)
+                if (stackSize > amount)
                 {
                     slot.RemoveFromStack(amount);
                     OnInventorySlotChanged?.Invoke(slot);
@@ -164,7 +177,7 @@ public class InventorySystem
                     OnInventorySlotChanged?.Invoke(slot);
                 }
 
-                
+
             }
 
         }

@@ -7,12 +7,20 @@ using UnityEngine.Events;
 [RequireComponent(typeof(UniqueID))]
 public class ShopKeeper : MonoBehaviour, IInteractable
 {
+    [Header("Shop Settings")]
     [SerializeField] private ShopItemList _shopItemsHeld;
     [SerializeField] private ShopSystem _shopSystem;
-
-    public static UnityAction<ShopSystem, PlayerInventoryHolder> OnShopWindowRequested;
+    [Space]
+    [Header("Other Settings")]
+    [SerializeField] private RoundManager _roundManager;
+    [SerializeField] private int _amountRandomItems;
+    [Space]
+    [Header("List Items")]
+    [SerializeField] private List<ShopInventoryItem> _randomItems;
 
     private string _id;
+
+    public static UnityAction<ShopSystem, PlayerInventoryHolder> OnShopWindowRequested;
 
     private ShopSaveData _shopSaveData;
 
@@ -22,9 +30,10 @@ public class ShopKeeper : MonoBehaviour, IInteractable
 
         foreach (var item in _shopItemsHeld.Items)
         {
-            //Debug.Log($"{item.ItemData.DisplayName}: {item.Amount}");
             _shopSystem.AddToShop(item.ItemData, item.Amount);
         }
+
+        SetRandomItems();
 
         _id = GetComponent<UniqueID>().ID;
         _shopSaveData = new ShopSaveData(_shopSystem);
@@ -39,11 +48,26 @@ public class ShopKeeper : MonoBehaviour, IInteractable
     private void OnEnable()
     {
         SaveLoad.OnLoadGame += LoadInventory;
+        _roundManager.OnNewRoundStart += SetRandomItems;
     }
 
     private void OnDisable()
     {
         SaveLoad.OnLoadGame -= LoadInventory;
+        _roundManager.OnNewRoundStart -= SetRandomItems;
+    }
+
+    private void SetRandomItems()
+    {
+        int itemsToAdd = Mathf.Min(_amountRandomItems, _randomItems.Count);
+
+        for (int i = 0; i < itemsToAdd; i++)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, _randomItems.Count);
+
+            _shopSystem.AddToShop(_randomItems[randomIndex].ItemData, _randomItems[randomIndex].Amount);
+            _randomItems.RemoveAt(randomIndex);
+        }
     }
 
     private void LoadInventory(SaveData data)
@@ -59,16 +83,6 @@ public class ShopKeeper : MonoBehaviour, IInteractable
             SaveGameManager.data._shopKeeperDictionary.Add(_id, _shopSaveData);
         }
     }
-
-    //private void LoadInventory(SaveData data)
-    //{
-    //    if (data._shopKeeperDictionary.TryGetValue(_id, out ShopSaveData shopSaveData))
-    //        return;
-
-    //    _shopSaveData = shopSaveData;
-    //    _shopSystem = _shopSaveData.ShopSystem;
-    //}
-
 
     public UnityAction<IInteractable> OnInteractionComplete { get; set; }
 

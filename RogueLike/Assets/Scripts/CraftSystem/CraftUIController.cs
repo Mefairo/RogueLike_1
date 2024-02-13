@@ -24,7 +24,6 @@ public class CraftUIController : MonoBehaviour
 
     private void DisplayCraftWindow(CraftSystem craftSystem, PlayerInventoryHolder playerInventory)
     {
-        Debug.Log("xzxcxczcx");
         _craftKeeperDisplay.gameObject.SetActive(true);
         _craftKeeperDisplay.DisplayCraftWindow(craftSystem, playerInventory);
     }

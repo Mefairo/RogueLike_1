@@ -59,7 +59,7 @@ public class EnemyManager : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.T))
         {
-            Instantiate(_enemyList[1], transform.position, Quaternion.identity);
+            //Instantiate(_enemyList[1], transform.position, Quaternion.identity);
         }
     }
 

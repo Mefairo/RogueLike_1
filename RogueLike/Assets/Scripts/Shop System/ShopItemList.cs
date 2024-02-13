@@ -9,11 +9,13 @@ public class ShopItemList : ScriptableObject
     [SerializeField] private int _maxAllowedGold;
     [SerializeField] private float _sellMarkUp;
     [SerializeField] private float _buyMarkUp;
+    [SerializeField] private List<ShopInventoryItem> _randomItems;
 
     public List<ShopInventoryItem> Items => _items;
     public int MaxAllowedGold => _maxAllowedGold;
     public float SellMarkUp => _sellMarkUp;
     public float BuyMarkUp => _buyMarkUp;
+    public List<ShopInventoryItem> RandomItems => _randomItems;
 }
 
 [System.Serializable]

@@ -1,11 +1,14 @@
-using System.Collections;
+
+
+using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.UI;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Test1 
 {
+    public List<int> List;
 
+    private void QQQ()
+    {
+        //var random = Random.Range(List.Count);
+    }
 }

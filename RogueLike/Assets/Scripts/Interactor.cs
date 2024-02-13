@@ -15,13 +15,15 @@ public class Interactor : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            for (int i = 0; i < colliders.Length; i++)
-            {
-                var interactable = colliders[i].GetComponent<IInteractable>();
+            CheckIntecractObjectAround();
 
-                if (interactable != null)
-                    StartInteraction(interactable);
-            }
+            //for (int i = 0; i < colliders.Length; i++)
+            //{
+            //    var interactable = colliders[i].GetComponent<IInteractable>();
+
+            //    if (interactable != null)
+            //        StartInteraction(interactable);
+            //}
         }
     }
 
@@ -34,6 +36,19 @@ public class Interactor : MonoBehaviour
     private void EndInteracting()
     {
         IsInteracting = false;
+    }
+
+    private void CheckIntecractObjectAround()
+    {
+        var colliders = Physics2D.OverlapCircleAll(InteractionPoint.position, InteractionPointRadius, InteractionLayer);
+
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            var interactable = colliders[i].GetComponent<IInteractable>();
+
+            if (interactable != null)
+                StartInteraction(interactable);
+        }
     }
 
 }

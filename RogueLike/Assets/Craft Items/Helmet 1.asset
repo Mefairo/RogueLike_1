@@ -14,14 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 1111
   DisplayName: helmet 1
-  Description: helmet 1
+  Description: 'helmet 1 dsadsa sadsadsa ds sad sads sdadsa dssadas sdad dsadsa sadsad
+    sdsa dsadsad sdas '
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: aff555a48aa2df3469840fe97b1a66b0, type: 3}
+  IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 9cdc38c0e360e844f8d953f054113e24, type: 3}
   MaxStackSize: 1
   GoldValue: 100
-  ItemTier: 0
   StatusEffects: {fileID: 0}
   ItemType: 5
+  ItemTierCount: 0
+  StatsList: []
   Recipes:
   - _requiredItems:
     - {fileID: 11400000, guid: 68e49940d379c114eb2c662222e9d137, type: 2}

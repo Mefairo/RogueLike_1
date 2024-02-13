@@ -6,8 +6,16 @@ using System;
 
 public class CraftKeeper : MonoBehaviour, IInteractable
 {
+    [Header("Craft Settings")]
     [SerializeField] private CraftItemList _craftItemsHeld;
     [SerializeField] private CraftSystem _craftSystem;
+    [Space]
+    [Header("Other Settings")]
+    [SerializeField] private RoundManager _roundManager;
+    [SerializeField] private int _amountRandomItems;
+    [Space]
+    [Header("List Items")]
+    [SerializeField] private List<CraftItemData> _randomItems;
 
     public static UnityAction<CraftSystem, PlayerInventoryHolder> OnCraftWindowRequested;
 
@@ -17,8 +25,32 @@ public class CraftKeeper : MonoBehaviour, IInteractable
 
         foreach (var item in _craftItemsHeld.Items)
         {
-            //Debug.Log($"{item.DisplayName}");
             _craftSystem.AddToCraft(item);
+        }
+
+        SetRandomItems();
+    }
+
+    private void OnEnable()
+    {
+        _roundManager.OnNewRoundStart += SetRandomItems;
+    }
+
+    private void OnDisable()
+    {
+        _roundManager.OnNewRoundStart -= SetRandomItems;
+    }
+
+    private void SetRandomItems()
+    {
+        int itemsToAdd = Mathf.Min(_amountRandomItems, _randomItems.Count);
+
+        for (int i = 0; i < itemsToAdd; i++)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, _randomItems.Count);
+
+            _craftSystem.AddToCraft(_randomItems[randomIndex]);
+            _randomItems.RemoveAt(randomIndex);
         }
     }
 
