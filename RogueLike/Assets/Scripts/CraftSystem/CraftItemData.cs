@@ -6,4 +6,5 @@ using UnityEngine;
 public class CraftItemData : InventoryItemData
 {
     public List<CraftRecipe> Recipes;
+    public EquipType EquipType;
 }

@@ -22,7 +22,7 @@ MonoBehaviour:
   MaxStackSize: 1
   GoldValue: 11
   StatusEffects: {fileID: 0}
-  ItemType: 0
+  ItemType: 4
   ItemTierCount: 2
   StatsList:
   - _stats: 0
@@ -33,3 +33,4 @@ MonoBehaviour:
     - 40
     - 50
   Recipes: []
+  EquipType: 0

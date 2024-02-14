@@ -57,10 +57,10 @@ public class EquipDisplay : InventoryDisplay
     }
     private void EquipItemPlayer(EquipSlot_UI equipSlot_UI)
     {
-        var equipSlot = equipSlot_UI.AssignedInventorySlot.ItemData;
-        var mouseSlot = mouseInventoryItem.AssignedInventorySlot.ItemData;
+        CraftItemData equipSlot = (CraftItemData)equipSlot_UI.AssignedInventorySlot.ItemData;
+        CraftItemData mouseSlot = (CraftItemData)mouseInventoryItem.AssignedInventorySlot.ItemData;
 
-        if (equipSlot_UI.ItemType == mouseSlot.ItemType)
+        if (equipSlot_UI.ItemType == mouseSlot.EquipType)
         {
             if (equipSlot == null && mouseSlot != null)
             {

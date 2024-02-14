@@ -15,14 +15,14 @@ public class ItemsShowInfo : MonoBehaviour
 
     public void ShowInfo(InventorySlot_UI slot)
     {
-        InventoryItemData item = slot.AssignedInventorySlot.ItemData;
+        CraftItemData item = (CraftItemData)slot.AssignedInventorySlot.ItemData;
 
         if (item != null)
         {
             gameObject.SetActive(true);
 
             _nameText.text = item.DisplayName;
-            _itemTypeText.text = item.ItemType.ToString();
+            _itemTypeText.text = item.EquipType.ToString();
             _descriptionText.text = item.Description;
 
             SetStatsText(slot);

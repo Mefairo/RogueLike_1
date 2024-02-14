@@ -951,8 +951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 2
-  _critMultiply: 1
-  _critChance: 100
+  _critMultiply: 0
+  _critChance: 0
   _startTimeBtwShots: 1
   _bulletSpeed: 15
   _lifeTime: 5
@@ -961,15 +961,15 @@ MonoBehaviour:
   _lifestealMultiply: 0
   _lifestealChance: 0
   _initialDamage: 2
-  _initialCritMultiply: 200
-  _initialCritChance: 100
+  _initialCritMultiply: 0
+  _initialCritChance: 0
   _initialStartTimeBtwShots: 1
   _initialBulletSpeed: 15
   _initialLifeTime: 5
   _initialArmor: 0
   _initialEvasion: 0
-  _initialLifestealMultiply: 0
-  _initialLifestealChance: 0
+  _initialLifestealMultiply: 1
+  _initialLifestealChance: 100
   _bonusDamage: 0
   _bonusCritMultiply: 0
   _bonusCritChance: 0

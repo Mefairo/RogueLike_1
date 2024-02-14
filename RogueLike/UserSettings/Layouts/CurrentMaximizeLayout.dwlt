@@ -96,7 +96,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -171,8 +171,8 @@ MonoBehaviour:
     y: 0
     width: 853
     height: 486
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 5}
   m_Panes:
   - {fileID: 5}
@@ -577,7 +577,7 @@ MonoBehaviour:
       sizeOverriden: 0
     m_OverlaysVisible: 1
   m_WindowGUID: e03a0553ac1925046ab776a65f5c13fd
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -586,9 +586,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 139.83766, y: 305.8179, z: -0.8954047}
+    m_Target: {x: -0.6852478, y: -1.621445, z: -0.04846002}
     speed: 2
-    m_Value: {x: 139.83766, y: 305.8179, z: -0.8954047}
+    m_Value: {x: -0.6852478, y: -1.621445, z: -0.04846002}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -638,9 +638,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 134.45076
+    m_Target: 4.7785115
     speed: 2
-    m_Value: 134.45076
+    m_Value: 4.7785115
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -684,8 +684,8 @@ MonoBehaviour:
     y: 486
     width: 853
     height: 461
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -754,9 +754,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: b45c81fffc06aeff0c07aeff3665b3ff5c96b6ff689bb6ff54f9ffffb2faffffee760000267b00004e7b0000967c00009c7c0000b87d0000f27d0000327e00001081000090810000f281000070820000e8820000548300004e860000b487000072890000
+      m_SelectedIDs: 6e4cf3ff
+      m_LastClickedID: -832402
+      m_ExpandedIDs: 6e4cf3ffc4faffffa2830000a48a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -851,7 +851,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/Inventory
+    - Assets/Scripts/Shop System
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -859,16 +859,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites/Inventory
+  - Assets/Scripts/Shop System
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github\RogueLike_1\RogueLike
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1620}
-    m_SelectedIDs: c0240200
-    m_LastClickedID: 140480
-    m_ExpandedIDs: 00000000b6240200b8240200ba240200bc240200be240200c0240200c2240200c4240200c6240200c8240200ca240200cc240200ce240200d0240200d2240200d4240200d6240200d8240200da240200dc240200de240200e0240200e2240200e4240200e6240200e8240200ea240200ec240200ee240200f0240200f2240200f4240200f6240200f8240200fa240200fc240200fe24020000250200022502000425020006250200082502000a2502000c2502000e25020010250200122502001425020016250200182502001a2502001c2502001e2502002025020022250200ee25020000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 1140}
+    m_SelectedIDs: ca250200
+    m_LastClickedID: 140746
+    m_ExpandedIDs: 000000005c2502005e25020060250200622502006425020066250200682502006a2502006c2502006e25020070250200722502007425020076250200782502007a2502007c2502007e25020080250200822502008425020086250200882502008a2502008c2502008e25020090250200922502009425020096250200982502009a2502009c2502009e250200a0250200a2250200a4250200a6250200a8250200aa250200ac250200ae250200b0250200b2250200b4250200b6250200b8250200ba250200bc250200be250200c0250200c2250200c4250200c6250200c8250200ca25020000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -896,7 +896,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b6240200b8240200ba240200bc240200be240200c0240200c2240200c4240200c6240200c8240200ca240200cc240200ce240200d0240200d2240200d4240200d6240200d8240200da240200dc240200de240200e0240200e2240200e4240200e6240200e8240200ea240200ec240200ee240200f0240200f2240200f4240200f6240200f8240200fa240200fc240200fe24020000250200022502000425020006250200082502000a2502000c2502000e25020010250200122502001425020016250200182502001a2502001c2502001e2502002025020022250200ee25020000ca9a3bffffff7f
+    m_ExpandedIDs: 000000005c2502005e25020060250200622502006425020066250200682502006a2502006c2502006e25020070250200722502007425020076250200782502007a2502007c2502007e25020080250200822502008425020086250200882502008a2502008c2502008e25020090250200922502009425020096250200982502009a2502009c2502009e250200a0250200a2250200a4250200a6250200a8250200aa250200ac250200ae250200b0250200b2250200b4250200b6250200b8250200ba250200bc250200be250200c0250200c2250200c4250200c6250200c8250200ca25020000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -921,8 +921,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 6e4cf3ff
+    m_LastClickedInstanceID: -832402
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c2290900fa130200dc9e0000ea1d0200526f05005012070098c705004cc8050092120200121b020090d60000fa6d050028b50000
     m_RenameOverlay:
@@ -948,7 +948,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 537}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 231
@@ -971,8 +971,8 @@ MonoBehaviour:
     y: 0
     width: 430
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}

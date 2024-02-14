@@ -15,10 +15,13 @@ MonoBehaviour:
   ID: 4
   DisplayName: Bottle
   Description: Bottle
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: 6afe883fefec04446a8e55813324e158, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 4807917829686043383, guid: e9e457c8a1838b146abee2ee72338c54, type: 3}
   MaxStackSize: 1
   GoldValue: 1000
-  ItemPrefab: {fileID: 4807917829686043383, guid: e9e457c8a1838b146abee2ee72338c54, type: 3}
-  Stackable: 1
-  AmountStackBuffs: 0
-  ItemType: 4
+  StatusEffects: {fileID: 0}
+  ItemType: 3
+  ItemTierCount: 0
+  StatsList: []

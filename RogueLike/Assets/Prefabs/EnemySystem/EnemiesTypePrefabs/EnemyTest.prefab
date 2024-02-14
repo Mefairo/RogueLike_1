@@ -837,6 +837,7 @@ GameObject:
   - component: {fileID: 4677752049222939658}
   - component: {fileID: 81659036958638318}
   - component: {fileID: 6632073085727106967}
+  - component: {fileID: -9147668139331229575}
   - component: {fileID: 677014493848522263}
   - component: {fileID: 2519089986321393249}
   - component: {fileID: 916447912305714019}
@@ -934,16 +935,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 5
-  _critMultiply: 150
+  _critMultiply: 1
   _critChance: 50
   _startTimeBtwShots: 2
   _bulletSpeed: 10
   _lifeTime: 5
   _armor: 0
   _evasion: 0
-  _lifestealMultiply: 0
-  _lifestealChance: 0
-  _initialDamage: 5
+  _lifestealMultiply: 1
+  _lifestealChance: 100
+  _initialDamage: 3
   _initialCritMultiply: 1
   _initialCritChance: 50
   _initialStartTimeBtwShots: 2
@@ -951,8 +952,8 @@ MonoBehaviour:
   _initialLifeTime: 5
   _initialArmor: 0
   _initialEvasion: 0
-  _initialLifestealMultiply: 0
-  _initialLifestealChance: 0
+  _initialLifestealMultiply: 1
+  _initialLifestealChance: 100
   _bonusDamage: 0
   _bonusCritMultiply: 0
   _bonusCritChance: 0
@@ -963,6 +964,20 @@ MonoBehaviour:
   _bonusEvasion: 0
   _bonusLifestealMultiply: 0
   _bonusLifestealChance: 0
+--- !u!114 &-9147668139331229575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762070542328839167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a73c4494512bfe24cb7253c87390045e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minGold: 3
+  _maxGold: 6
 --- !u!114 &677014493848522263
 MonoBehaviour:
   m_ObjectHideFlags: 0

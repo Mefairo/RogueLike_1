@@ -9,7 +9,7 @@ using static UnityEngine.Rendering.DebugUI;
 [System.Serializable]
 public class InventorySystem
 {
-    [SerializeField] private List<InventorySlot> inventorySlots;
+    [SerializeField] private List<InventorySlot> _inventorySlots;
     [SerializeField] private int _gold;
 
     public event UnityAction<int> OnChangeGold;
@@ -17,14 +17,14 @@ public class InventorySystem
     public int Gold
     {
         get => _gold;
-        set
+        private set
         {
             _gold = value;
             OnChangeGold?.Invoke(value);
         }
     }
 
-    public List<InventorySlot> InventorySlots => inventorySlots;
+    public List<InventorySlot> InventorySlots => _inventorySlots;
     public int InventorySize => InventorySlots.Count;
 
     public UnityAction<InventorySlot> OnInventorySlotChanged;
@@ -45,11 +45,11 @@ public class InventorySystem
 
     private void CreateInventory(int size)
     {
-        inventorySlots = new List<InventorySlot>(size);
+        _inventorySlots = new List<InventorySlot>(size);
 
         for (int i = 0; i < size; i++)
         {
-            inventorySlots.Add(new InventorySlot());
+            _inventorySlots.Add(new InventorySlot());
         }
 
     }
@@ -127,14 +127,14 @@ public class InventorySystem
     public void SpendGold(int price)
     {
         Gold -= price;
-        OnChangeGold?.Invoke(Gold);
+        //OnChangeGold?.Invoke(Gold);
     }
 
     public Dictionary<InventoryItemData, int> GetAllItemHeld()
     {
         var distinctItems = new Dictionary<InventoryItemData, int>();
 
-        foreach (var item in inventorySlots)
+        foreach (var item in _inventorySlots)
         {
             if (item.ItemData == null)
                 continue;
@@ -152,7 +152,7 @@ public class InventorySystem
     public void GainGold(int price)
     {
         Gold += price;
-        OnChangeGold?.Invoke(Gold);
+        //OnChangeGold?.Invoke(Gold);
     }
 
     public void RemoveItemsFromInventory(InventoryItemData data, int amount)

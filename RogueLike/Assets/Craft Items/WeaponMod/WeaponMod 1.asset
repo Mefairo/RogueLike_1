@@ -19,12 +19,12 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 4024aba56868fa2498dd748431a93586, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 1d9922c24dbd74c4ca1d3cddb7cc0b7e, type: 3}
-  ItemDataPrefab: {fileID: 0}
   MaxStackSize: 1
   GoldValue: 100
   StatusEffects: {fileID: 0}
-  ItemType: 9
+  ItemType: 4
   ItemTierCount: 0
   StatsList: []
   Recipes: []
+  EquipType: 9
   WeaponMod: {fileID: -1956330230960787666, guid: 1d9922c24dbd74c4ca1d3cddb7cc0b7e, type: 3}

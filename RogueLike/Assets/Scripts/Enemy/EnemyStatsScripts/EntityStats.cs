@@ -6,10 +6,33 @@ public abstract class EntityStats : UnitStats
 {
     public abstract void NewRoundStats();
 
-    public override abstract void ChangeDamage(float damage);
-    public override abstract void ChangeCritMultiply(float critMuliply);
-    public override abstract void ChangeCritChance(float critChance);
-    public override abstract void ChangeAttackSpeed(float attackSpeed);
-    public override abstract void ChangeBulletSpeed(float bulletSpeed);
-    public override abstract void ChangeLifeTime(float lifetime);
+    public override void ChangeDamage(float damage)
+    {
+        _bonusDamage += damage;
+    }
+
+    public override void ChangeCritMultiply(float critMuliply)
+    {
+        _bonusCritMultiply += critMuliply;
+    }
+
+    public override void ChangeCritChance(float critChance)
+    {
+        _bonusCritChance += critChance;
+    }
+
+    public override void ChangeAttackSpeed(float attackSpeed)
+    {
+        _bonusAttackSpeed -= attackSpeed;
+    }
+
+    public override void ChangeBulletSpeed(float bulletSpeed)
+    {
+        _bonusBulletSpeed += bulletSpeed;
+    }
+
+    public override void ChangeLifeTime(float lifetime)
+    {
+        _bonusLifetime += lifetime;
+    }
 }

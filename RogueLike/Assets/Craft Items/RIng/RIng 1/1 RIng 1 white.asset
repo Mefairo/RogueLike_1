@@ -15,13 +15,15 @@ MonoBehaviour:
   ID: -1
   DisplayName: RIng 1
   Description: 
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: 17705771b01fc0547bcdb4096326d8d4, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 0a4a7b1d918b41341b39453829acb921, type: 3}
   MaxStackSize: 1
   GoldValue: 100
   StatusEffects: {fileID: 0}
-  ItemType: 6
-  ItemTier: 1
+  ItemType: 4
   ItemTierCount: 0
+  StatsList: []
   Recipes: []
+  EquipType: 6

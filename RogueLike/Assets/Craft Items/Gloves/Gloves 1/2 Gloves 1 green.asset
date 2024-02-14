@@ -15,13 +15,15 @@ MonoBehaviour:
   ID: -1
   DisplayName: Gloves 1
   Description: 
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: cb94d9b516db3d64685f0141e1d13393, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 28ed2645df4d5854a89d90c4bc6e220f, type: 3}
   MaxStackSize: 1
   GoldValue: 100
   StatusEffects: {fileID: 0}
-  ItemType: 3
-  ItemTier: 2
+  ItemType: 4
   ItemTierCount: 1
+  StatsList: []
   Recipes: []
+  EquipType: 3

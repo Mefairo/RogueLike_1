@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public enum ItemType
+public enum EquipType
 {
     Helmet,
     Shoulder_Pads,

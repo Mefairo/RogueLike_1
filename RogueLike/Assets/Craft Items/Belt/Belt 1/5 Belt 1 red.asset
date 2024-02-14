@@ -22,7 +22,7 @@ MonoBehaviour:
   MaxStackSize: 1
   GoldValue: 100
   StatusEffects: {fileID: 0}
-  ItemType: 8
+  ItemType: 4
   ItemTierCount: 4
   StatsList:
   - _stats: 0
@@ -46,3 +46,4 @@ MonoBehaviour:
     _craftPrefab:
     - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
     _craftedItem: {fileID: 0}
+  EquipType: 8

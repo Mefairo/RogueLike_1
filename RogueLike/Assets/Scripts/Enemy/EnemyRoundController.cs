@@ -24,6 +24,5 @@ public class EnemyRoundController : MonoBehaviour
         //_enemy.Player.RoundManager.ConditionsForNewRound();
         EnemyManager.Instance.Player.RoundManager.EnemiesOnScene.Remove(this);
         EnemyManager.Instance.Player.RoundManager.ConditionsForNewRound();
-
     }
 }

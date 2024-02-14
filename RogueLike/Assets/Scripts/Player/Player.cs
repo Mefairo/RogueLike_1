@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private PlayerHealth _playerHealth;
     [SerializeField] private PlayerStats _playerStats;
     [SerializeField] private PlayerGun _playerGun;
+    [SerializeField] private PlayerInventoryHolder _playerInv;
     [SerializeField] private GunManager _gunManager;
     [Space]
     [SerializeField] private RoundManager _roundManager;
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     public PlayerHealth PlayerHealth => _playerHealth;  
     public PlayerStats PlayerStats => _playerStats;
     public PlayerGun PlayerGun => _playerGun;
+    public PlayerInventoryHolder PlayerInv => _playerInv;
     public GunManager GunManager => _gunManager;
 
     public RoundManager RoundManager => _roundManager;

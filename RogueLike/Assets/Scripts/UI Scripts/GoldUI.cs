@@ -25,8 +25,6 @@ public class GoldUI : MonoBehaviour
 
     private void SetAmountGold(int amount)
     {
-        Debug.Log(_inventoryHolder.PrimaryInventorySystem.Gold);
-        //_inventoryHolder.PrimaryInventorySystem.Gold = amount;
         _goldText.text = $"{amount}";
     }
 

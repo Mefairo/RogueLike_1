@@ -15,13 +15,15 @@ MonoBehaviour:
   ID: -1
   DisplayName: Armor 1
   Description: 
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: 2b9910a9cf2c58945b9043a0839e4ba1, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: fd8174ac7fb2e0249a12c287918e77a9, type: 3}
   MaxStackSize: 1
   GoldValue: 100
   StatusEffects: {fileID: 0}
-  ItemType: 2
-  ItemTier: 3
+  ItemType: 4
   ItemTierCount: 2
+  StatsList: []
   Recipes: []
+  EquipType: 2

@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class EquipSlot_UI : InventorySlot_UI
 {
-    [SerializeField] private ItemType _itemType;
+    [SerializeField] private EquipType _itemType;
 
-    public ItemType ItemType  => _itemType;
+    public EquipType ItemType  => _itemType;
 
     public EquipDisplay ParentEquipmentDisplay { get; private set; }
 

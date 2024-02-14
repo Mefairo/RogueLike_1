@@ -15,13 +15,15 @@ MonoBehaviour:
   ID: -1
   DisplayName: Boots 1
   Description: 
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: 7e883bc16e17a8b4b933c1fd64a39083, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: da839de5a8e8d2342b0828c5f918a123, type: 3}
   MaxStackSize: 1
   GoldValue: 100
   StatusEffects: {fileID: 0}
-  ItemType: 5
-  ItemTier: 5
+  ItemType: 4
   ItemTierCount: 4
+  StatsList: []
   Recipes: []
+  EquipType: 5

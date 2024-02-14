@@ -20,21 +20,21 @@ public class EquipSlot
 
     private void Equip(Player player, EquipSlot_UI equipSlot_UI)
     {
-        InventoryItemData itemData = equipSlot_UI.AssignedInventorySlot.ItemData;
+        CraftItemData itemData = (CraftItemData)equipSlot_UI.AssignedInventorySlot.ItemData;
 
         UseEquip(player, true, itemData);
 
-        if (itemData.ItemType == ItemType.Weapon_Mod)
+        if (itemData.EquipType == EquipType.Weapon_Mod)
             Mod(player, itemData);
     }
 
     private void UnEquip(Player player, EquipSlot_UI equipSlot_UI)
     {
-        InventoryItemData itemData = equipSlot_UI.AssignedInventorySlot.ItemData;
+        CraftItemData itemData = (CraftItemData)equipSlot_UI.AssignedInventorySlot.ItemData;
 
         UseEquip(player, false, itemData);
 
-        if (itemData.ItemType == ItemType.Weapon_Mod)
+        if (itemData.EquipType == EquipType.Weapon_Mod)
             UnMod(player, itemData);
     }
 

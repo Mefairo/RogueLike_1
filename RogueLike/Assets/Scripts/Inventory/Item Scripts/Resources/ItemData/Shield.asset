@@ -16,11 +16,13 @@ MonoBehaviour:
   DisplayName: "\u0429\u0438\u0442"
   Description: "\u0414\u0430\u0435\u0442 \u0432\u0440\u0435\u043C\u0435\u043D\u043D\u0443\u044E
     \u043D\u0435\u0443\u044F\u0437\u0432\u0438\u043C\u043E\u0441\u0442\u044C"
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: 8e534f20dc4c47946a7fb780348cbf5d, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 844505630040324212, guid: 13041c2a0421c094ab20cdef3f114be2, type: 3}
   MaxStackSize: 10
   GoldValue: 40
-  ItemPrefab: {fileID: 844505630040324212, guid: 13041c2a0421c094ab20cdef3f114be2, type: 3}
-  Stackable: 0
-  AmountStackBuffs: 0
-  ItemType: 2
   StatusEffects: {fileID: 11400000, guid: c7037d508ce05694ba134b3d78c74541, type: 2}
+  ItemType: 2
+  ItemTierCount: 0
+  StatsList: []
