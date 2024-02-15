@@ -22,7 +22,7 @@ MonoBehaviour:
   MaxStackSize: 50
   GoldValue: 1000
   StatusEffects: {fileID: 11400000, guid: cfcade1b75013c84287b2e213bcc78cf, type: 2}
-  ItemType: 1
+  ItemType: 3
   ItemTierCount: 0
   StatsList: []
   Recipes:

@@ -9,6 +9,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using static UnityEditor.Progress;
 
 public class ShopKeeperDisplay : MonoBehaviour
 {
@@ -36,13 +37,6 @@ public class ShopKeeperDisplay : MonoBehaviour
     [Header("Cart")]
     [SerializeField] private GameObject _itemListContentPanel;
     [SerializeField] private GameObject _shoppingCartContentPanel;
-    [Space]
-    [Header("Item Tabs")]
-    [SerializeField] private Button _allItemsButton;
-    [SerializeField] private Button _materialsButton;
-    [SerializeField] private Button _alchemyButton;
-    [SerializeField] private Button _equipButton;
-    [SerializeField] private Button _offeringButton;
 
     private int _basketTotal;
 
@@ -54,15 +48,6 @@ public class ShopKeeperDisplay : MonoBehaviour
     private Dictionary<InventoryItemData, int> _shoppingCart = new Dictionary<InventoryItemData, int>();
 
     private Dictionary<InventoryItemData, ShoppingCartItemUI> _shoppingCartUI = new Dictionary<InventoryItemData, ShoppingCartItemUI>();
-
-    private void Awake()
-    {
-        _allItemsButton.onClick.AddListener(DisplayShopInventory);
-        _materialsButton.onClick.AddListener(DisplayMaterialsInventory);
-        _alchemyButton.onClick.AddListener(DisplayAlchemyInventory);
-        _equipButton.onClick.AddListener(DisplayEquipInventory);
-        _offeringButton.onClick.AddListener(DisplayOfferingInventory);
-    }
 
     public void DisplayShopWindow(ShopSystem shopSystem, PlayerInventoryHolder playerInventoryHolder)
     {
@@ -93,14 +78,6 @@ public class ShopKeeperDisplay : MonoBehaviour
         _basketTotal = 0;
         _playerGoldText.text = $"Player Gold: {_playerInventoryHolder.PrimaryInventorySystem.Gold}";
         _shopGoldText.text = $"Shop Gold: {_shopSystem.AvailableGold}";
-
-        //DisplayShopInventory();
-
-        //if (_isSelling)
-        //    DisplayPlayerInventory();
-
-        //else
-        //    DisplayShopInventory();
     }
 
     private void BuyItems()
@@ -161,6 +138,65 @@ public class ShopKeeperDisplay : MonoBehaviour
         }
     }
 
+    private void CreatePlayerItemSlot(KeyValuePair<InventoryItemData, int> item)
+    {
+        var tempSlot = new ShopSlot();
+        tempSlot.AssignItem(item.Key, item.Value);
+
+        ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
+        shopSlot.Init(tempSlot, _shopSystem.SellMarkUp);
+    }
+
+    private void CreateShopItemSlot(ShopSlot item)
+    {
+        ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
+        shopSlot.Init(item, _shopSystem.BuyMarkUp);
+    }
+
+    public void TabClicked(CheckTypeForTabs tab)
+    {
+        RefreshDisplay();
+
+        if (_isSelling)
+        {
+            foreach (var item in _playerInventoryHolder.PrimaryInventorySystem.GetAllItemHeld())
+            {
+                if (tab.ItemType == ItemType.All)
+                    CreatePlayerItemSlot(item);
+
+                else
+                {
+                    if (item.Key.ItemType == tab.ItemType)
+                        CreatePlayerItemSlot(item);
+
+                    else
+                        continue;
+                }
+            }
+        }
+
+        else
+        {
+            foreach (var item in _shopSystem.ShopInventory)
+            {
+                if (item.ItemData == null)
+                    continue;
+
+                if (tab.ItemType == ItemType.All)
+                    CreateShopItemSlot(item);
+
+                else
+                {
+                    if (item.ItemData.ItemType == tab.ItemType)
+                        CreateShopItemSlot(item);
+
+                    else
+                        continue;
+                }
+            }
+        }
+    }
+
     private void DisplayShopInventory()
     {
         RefreshDisplay();
@@ -168,13 +204,7 @@ public class ShopKeeperDisplay : MonoBehaviour
         if (_isSelling)
         {
             foreach (var item in _playerInventoryHolder.PrimaryInventorySystem.GetAllItemHeld())
-            {
-                var tempSlot = new ShopSlot();
-                tempSlot.AssignItem(item.Key, item.Value);
-
-                ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                shopSlot.Init(tempSlot, _shopSystem.SellMarkUp);
-            }
+                CreatePlayerItemSlot(item);
         }
 
         else
@@ -184,187 +214,10 @@ public class ShopKeeperDisplay : MonoBehaviour
                 if (item.ItemData == null)
                     continue;
 
-                var shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                shopSlot.Init(item, _shopSystem.BuyMarkUp);
+                CreateShopItemSlot(item);
             }
         }
 
-    }
-
-    private void DisplayPlayerInventory()
-    {
-        foreach (var item in _playerInventoryHolder.PrimaryInventorySystem.GetAllItemHeld())
-        {
-            var tempSlot = new ShopSlot();
-            tempSlot.AssignItem(item.Key, item.Value);
-
-            var shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-            shopSlot.Init(tempSlot, _shopSystem.SellMarkUp);
-        }
-    }
-
-    private void DisplayMaterialsInventory()
-    {
-        RefreshDisplay();
-
-        if (_isSelling)
-        {
-            foreach (var item in _playerInventoryHolder.PrimaryInventorySystem.GetAllItemHeld())
-            {
-                var tempSlot = new ShopSlot();
-                tempSlot.AssignItem(item.Key, item.Value);
-
-                if (item.Key.ItemType == ItemType.Material)
-                {
-                    ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                    shopSlot.Init(tempSlot, _shopSystem.SellMarkUp);
-                }
-
-                else
-                    continue;
-            }
-        }
-
-        else
-        {
-            foreach (var item in _shopSystem.ShopInventory)
-            {
-                if (item.ItemData == null)
-                    continue;
-
-                if (item.ItemData.ItemType == ItemType.Material)
-                {
-                    ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                    shopSlot.Init(item, _shopSystem.BuyMarkUp);
-                }
-
-                else
-                    continue;
-            }
-        }
-    }
-
-    private void DisplayAlchemyInventory()
-    {
-        RefreshDisplay();
-
-        if (_isSelling)
-        {
-            foreach (var item in _playerInventoryHolder.PrimaryInventorySystem.GetAllItemHeld())
-            {
-                var tempSlot = new ShopSlot();
-                tempSlot.AssignItem(item.Key, item.Value);
-
-                if (item.Key.ItemType == ItemType.Alchemy)
-                {
-                    ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                    shopSlot.Init(tempSlot, _shopSystem.SellMarkUp);
-                }
-
-                else
-                    continue;
-            }
-        }
-
-        else
-        {
-            foreach (var item in _shopSystem.ShopInventory)
-            {
-                if (item.ItemData == null)
-                    continue;
-
-                if (item.ItemData.ItemType == ItemType.Alchemy)
-                {
-                    ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                    shopSlot.Init(item, _shopSystem.BuyMarkUp);
-                }
-
-                else
-                    continue;
-            }
-        }
-    }
-
-    private void DisplayEquipInventory()
-    {
-        RefreshDisplay();
-
-        if (_isSelling)
-        {
-            foreach (var item in _playerInventoryHolder.PrimaryInventorySystem.GetAllItemHeld())
-            {
-                var tempSlot = new ShopSlot();
-                tempSlot.AssignItem(item.Key, item.Value);
-
-                if (item.Key.ItemType == ItemType.Equipment)
-                {
-                    ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                    shopSlot.Init(tempSlot, _shopSystem.SellMarkUp);
-                }
-
-                else
-                    continue;
-            }
-        }
-
-        else
-        {
-            foreach (var item in _shopSystem.ShopInventory)
-            {
-                if (item.ItemData == null)
-                    continue;
-
-                if (item.ItemData.ItemType == ItemType.Equipment)
-                {
-                    ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                    shopSlot.Init(item, _shopSystem.BuyMarkUp);
-                }
-
-                else
-                    continue;
-            }
-        }
-    }
-
-    private void DisplayOfferingInventory()
-    {
-        RefreshDisplay();
-
-        if (_isSelling)
-        {
-            foreach (var item in _playerInventoryHolder.PrimaryInventorySystem.GetAllItemHeld())
-            {
-                var tempSlot = new ShopSlot();
-                tempSlot.AssignItem(item.Key, item.Value);
-
-                if (item.Key.ItemType == ItemType.Offering)
-                {
-                    ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                    shopSlot.Init(tempSlot, _shopSystem.SellMarkUp);
-                }
-
-                else
-                    continue;
-            }
-        }
-
-        else
-        {
-            foreach (var item in _shopSystem.ShopInventory)
-            {
-                if (item.ItemData == null)
-                    continue;
-
-                if (item.ItemData.ItemType == ItemType.Offering)
-                {
-                    ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
-                    shopSlot.Init(item, _shopSystem.BuyMarkUp);
-                }
-
-                else
-                    continue;
-            }
-        }
     }
 
     public void RemoveItemFromCart(ShopSlotUI shopSlotUI)

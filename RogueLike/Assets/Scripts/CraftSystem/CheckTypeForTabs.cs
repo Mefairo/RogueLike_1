@@ -8,8 +8,9 @@ public class CheckTypeForTabs : MonoBehaviour
     [SerializeField] private ItemType _itemType;
 
     private Button _button;
-   
-    public CraftKeeperDisplay ParentDisplay { get; private set; }
+
+    //public CraftKeeperDisplay ParentDisplay { get; private set; }
+    public ShopKeeperDisplay ParentDisplay { get; private set; }
 
     public ItemType ItemType => _itemType;
 
@@ -18,13 +19,12 @@ public class CheckTypeForTabs : MonoBehaviour
         _button = GetComponent<Button>();
         _button?.onClick.AddListener(OnTabClick);
 
-        ParentDisplay = transform.parent.GetComponent<CraftKeeperDisplay>();
+        ParentDisplay = GetComponentInParent<ShopKeeperDisplay>();
     }
 
 
     public void OnTabClick()
     {
-        Debug.Log("click");
         ParentDisplay?.TabClicked(this);
     }
 }

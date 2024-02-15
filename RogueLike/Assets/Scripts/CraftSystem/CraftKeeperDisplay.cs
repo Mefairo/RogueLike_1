@@ -25,13 +25,6 @@ public class CraftKeeperDisplay : MonoBehaviour
     [SerializeField] private GameObject _itemListContentPanel;
     [SerializeField] private GameObject _craftingCartContentPanel;
     [Space]
-    [Header("Item Tabs")]
-    [SerializeField] private CheckTypeForTabs _allItemsButton;
-    [SerializeField] private CheckTypeForTabs _materialsButton;
-    [SerializeField] private CheckTypeForTabs _alchemyButton;
-    [SerializeField] private CheckTypeForTabs _equipButton;
-    [SerializeField] private CheckTypeForTabs _offeringButton;
-    [Space]
     [Header("Other")]
     [SerializeField] private Transform pointCraftItem;
 
@@ -41,16 +34,6 @@ public class CraftKeeperDisplay : MonoBehaviour
     private PlayerInventoryHolder _playerInventoryHolder;
 
     private Dictionary<CraftItemData, ItemCraft> _craftingCartUI = new Dictionary<CraftItemData, ItemCraft>();
-
-
-    private void Awake()
-    {
-        //_allItemsButton.onClick.AddListener(DisplayCraftInventory);
-        //_materialsButton.onClick.AddListener(DisplayMaterialsInventory);
-        //_alchemyButton.onClick.AddListener(DisplayAlchemyInventory);
-        //_equipButton.onClick.AddListener(DisplayEquipInventory);
-        //_offeringButton.onClick.AddListener(DisplayOfferingInventory);
-    }
 
     public void DisplayCraftWindow(CraftSystem craftSystem, PlayerInventoryHolder playerInventoryHolder)
     {
@@ -74,8 +57,6 @@ public class CraftKeeperDisplay : MonoBehaviour
         ClearItemPreview();
 
         _craftButton.gameObject.SetActive(false);
-
-        //DisplayCraftInventory();
     }
 
     private void ClearSlot()
@@ -101,8 +82,6 @@ public class CraftKeeperDisplay : MonoBehaviour
 
     public void TabClicked(CheckTypeForTabs tab)
     {
-        Debug.Log(tab);
-        Debug.Log("click 1");
         RefreshDisplay();
 
         foreach (var item in _craftSystem.CraftInventory)
@@ -110,14 +89,23 @@ public class CraftKeeperDisplay : MonoBehaviour
             if (item.ItemData == null)
                 continue;
 
-            if (item.ItemData.ItemType == tab.ItemType)
+            if (tab.ItemType == ItemType.All)
             {
                 CraftSlotUI craftSlot = Instantiate(_craftSlotPrefab, _itemListContentPanel.transform);
                 craftSlot.Init(item);
             }
 
             else
-                continue;
+            {
+                if (item.ItemData.ItemType == tab.ItemType)
+                {
+                    CraftSlotUI craftSlot = Instantiate(_craftSlotPrefab, _itemListContentPanel.transform);
+                    craftSlot.Init(item);
+                }
+
+                else
+                    continue;
+            }
         }
     }
 
@@ -152,86 +140,6 @@ public class CraftKeeperDisplay : MonoBehaviour
 
             var craftSlot = Instantiate(_craftSlotPrefab, _itemListContentPanel.transform);
             craftSlot.Init(item);
-        }
-    }
-
-    private void DisplayMaterialsInventory()
-    {
-        RefreshDisplay();
-
-        foreach (var item in _craftSystem.CraftInventory)
-        {
-            if (item.ItemData == null)
-                continue;
-
-            if (item.ItemData.ItemType == ItemType.Material)
-            {
-                CraftSlotUI craftSlot = Instantiate(_craftSlotPrefab, _itemListContentPanel.transform);
-                craftSlot.Init(item);
-            }
-
-            else
-                continue;
-        }
-    }
-
-    private void DisplayAlchemyInventory()
-    {
-        RefreshDisplay();
-
-        foreach (var item in _craftSystem.CraftInventory)
-        {
-            if (item.ItemData == null)
-                continue;
-
-            if (item.ItemData.ItemType == ItemType.Alchemy)
-            {
-                CraftSlotUI craftSlot = Instantiate(_craftSlotPrefab, _itemListContentPanel.transform);
-                craftSlot.Init(item);
-            }
-
-            else
-                continue;
-        }
-    }
-
-    private void DisplayEquipInventory()
-    {
-        RefreshDisplay();
-
-        foreach (var item in _craftSystem.CraftInventory)
-        {
-            if (item.ItemData == null)
-                continue;
-
-            if (item.ItemData.ItemType == ItemType.Equipment)
-            {
-                CraftSlotUI craftSlot = Instantiate(_craftSlotPrefab, _itemListContentPanel.transform);
-                craftSlot.Init(item);
-            }
-
-            else
-                continue;
-        }
-    }
-
-    private void DisplayOfferingInventory()
-    {
-        RefreshDisplay();
-
-        foreach (var item in _craftSystem.CraftInventory)
-        {
-            if (item.ItemData == null)
-                continue;
-
-            if (item.ItemData.ItemType == ItemType.Offering)
-            {
-                CraftSlotUI craftSlot = Instantiate(_craftSlotPrefab, _itemListContentPanel.transform);
-                craftSlot.Init(item);
-            }
-
-            else
-                continue;
         }
     }
 

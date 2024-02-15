@@ -15,12 +15,16 @@ MonoBehaviour:
   ID: 12
   DisplayName: Bottle 2
   Description: Drink
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: bd6ec59fde3ab8d408a79ab8efaa33d7, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 844505630040324212, guid: 13041c2a0421c094ab20cdef3f114be2, type: 3}
   MaxStackSize: 1
   GoldValue: 1000
-  ItemPrefab: {fileID: 844505630040324212, guid: 13041c2a0421c094ab20cdef3f114be2, type: 3}
-  ItemType: 4
   StatusEffects: {fileID: 0}
+  ItemType: 2
+  ItemTierCount: 0
+  StatsList: []
   Recipes:
   - _requiredItems:
     - {fileID: 11400000, guid: 54316f0dbcdaf6e4abb3311cf218d21d, type: 2}
@@ -28,3 +32,4 @@ MonoBehaviour:
     _craftPrefab:
     - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
     _craftedItem: {fileID: 11400000, guid: 68e49940d379c114eb2c662222e9d137, type: 2}
+  EquipType: 0

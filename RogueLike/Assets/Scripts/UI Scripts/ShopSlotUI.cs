@@ -12,6 +12,7 @@ public class ShopSlotUI : MonoBehaviour
     //[SerializeField] private Image _backgroundSprite;
     [SerializeField] private TextMeshProUGUI _itemName;
     [SerializeField] private TextMeshProUGUI _itemCount;
+    [SerializeField] private TextMeshProUGUI _itemPrice;
     [SerializeField] private ShopSlot _assignedItemSlot;
 
     public ShopSlot AssignedItemSlot => _assignedItemSlot;
@@ -38,6 +39,7 @@ public class ShopSlotUI : MonoBehaviour
 
         _itemName.text = "";
         _itemCount.text = "";
+        _itemPrice.text = "";
 
         _addItemToCartButton?.onClick.AddListener(AddItemToCart);
         _removeItemFromCartButton?.onClick.AddListener(RemoveItemFromCart);
@@ -70,10 +72,12 @@ public class ShopSlotUI : MonoBehaviour
             //else
             //    _backgroundSprite.color = _backgroundSprite.color.WithAlpha(0);
 
-            _itemCount.text = _assignedItemSlot.StackSize.ToString();
 
             var modifiedPrice = ShopKeeperDisplay.GetModifiedPrice(_assignedItemSlot.ItemData, 1, MarkUp);
-            _itemName.text = $"{_assignedItemSlot.ItemData.DisplayName} - {modifiedPrice} gold";
+
+            _itemName.text = $"{_assignedItemSlot.ItemData.DisplayName}";
+            _itemCount.text = $"Amount: {_assignedItemSlot.StackSize}";
+            _itemPrice.text = modifiedPrice.ToString();
         }
         else
         {
@@ -85,6 +89,7 @@ public class ShopSlotUI : MonoBehaviour
 
             _itemName.text = "";
             _itemCount.text = "";
+            _itemPrice.text = "";
         }
     }
 
@@ -95,7 +100,9 @@ public class ShopSlotUI : MonoBehaviour
 
         _tempAmount--;
         ParentDisplay.AddItemToCart(this);
-        _itemCount.text = _tempAmount.ToString();
+
+        _itemCount.text = $"Amount: {_tempAmount}";
+        //_itemCount.text = _tempAmount.ToString();
     }
 
     private void RemoveItemFromCart()
@@ -105,7 +112,9 @@ public class ShopSlotUI : MonoBehaviour
 
         _tempAmount++;
         ParentDisplay.RemoveItemFromCart(this);
-        _itemCount.text = _tempAmount.ToString();
+
+        _itemCount.text = $"Amount: {_tempAmount}";
+        //_itemCount.text = _tempAmount.ToString();
     }
 
     public void UpdateItemPreview()
