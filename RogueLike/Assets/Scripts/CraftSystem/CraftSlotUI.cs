@@ -78,23 +78,23 @@ public class CraftSlotUI : MonoBehaviour
         ParentDisplay.SelectItemCraft(this);
         ParentDisplay.CanCraftItem(this);
 
-        SelectSlot(this);
+        //SelectSlot(this);
     }
 
-    private void SelectSlot(CraftSlotUI craftSlotUI)
-    {
-        ColorBlock colors = this._updatePreviewButton.colors;
-        colors.normalColor = Color.white;
-        colors.colorMultiplier = 5f;
-        this._updatePreviewButton.colors = colors;
-    }
+    //private void SelectSlot(CraftSlotUI craftSlotUI)
+    //{
+    //    ColorBlock colors = this._updatePreviewButton.colors;
+    //    colors.normalColor = Color.white;
+    //    colors.colorMultiplier = 5f;
+    //    this._updatePreviewButton.colors = colors;
+    //}
 
-    public void ResetSlotColor()
-    {
-        ColorBlock colors = this._updatePreviewButton.colors;
-        colors.normalColor = Color.white;
-        colors.colorMultiplier = 1f;
-        this._updatePreviewButton.colors = colors;
-    }
+    //public void ResetSlotColor()
+    //{
+    //    ColorBlock colors = this._updatePreviewButton.colors;
+    //    colors.normalColor = Color.white;
+    //    colors.colorMultiplier = 1f;
+    //    this._updatePreviewButton.colors = colors;
+    //}
 
 }

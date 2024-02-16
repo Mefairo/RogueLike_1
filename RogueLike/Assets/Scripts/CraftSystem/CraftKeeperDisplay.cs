@@ -166,7 +166,7 @@ public class CraftKeeperDisplay : MonoBehaviour
 
         if (_selectedCraftSlotUI != null && _selectedCraftSlotUI != craftSlotUI)
         {
-            _selectedCraftSlotUI.ResetSlotColor();
+            //_selectedCraftSlotUI.ResetSlotColor();
         }
 
         _selectedCraftSlotUI = craftSlotUI;
@@ -193,7 +193,7 @@ public class CraftKeeperDisplay : MonoBehaviour
 
         if (_selectedRequiredItem != null && _selectedRequiredItem != itemCraft)
         {
-            _selectedRequiredItem.ResetSlotColor();
+            //_selectedRequiredItem.ResetSlotColor();
         }
 
         _selectedRequiredItem = itemCraft;

@@ -6,6 +6,7 @@ using UnityEngine;
 [Serializable]
 public enum EquipType
 {
+    None,
     Helmet,
     Shoulder_Pads,
     Chest,

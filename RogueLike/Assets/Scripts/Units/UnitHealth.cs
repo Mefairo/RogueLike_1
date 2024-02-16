@@ -21,6 +21,7 @@ public abstract class UnitHealth : MonoBehaviour, IHealthChangeable
         {
             _maxHealth = value;
             OnMaxHPChange?.Invoke(value);
+            OnCurrentHPChange?.Invoke(_currentHealth);
         }
     }
 

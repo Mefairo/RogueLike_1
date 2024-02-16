@@ -2,10 +2,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using static UnityEditor.Experimental.GraphView.GraphView;
+using static UnityEditor.Progress;
 
 public abstract class InventoryDisplay : MonoBehaviour
 {
     [SerializeField] protected MouseItemData mouseInventoryItem;
+    [SerializeField] protected DynamicInventoryDisplay _inventoryDisplay;
+    [SerializeField] protected EquipDisplay _equipDisplay;
+    [SerializeField] protected Player _player;
 
     protected InventorySystem inventorySystem;
     protected Dictionary<InventorySlot_UI, InventorySlot> slotDictionary;
@@ -37,8 +42,18 @@ public abstract class InventoryDisplay : MonoBehaviour
         if (clickedUISlot.AssignedInventorySlot.ItemData != null && mouseInventoryItem.AssignedInventorySlot.ItemData == null)
         {
             //Debug.Log("37");
+            if (Input.GetKey(KeyCode.LeftControl) && _inventoryDisplay.gameObject.activeSelf && clickedUISlot.AssignedInventorySlot.ItemData != null)
+            {
+                SwapItemsBtwInventories(clickedUISlot);
+            }
+
+            else if (Input.GetKey(KeyCode.LeftControl) && _equipDisplay.gameObject.activeSelf && clickedUISlot.AssignedInventorySlot.ItemData != null)
+            {
+                FastEquipItem(clickedUISlot);
+            }
+
             // Если игрок держит SHIFT, то нужно разделить количество предметов в слоте
-            if (Input.GetKey(KeyCode.LeftShift) && clickedUISlot.AssignedInventorySlot.SplitStack(out InventorySlot halfStackSlot))
+            else if (Input.GetKey(KeyCode.LeftShift) && clickedUISlot.AssignedInventorySlot.SplitStack(out InventorySlot halfStackSlot))
             {
                 //Debug.Log("111");
                 mouseInventoryItem.UpdateMouseSlot(halfStackSlot);
@@ -147,7 +162,7 @@ public abstract class InventoryDisplay : MonoBehaviour
             }
 
 
-            else if(itemInClickedSlot.StackSize == itemInClickedSlot.ItemData.MaxStackSize)
+            else if (itemInClickedSlot.StackSize == itemInClickedSlot.ItemData.MaxStackSize)
             {
                 //Debug.Log("123123");
 
@@ -175,4 +190,112 @@ public abstract class InventoryDisplay : MonoBehaviour
             mouseInventoryItem.UpdateMouseSlot(clonedClickedSlot);
         }
     }
+
+    private void FastEquipItem(InventorySlot_UI clickedUISlot)
+    {
+        if (clickedUISlot.AssignedInventorySlot.ItemData is CraftItemData)
+        {
+            CraftItemData equipItem = (CraftItemData)clickedUISlot.AssignedInventorySlot.ItemData;
+
+            foreach (Transform childTransform in _equipDisplay.transform)
+            {
+                EquipSlot_UI slot = childTransform.GetComponent<EquipSlot_UI>();
+
+                if (slot.AssignedInventorySlot.ItemData == null)
+                {
+                    if (equipItem.EquipType == slot.ItemType)
+                    {
+                        slot.AssignedInventorySlot.AssignItem(clickedUISlot.AssignedInventorySlot);
+                        slot.UpdateUISlot();
+
+                        clickedUISlot.AssignedInventorySlot.ClearSlot();
+                        clickedUISlot.UpdateUISlot();
+
+                        _equipDisplay.OnPlayerEquip?.Invoke(_player, slot);
+                    }
+
+                    else
+                        continue;
+                }
+
+                else
+                {
+                    if (equipItem.EquipType == slot.ItemType)
+                    {
+                        _equipDisplay.OnPlayerTakeOfEquip?.Invoke(_player, slot);
+
+                        SwapEquipSlots(clickedUISlot, slot);
+                    }
+
+                    else
+                        continue;
+                }
+            }
+        }
+    }
+
+    private void SwapItemsBtwInventories(InventorySlot_UI clickedUISlot)
+    {
+
+        foreach (Transform childTransform in _inventoryDisplay.transform)
+        {
+            InventorySlot_UI slot = childTransform.GetComponent<InventorySlot_UI>();
+
+            bool isSameItem = clickedUISlot.AssignedInventorySlot.ItemData == slot.AssignedInventorySlot.ItemData;
+
+            if (slot.AssignedInventorySlot.ItemData == null)
+            {
+                Debug.Log("null");
+                _inventoryDisplay.InventorySystem.AddToInventory(clickedUISlot.AssignedInventorySlot.ItemData, 1);
+
+                if (clickedUISlot.AssignedInventorySlot.StackSize == 1)
+                {
+                    clickedUISlot.AssignedInventorySlot.ClearSlot();
+                    clickedUISlot.UpdateUISlot();
+                }
+
+                else
+                {
+                    clickedUISlot.AssignedInventorySlot.RemoveFromStack(1);
+                    clickedUISlot.UpdateUISlot();
+                }
+
+                return;
+            }
+
+            else
+            {
+                Debug.Log(" ne null");
+
+                if (isSameItem && slot.AssignedInventorySlot.EnoughRoomLeftInStack(clickedUISlot.AssignedInventorySlot.StackSize))
+                {
+                    Debug.Log("add");
+                    //slot.AssignedInventorySlot.AddToStack(1);
+                    _inventoryDisplay.InventorySystem.AddToInventory(clickedUISlot.AssignedInventorySlot.ItemData, 1);
+                    clickedUISlot.AssignedInventorySlot.RemoveFromStack(1);
+                    //slot.AssignedInventorySlot.AssignItem(mouseInventoryItem.AssignedInventorySlot);
+                    //slot.UpdateUISlot();
+                }
+
+                else
+                    continue;
+
+            }
+        }
+    }
+
+    private void SwapEquipSlots(InventorySlot_UI clickedUISlot, EquipSlot_UI slot)
+    {
+        var clonedEquipSlot = new InventorySlot(slot.AssignedInventorySlot.ItemData, slot.AssignedInventorySlot.StackSize);
+
+        slot.ClearSlot();
+        slot.AssignedInventorySlot.AssignItem(clickedUISlot.AssignedInventorySlot);
+        slot.UpdateUISlot();
+
+        clickedUISlot.AssignedInventorySlot.AssignItem(clonedEquipSlot);
+        clickedUISlot.UpdateUISlot();
+
+        _equipDisplay.OnPlayerEquip?.Invoke(_player, slot);
+    }
 }
+

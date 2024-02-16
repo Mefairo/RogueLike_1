@@ -22,12 +22,6 @@ public class ItemCraft: MonoBehaviour
 
     private void Awake()
     {
-        //_imageComponent.sprite = null;
-        //_imageComponent.preserveAspect = true;
-        //_imageComponent.color = Color.clear;
-        //_nameComponent.text = "";
-        //_amountComponent.text = "";
-
         _updatePreviewButton?.onClick.AddListener(UpdateItemPreview);
 
         ParentDisplay = GetComponentInParent<CraftKeeperDisplay>();
@@ -45,23 +39,5 @@ public class ItemCraft: MonoBehaviour
     private void UpdateItemPreview()
     {
         ParentDisplay.UpdateItemPreview(this);
-
-        SelectSlot(this);
-    }
-
-    private void SelectSlot(ItemCraft itemCraft)
-    {
-        ColorBlock colors = this._updatePreviewButton.colors;
-        colors.normalColor = Color.white;
-        colors.colorMultiplier = 5f;
-        this._updatePreviewButton.colors = colors;
-    }
-
-    public void ResetSlotColor()
-    {
-        ColorBlock colors = this._updatePreviewButton.colors;
-        colors.normalColor = Color.white;
-        colors.colorMultiplier = 1f;
-        this._updatePreviewButton.colors = colors;
     }
 }

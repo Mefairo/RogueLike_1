@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.Progress;
 
 public class ItemsShowInfo : MonoBehaviour
 {
@@ -15,15 +16,21 @@ public class ItemsShowInfo : MonoBehaviour
 
     public void ShowInfo(InventorySlot_UI slot)
     {
-        CraftItemData item = (CraftItemData)slot.AssignedInventorySlot.ItemData;
+        ClearInfo();
+        InventoryItemData item = slot.AssignedInventorySlot.ItemData;
 
         if (item != null)
         {
             gameObject.SetActive(true);
 
             _nameText.text = item.DisplayName;
-            _itemTypeText.text = item.EquipType.ToString();
             _descriptionText.text = item.Description;
+
+            if (item is CraftItemData)
+            {
+                CraftItemData craftItem = (CraftItemData)item;
+                _itemTypeText.text = craftItem.EquipType.ToString();
+            }
 
             SetStatsText(slot);
         }
@@ -49,5 +56,14 @@ public class ItemsShowInfo : MonoBehaviour
 
         _statsNameText.text = statsText;
         _statsValueText.text = statsValue;
+    }
+
+    private void ClearInfo()
+    {
+        _nameText.text = "";
+        _descriptionText.text = "";
+        _itemTypeText.text = "";
+        _statsNameText.text = "";
+        _statsValueText.text = "";
     }
 }

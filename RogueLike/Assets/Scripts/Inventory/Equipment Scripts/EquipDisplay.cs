@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class EquipDisplay : InventoryDisplay
 {
-    [SerializeField] private Player _player;
+    [SerializeField] protected StaticInventoryDisplay _invDisplay;
 
     public UnityAction<Player, EquipSlot_UI> OnPlayerEquip;
     public UnityAction<Player, EquipSlot_UI> OnPlayerTakeOfEquip;
@@ -34,8 +34,20 @@ public class EquipDisplay : InventoryDisplay
         var equipSlot = equipSlot_UI.AssignedInventorySlot.ItemData;
         var mouseSlot = mouseInventoryItem.AssignedInventorySlot.ItemData;
 
+        if (equipSlot != null && mouseSlot == null && Input.GetKey(KeyCode.LeftControl))
+        {
+            Debug.Log("takeoff");
+            OnPlayerTakeOfEquip?.Invoke(_player, equipSlot_UI);
+
+            _invDisplay.InventorySystem.AddToInventory(equipSlot_UI.AssignedInventorySlot.ItemData, 1);
+
+            equipSlot_UI.AssignedInventorySlot.ClearSlot();
+            equipSlot_UI.UpdateUISlot();
+        }
+
+
         // Если кликнуть на слот,в котором есть предмет,а у мыши нет элемента, тогда нужно поднять предмет
-        if (equipSlot != null && mouseSlot == null)
+        else if (equipSlot != null && mouseSlot == null)
         {
             OnPlayerTakeOfEquip?.Invoke(_player, equipSlot_UI);
 

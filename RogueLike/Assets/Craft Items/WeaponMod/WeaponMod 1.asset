@@ -26,5 +26,5 @@ MonoBehaviour:
   ItemTierCount: 0
   StatsList: []
   Recipes: []
-  EquipType: 9
+  EquipType: 10
   WeaponMod: {fileID: -1956330230960787666, guid: 1d9922c24dbd74c4ca1d3cddb7cc0b7e, type: 3}

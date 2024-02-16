@@ -33,4 +33,4 @@ MonoBehaviour:
     - 40
     - 50
   Recipes: []
-  EquipType: 0
+  EquipType: 1

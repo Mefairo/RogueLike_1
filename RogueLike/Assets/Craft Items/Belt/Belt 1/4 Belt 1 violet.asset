@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 4 Belt 1 violet
   m_EditorClassIdentifier: 
   ID: 311
-  DisplayName: Belt 1
+  DisplayName: Belt 1 v
   Description: Top Belt
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 4758749bf70504f478e64796865de55d, type: 3}
@@ -46,4 +46,4 @@ MonoBehaviour:
     _craftPrefab:
     - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
     _craftedItem: {fileID: 0}
-  EquipType: 8
+  EquipType: 9

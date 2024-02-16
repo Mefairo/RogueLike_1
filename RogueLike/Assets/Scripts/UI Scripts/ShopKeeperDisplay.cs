@@ -39,11 +39,11 @@ public class ShopKeeperDisplay : MonoBehaviour
     [SerializeField] private GameObject _shoppingCartContentPanel;
 
     private int _basketTotal;
-
     private bool _isSelling;
 
     private ShopSystem _shopSystem;
     private PlayerInventoryHolder _playerInventoryHolder;
+    private CheckTypeForTabs _tabs;
 
     private Dictionary<InventoryItemData, int> _shoppingCart = new Dictionary<InventoryItemData, int>();
 
@@ -102,6 +102,7 @@ public class ShopKeeperDisplay : MonoBehaviour
         _playerInventoryHolder.PrimaryInventorySystem.SpendGold(_basketTotal);
 
         RefreshDisplay();
+        DisplayShopInventory();
     }
 
     private void SellItems()
@@ -120,6 +121,7 @@ public class ShopKeeperDisplay : MonoBehaviour
         }
 
         RefreshDisplay();
+        DisplayShopInventory();
     }
 
     private void ClearSlots()
@@ -229,11 +231,13 @@ public class ShopKeeperDisplay : MonoBehaviour
         {
             _shoppingCart[data]--;
 
-            var newString = $"- {data.DisplayName} {price}G x{_shoppingCart[data]}";
-            var newImage = data.Icon;
+            //var newString = $"- {data.DisplayName} {price}G x{_shoppingCart[data]}";
+            string newString = $"- {data.DisplayName}";
+            string newAmount = $"x{_shoppingCart[data]}";
+            Sprite newImage = data.Icon;
             //var backgroundImage = data.IconBackground;/////////////////////////////
 
-            _shoppingCartUI[data].SetItemText(newString, newImage);
+            _shoppingCartUI[data].SetItemText(newString, newAmount, newImage);
 
             if (_shoppingCart[data] <= 0)
             {
@@ -282,11 +286,15 @@ public class ShopKeeperDisplay : MonoBehaviour
         {
             _shoppingCart[data]++;
 
-            var newString = $"- {data.DisplayName} {price}G x{_shoppingCart[data]}";
+            //var newString = $"- {data.DisplayName} {price}G x{_shoppingCart[data]}";
+
+            string newString = $"- {data.DisplayName}";
+            string newAmount = $"x{_shoppingCart[data]}";
             var newImage = data.Icon;
+
             //var backgroundImage = data.IconBackground;////////////////////////////
 
-            _shoppingCartUI[data].SetItemText(newString, newImage);
+            _shoppingCartUI[data].SetItemText(newString, newAmount, newImage);
         }
 
         else
@@ -294,11 +302,14 @@ public class ShopKeeperDisplay : MonoBehaviour
             _shoppingCart.Add(data, 1);
 
             var shoppingCartTextObj = Instantiate(_shoppingCartItemPrefab, _shoppingCartContentPanel.transform);
-            var newString = $"- {data.DisplayName} {price}G x1";
+            //var newString = $"- {data.DisplayName} {price}G x1";
+
+            string newString = $"- {data.DisplayName}";
+            string newAmount = $"x1";
             var newImage = data.Icon;
             //var backgroundImage = data.IconBackground;//////////////////////////////
 
-            shoppingCartTextObj.SetItemText(newString, newImage);
+            shoppingCartTextObj.SetItemText(newString, newAmount, newImage);
 
             _shoppingCartUI.Add(data, shoppingCartTextObj);
         }
