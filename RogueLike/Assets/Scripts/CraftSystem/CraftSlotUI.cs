@@ -2,13 +2,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Unity.VisualScripting;
+using UnityEngine.EventSystems;
 
-public class CraftSlotUI : MonoBehaviour
+public class CraftSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private Image _itemSprite;
     //[SerializeField] private Image _backgroundSprite;
     [SerializeField] private TextMeshProUGUI _itemName;
     [SerializeField] private CraftSlot _assignedItemSlot;
+    [SerializeField] private ItemsShowInfo _panelInfo;
 
     public CraftSlot AssignedItemSlot => _assignedItemSlot;
 
@@ -32,6 +34,14 @@ public class CraftSlotUI : MonoBehaviour
         _updatePreviewButton?.onClick.AddListener(UpdateItemPreview);
 
         ParentDisplay = GetComponentInParent<CraftKeeperDisplay>();
+    }
+
+    private void Start()
+    {
+        _panelInfo = UIManager.Instance.PanelInfo;
+
+        if (_panelInfo != null)
+            _panelInfo.gameObject.SetActive(false);
     }
 
     public void Init(CraftSlot craftSlot)
@@ -79,6 +89,16 @@ public class CraftSlotUI : MonoBehaviour
         ParentDisplay.CanCraftItem(this);
 
         //SelectSlot(this);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        _panelInfo.ShowInfo(this);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        _panelInfo.HideInfo();
     }
 
     //private void SelectSlot(CraftSlotUI craftSlotUI)
