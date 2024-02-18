@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class ChestInventory : InventoryHolder, IInteractable
 {
     public UnityAction<IInteractable> OnInteractionComplete { get; set; }
+    public static UnityAction OnChestWindowClosed;
 
     protected override void Awake()
     {
@@ -40,7 +41,13 @@ public class ChestInventory : InventoryHolder, IInteractable
 
     public void EndInteraction()
     {
+        OnChestWindowClosed?.Invoke();
+    }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+            EndInteraction();
     }
 }
 

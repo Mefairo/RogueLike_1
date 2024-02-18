@@ -11,20 +11,8 @@ public class Interactor : MonoBehaviour
 
     private void Update()
     {
-        var colliders = Physics.OverlapSphere(InteractionPoint.position, InteractionPointRadius, InteractionLayer );
-
         if (Input.GetKeyDown(KeyCode.E))
-        {
             CheckIntecractObjectAround();
-
-            //for (int i = 0; i < colliders.Length; i++)
-            //{
-            //    var interactable = colliders[i].GetComponent<IInteractable>();
-
-            //    if (interactable != null)
-            //        StartInteraction(interactable);
-            //}
-        }
     }
 
     private void StartInteraction(IInteractable interactable)
@@ -50,5 +38,17 @@ public class Interactor : MonoBehaviour
                 StartInteraction(interactable);
         }
     }
+
+    //private void OnTriggerExit2D(Collider2D other)
+    //{
+    //    Debug.Log("trigger");
+    //    // Проверяем, вышел ли игрок из триггера объекта CraftKeeper
+    //    if (other.CompareTag("NPC"))
+    //    {
+    //        Debug.Log("inter");
+    //        // Закрываем панель крафта, если игрок отошел от объекта CraftKeeper
+    //        EndInteracting();
+    //    }
+    //}
 
 }

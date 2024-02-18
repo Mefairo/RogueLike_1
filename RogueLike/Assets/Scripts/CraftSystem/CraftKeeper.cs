@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using System;
+//using static UnityEngine.Rendering.DynamicArray<T>;
 
 public class CraftKeeper : MonoBehaviour, IInteractable
 {
@@ -18,6 +19,7 @@ public class CraftKeeper : MonoBehaviour, IInteractable
     [SerializeField] private List<CraftItemData> _randomItems;
 
     public static UnityAction<CraftSystem, PlayerInventoryHolder> OnCraftWindowRequested;
+    public static UnityAction OnCraftWindowClosed;
 
     private void Awake()
     {
@@ -60,9 +62,9 @@ public class CraftKeeper : MonoBehaviour, IInteractable
 
     public void Interact(Interactor interactor, out bool interactSuccessful)
     {
-        var playerInv = interactor.GetComponent<PlayerInventoryHolder>(); 
+        var playerInv = interactor.GetComponent<PlayerInventoryHolder>();
 
-        if(playerInv != null)
+        if (playerInv != null)
         {
             OnCraftWindowRequested?.Invoke(_craftSystem, playerInv);
             interactSuccessful = true;
@@ -78,7 +80,13 @@ public class CraftKeeper : MonoBehaviour, IInteractable
 
     public void EndInteraction()
     {
-        throw new System.NotImplementedException();
+        OnCraftWindowClosed?.Invoke();
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+            EndInteraction();
     }
 
 }

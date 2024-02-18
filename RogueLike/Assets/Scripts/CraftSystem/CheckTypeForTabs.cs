@@ -9,8 +9,8 @@ public class CheckTypeForTabs : MonoBehaviour
 
     private Button _button;
 
-    //public CraftKeeperDisplay ParentDisplay { get; private set; }
-    public ShopKeeperDisplay ParentDisplay { get; private set; }
+    public CraftKeeperDisplay CraftKeeper { get; private set; }
+    public ShopKeeperDisplay ShopKeeper { get; private set; }
 
     public ItemType ItemType => _itemType;
 
@@ -19,12 +19,17 @@ public class CheckTypeForTabs : MonoBehaviour
         _button = GetComponent<Button>();
         _button?.onClick.AddListener(OnTabClick);
 
-        ParentDisplay = GetComponentInParent<ShopKeeperDisplay>();
+        ShopKeeper = GetComponentInParent<ShopKeeperDisplay>();
+        CraftKeeper = GetComponentInParent<CraftKeeperDisplay>();
     }
 
 
     public void OnTabClick()
     {
-        ParentDisplay?.TabClicked(this);
+        if (ShopKeeper != null)
+            ShopKeeper?.TabClicked(this);
+
+        if (CraftKeeper != null)
+            CraftKeeper.TabClicked(this);
     }
 }

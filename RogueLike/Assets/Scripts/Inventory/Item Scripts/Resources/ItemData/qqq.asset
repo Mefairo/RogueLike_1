@@ -15,10 +15,13 @@ MonoBehaviour:
   ID: 5
   DisplayName: 
   Description: 
+  StatsDescription: 
   Icon: {fileID: 0}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 0}
   MaxStackSize: 0
   GoldValue: 0
-  ItemPrefab: {fileID: 0}
-  Stackable: 0
-  AmountStackBuffs: 0
+  StatusEffects: {fileID: 0}
   ItemType: 0
+  ItemTierCount: 0
+  StatsList: []

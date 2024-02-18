@@ -15,9 +15,13 @@ MonoBehaviour:
   ID: 0
   DisplayName: Fruit
   Description: So cool
+  StatsDescription: 
   Icon: {fileID: 21300000, guid: ac2b6369c0322e948bf831079cd5faad, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 8265726570659436991, guid: 636c90ec77ff4224d90ffc8c77482ad1, type: 3}
   MaxStackSize: 1
   GoldValue: 5
-  ItemPrefab: {fileID: 8265726570659436991, guid: 636c90ec77ff4224d90ffc8c77482ad1, type: 3}
-  ItemType: 5
   StatusEffects: {fileID: 11400000, guid: 8bc612f9e2d2e6b48b7c23e8df0d354e, type: 2}
+  ItemType: 5
+  ItemTierCount: 0
+  StatsList: []

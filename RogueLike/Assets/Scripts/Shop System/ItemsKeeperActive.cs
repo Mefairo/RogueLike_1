@@ -11,6 +11,7 @@ public class ItemsKeeperActive : MonoBehaviour, IInteractable
     [SerializeField] private int _price;
     [SerializeField] private GameObject _keeper;
     [SerializeField] private SpriteRenderer _shopSprite;
+    [SerializeField] private bool _isActiveKeeper;
     [Space]
     [Header("UI")]
     [SerializeField] private Image _panel;
@@ -22,7 +23,12 @@ public class ItemsKeeperActive : MonoBehaviour, IInteractable
 
     private void Awake()
     {
-        _keeper.gameObject.SetActive(false);
+        if (_isActiveKeeper)
+            _keeper.gameObject.SetActive(true);
+
+        else
+            _keeper.gameObject.SetActive(false);
+
         _panel.gameObject.SetActive(false);
 
         _buttonYes.onClick.AddListener(ConfirmPurchase);
@@ -69,9 +75,7 @@ public class ItemsKeeperActive : MonoBehaviour, IInteractable
         }
 
         else
-        {
             interactSuccessful = false;
-        }
     }
 
     public void EndInteraction()

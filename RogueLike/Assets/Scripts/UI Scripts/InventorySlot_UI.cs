@@ -116,7 +116,7 @@ public class InventorySlot_UI : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        _panelInfo.ShowInfo(this);
+        _panelInfo.ShowInfo(this.AssignedInventorySlot.ItemData);
     }
 
     public void OnPointerExit(PointerEventData eventData)

@@ -14,8 +14,10 @@ public class ItemsShowInfo : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _statsNameText;
     [SerializeField] private TextMeshProUGUI _statsValueText;
 
-    private void UpdateSlot(InventoryItemData item)
+    private void UpdateInfo(InventoryItemData item)
     {
+        ClearInfo();
+
         if (item != null)
         {
             gameObject.SetActive(true);
@@ -31,50 +33,12 @@ public class ItemsShowInfo : MonoBehaviour
         }
     }
 
-    public void ShowInfo(InventorySlot_UI slot)
+    public void ShowInfo(InventoryItemData item)
     {
-        ClearInfo();
-        InventoryItemData item = slot.AssignedInventorySlot.ItemData;
-        UpdateSlot(item);
-        if (item != null)
-        {
-            //gameObject.SetActive(true);
-
-            //_nameText.text = item.DisplayName;
-            //_descriptionText.text = item.Description;
-
-            //if (item is CraftItemData)
-            //{
-            //    CraftItemData craftItem = (CraftItemData)item;
-            //    _itemTypeText.text = craftItem.EquipType.ToString();
-            //}
-
-            SetStatsText(slot);
-        }
-
-    }
-
-    public void ShowInfo(CraftSlotUI slot)
-    {
-        ClearInfo();
-        InventoryItemData item = slot.AssignedItemSlot.ItemData;
-        UpdateSlot(item);
+        UpdateInfo(item);
 
         if (item != null)
-        {
-            //gameObject.SetActive(true);
-
-            //_nameText.text = item.DisplayName;
-            //_descriptionText.text = item.Description;
-
-            //if (item is CraftItemData)
-            //{
-            //    CraftItemData craftItem = (CraftItemData)item;
-            //    _itemTypeText.text = craftItem.EquipType.ToString();
-            //}
-            SetStatsText(slot);
-        }
-
+            UpdateText(item);
     }
 
     public void HideInfo()
@@ -82,10 +46,8 @@ public class ItemsShowInfo : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void SetStatsText(InventorySlot_UI slot)
+    private void UpdateText(InventoryItemData item)
     {
-        InventoryItemData item = slot.AssignedInventorySlot.ItemData;
-
         string statsText = "";
         string statsValue = "";
 
@@ -96,23 +58,6 @@ public class ItemsShowInfo : MonoBehaviour
                 statsText += $"{stat.Stats}: \n";
                 statsValue += $"{stat.ValueStat[item.ItemTierCount]}\n";
             }
-        }
-
-        _statsNameText.text = statsText;
-        _statsValueText.text = statsValue;
-    }
-
-    private void SetStatsText(CraftSlotUI slot)
-    {
-        InventoryItemData item = slot.AssignedItemSlot.ItemData;
-
-        string statsText = "";
-        string statsValue = "";
-
-        foreach (var stat in item.StatsList)
-        {
-            statsText += $"{stat.Stats}: \n";
-            statsValue += $"{stat.ValueStat[item.ItemTierCount]}\n";
         }
 
         _statsNameText.text = statsText;

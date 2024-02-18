@@ -10,6 +10,7 @@ using Unity.VisualScripting;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 using static UnityEditor.Progress;
+using UnityEngine.Scripting;
 
 public class ShopKeeperDisplay : MonoBehaviour
 {
@@ -43,7 +44,6 @@ public class ShopKeeperDisplay : MonoBehaviour
 
     private ShopSystem _shopSystem;
     private PlayerInventoryHolder _playerInventoryHolder;
-    private CheckTypeForTabs _tabs;
 
     private Dictionary<InventoryItemData, int> _shoppingCart = new Dictionary<InventoryItemData, int>();
 
@@ -231,13 +231,11 @@ public class ShopKeeperDisplay : MonoBehaviour
         {
             _shoppingCart[data]--;
 
-            //var newString = $"- {data.DisplayName} {price}G x{_shoppingCart[data]}";
-            string newString = $"- {data.DisplayName}";
             string newAmount = $"x{_shoppingCart[data]}";
-            Sprite newImage = data.Icon;
+            ShoppingCartItemUI shoppongCartSlot = _shoppingCartUI[data];
             //var backgroundImage = data.IconBackground;/////////////////////////////
 
-            _shoppingCartUI[data].SetItemText(newString, newAmount, newImage);
+            shoppongCartSlot.SetItemText(data, newAmount);
 
             if (_shoppingCart[data] <= 0)
             {
@@ -277,6 +275,7 @@ public class ShopKeeperDisplay : MonoBehaviour
     public void AddItemToCart(ShopSlotUI shopSlotUI)
     {
         var data = shopSlotUI.AssignedItemSlot.ItemData;
+        var shoppongCartItem = _shoppingCartItemPrefab;
 
         UpdateItemPreview(shopSlotUI);
 
@@ -286,30 +285,23 @@ public class ShopKeeperDisplay : MonoBehaviour
         {
             _shoppingCart[data]++;
 
-            //var newString = $"- {data.DisplayName} {price}G x{_shoppingCart[data]}";
-
-            string newString = $"- {data.DisplayName}";
             string newAmount = $"x{_shoppingCart[data]}";
-            var newImage = data.Icon;
-
+            ShoppingCartItemUI shoppongCartSlot = _shoppingCartUI[data];
             //var backgroundImage = data.IconBackground;////////////////////////////
 
-            _shoppingCartUI[data].SetItemText(newString, newAmount, newImage);
+            shoppongCartSlot.SetItemText(data, newAmount);
         }
 
         else
         {
             _shoppingCart.Add(data, 1);
 
-            var shoppingCartTextObj = Instantiate(_shoppingCartItemPrefab, _shoppingCartContentPanel.transform);
-            //var newString = $"- {data.DisplayName} {price}G x1";
+            ShoppingCartItemUI shoppingCartTextObj = Instantiate(shoppongCartItem, _shoppingCartContentPanel.transform);
 
-            string newString = $"- {data.DisplayName}";
             string newAmount = $"x1";
-            var newImage = data.Icon;
             //var backgroundImage = data.IconBackground;//////////////////////////////
 
-            shoppingCartTextObj.SetItemText(newString, newAmount, newImage);
+            shoppingCartTextObj.SetItemText(data, newAmount);
 
             _shoppingCartUI.Add(data, shoppingCartTextObj);
         }

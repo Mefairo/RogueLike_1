@@ -93,7 +93,7 @@ public class CraftSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        _panelInfo.ShowInfo(this);
+        _panelInfo.ShowInfo(this.AssignedItemSlot.ItemData);
     }
 
     public void OnPointerExit(PointerEventData eventData)

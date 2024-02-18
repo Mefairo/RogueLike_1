@@ -21,6 +21,7 @@ public class ShopKeeper : MonoBehaviour, IInteractable
     private string _id;
 
     public static UnityAction<ShopSystem, PlayerInventoryHolder> OnShopWindowRequested;
+    public static UnityAction OnShopWindowClosed;
 
     private ShopSaveData _shopSaveData;
 
@@ -104,7 +105,13 @@ public class ShopKeeper : MonoBehaviour, IInteractable
 
     public void EndInteraction()
     {
-        throw new System.NotImplementedException();
+        OnShopWindowClosed?.Invoke();
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+            EndInteraction();
     }
 }
 

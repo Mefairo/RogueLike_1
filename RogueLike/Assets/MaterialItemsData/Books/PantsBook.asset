@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3aaedcd8c87834690fb2ca7fac8638, type: 3}
+  m_Name: PantsBook
+  m_EditorClassIdentifier: 
+  ID: 50
+  DisplayName: Book of knowledge
+  Description: Book Pants
+  StatsDescription: 
+  Icon: {fileID: 21300000, guid: 93ce13c6fb8e29340ad04412a64bb6f0, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 6131324041524727166, guid: e225fc1677b68fb4ba53ae052cc9b3e7, type: 3}
+  MaxStackSize: 1
+  GoldValue: 100
+  StatusEffects: {fileID: 0}
+  ItemType: 2
+  ItemTierCount: 0
+  StatsList: []

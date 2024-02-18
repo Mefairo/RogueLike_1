@@ -14,12 +14,8 @@ TagManager:
   - Inventory
   - Test
   - Test player
-  - Key
-  - Door
-  - HP
-  - Shield
-  - Potion
   - RoomPoint
+  - NPC
   layers:
   - Default
   - TransparentFX

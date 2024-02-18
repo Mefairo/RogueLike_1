@@ -4,23 +4,27 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ShopSlotUI : MonoBehaviour
+public class ShopSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    [Header("Preview Item")]
     [SerializeField] private Image _itemSprite;
     //[SerializeField] private Image _backgroundSprite;
     [SerializeField] private TextMeshProUGUI _itemName;
     [SerializeField] private TextMeshProUGUI _itemCount;
     [SerializeField] private TextMeshProUGUI _itemPrice;
     [SerializeField] private ShopSlot _assignedItemSlot;
-
-    public ShopSlot AssignedItemSlot => _assignedItemSlot;
-
+    [Space]
+    [Header("Other")]
     [SerializeField] private Button _addItemToCartButton;
     [SerializeField] private Button _removeItemFromCartButton;
     [SerializeField] private Button _updatePreviewButton;
+    [Space]
+    [SerializeField] private ItemsShowInfo _panelInfo;
 
+    public ShopSlot AssignedItemSlot => _assignedItemSlot;
     public ShopKeeperDisplay ParentDisplay { get; private set; }
 
     public float MarkUp { get; private set; }
@@ -46,6 +50,14 @@ public class ShopSlotUI : MonoBehaviour
         _updatePreviewButton?.onClick.AddListener(UpdateItemPreview);
 
         ParentDisplay = GetComponentInParent<ShopKeeperDisplay>();
+    }
+
+    private void Start()
+    {
+        _panelInfo = UIManager.Instance.PanelInfo;
+
+        if (_panelInfo != null)
+            _panelInfo.gameObject.SetActive(false);
     }
 
     public void Init(ShopSlot slot, float markUp)
@@ -120,5 +132,15 @@ public class ShopSlotUI : MonoBehaviour
     public void UpdateItemPreview()
     {
         ParentDisplay.UpdateItemPreview(this);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        _panelInfo.ShowInfo(this.AssignedItemSlot.ItemData);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        _panelInfo.HideInfo();
     }
 }

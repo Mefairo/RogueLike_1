@@ -15,16 +15,23 @@ public class CraftUIController : MonoBehaviour
     private void OnEnable()
     {
         CraftKeeper.OnCraftWindowRequested += DisplayCraftWindow;
+        CraftKeeper.OnCraftWindowClosed += DisplayCraftWindowClose;
     }
 
     private void OnDisable()
     {
         CraftKeeper.OnCraftWindowRequested -= DisplayCraftWindow;
+        CraftKeeper.OnCraftWindowClosed -= DisplayCraftWindowClose;
     }
 
     private void DisplayCraftWindow(CraftSystem craftSystem, PlayerInventoryHolder playerInventory)
     {
         _craftKeeperDisplay.gameObject.SetActive(true);
         _craftKeeperDisplay.DisplayCraftWindow(craftSystem, playerInventory);
+    }
+
+    private void DisplayCraftWindowClose()
+    {
+        _craftKeeperDisplay.gameObject.SetActive(false);
     }
 }
