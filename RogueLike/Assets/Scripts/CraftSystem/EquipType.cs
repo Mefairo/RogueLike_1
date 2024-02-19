@@ -8,7 +8,7 @@ public enum EquipType
 {
     None,
     Helmet,
-    Shoulder_Pads,
+    Shoulder,
     Chest,
     Gloves,
     Pants,

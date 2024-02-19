@@ -9,7 +9,6 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
-using static UnityEditor.Progress;
 using UnityEngine.Scripting;
 
 public class ShopKeeperDisplay : MonoBehaviour

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b504e5c1a3c54264db8fd6e5d188794c, type: 3}
+  m_Name: 1 Belt 3 white
+  m_EditorClassIdentifier: 
+  ID: 311
+  DisplayName: Belt 3
+  Description: Top Belt
+  StatsDescription: 
+  Icon: {fileID: 21300000, guid: 3ea3d10196d43c3448c07f2a34f9826e, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 6131324041524727166, guid: 2cd805c64712bd24795e281d4c8815e0, type: 3}
+  MaxStackSize: 1
+  GoldValue: 100
+  StatusEffects: {fileID: 0}
+  ItemType: 4
+  ItemTierCount: 0
+  StatsList:
+  - _stats: 0
+    _valueStat:
+    - 10
+    - 20
+    - 30
+    - 40
+    - 50
+  - _stats: 3
+    _valueStat:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+  Recipes:
+  - _requiredItems:
+    - {fileID: 11400000, guid: e5c9ce1bb94df3a4b880e5398ad72d11, type: 2}
+    _amountResources: 02000000
+    _craftPrefab:
+    - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
+    _craftedItem: {fileID: 0}
+  EquipType: 9

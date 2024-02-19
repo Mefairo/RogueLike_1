@@ -1,0 +1,891 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'ru' Physical Memory: 16085 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\unity\Unity\2022.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+D:/Github/RogueLike_1/RogueLike
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+62272
+Successfully changed project path to: D:/Github/RogueLike_1/RogueLike
+D:/Github/RogueLike_1/RogueLike
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [17740] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 1492066106 [EditorId] 1492066106 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [17740] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 1492066106 [EditorId] 1492066106 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 5.71 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
+[Subsystems] Discovering subsystems at path D:/unity/Unity/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/RogueLike_1/RogueLike/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3977 MB
+    Driver:   31.0.15.4629
+Initialize mono
+Mono path[0] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003985 seconds.
+- Loaded All Assemblies, in  0.322 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 188 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.461 seconds
+Domain Reload Profiling: 783ms
+	BeginReloadAssembly (90ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (148ms)
+		LoadAssemblies (89ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (146ms)
+			TypeCache.Refresh (143ms)
+				TypeCache.ScanAssembly (125ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (461ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (413ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (276ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (84ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.626 seconds
+Refreshing native plugins compatible for Editor in 4.18 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.756 seconds
+Domain Reload Profiling: 1382ms
+	BeginReloadAssembly (133ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (420ms)
+		LoadAssemblies (251ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (248ms)
+			TypeCache.Refresh (193ms)
+				TypeCache.ScanAssembly (175ms)
+			ScanForSourceGeneratedMonoScriptInfo (41ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (756ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (579ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (372ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6575 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 115 unused Assets / (1.6 MB). Loaded Objects now: 7055.
+Memory consumption went from 278.4 MB to 276.8 MB.
+Total: 3.918700 ms (FindLiveObjects: 0.433100 ms CreateObjectMapping: 0.247900 ms MarkObjects: 2.970700 ms  DeleteObjects: 0.266000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 354304.802115 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 2/1 Pants 2 white.prefab
+  artifactKey: Guid(42f264e6a2ef6994390646e6ad936b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 2/1 Pants 2 white.prefab using Guid(42f264e6a2ef6994390646e6ad936b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab48fe422cd3fa56ad612bda6607fdd1') in 0.018284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 9.003720 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 2/2 Pants 2 green.prefab
+  artifactKey: Guid(b2cafce521d5461418c1bd82ba771e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 2/2 Pants 2 green.prefab using Guid(b2cafce521d5461418c1bd82ba771e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b1bd046fd19255d361c71c62778504') in 0.003374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 6.555499 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 2/3 Pants 2 blue.prefab
+  artifactKey: Guid(a0e461ac1bc0c7640bd7309bf066215b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 2/3 Pants 2 blue.prefab using Guid(a0e461ac1bc0c7640bd7309bf066215b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4a48ecac5f9d2be8ca90e24c5c82b4') in 0.003022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 8.404003 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 2/4 Pants 2 violet.prefab
+  artifactKey: Guid(69ac3782c098cf148919fbb368c9e108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 2/4 Pants 2 violet.prefab using Guid(69ac3782c098cf148919fbb368c9e108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc22ceb4bdfcaeb2f1a8d4a67fe9942a') in 0.002864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 7.010061 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 2/5 Pants 2 red.prefab
+  artifactKey: Guid(cc96f4a8d5ba4c14a976a7004f13bed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 2/5 Pants 2 red.prefab using Guid(cc96f4a8d5ba4c14a976a7004f13bed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ac1ba41475fe4dac1d7f1cc496e6809') in 0.002630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 1.104338 seconds.
+  path: Assets/Craft Items/Pants/Pants 2/1 Pants 2 white.asset
+  artifactKey: Guid(f86f9ad932879024d941d0e976f661cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 2/1 Pants 2 white.asset using Guid(f86f9ad932879024d941d0e976f661cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9ad5792e835113b87487a8dc3fb2b69') in 0.003331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Craft Items/Pants/Pants 2/5 Pants 2 red.asset
+  artifactKey: Guid(dff5d63ccfb2124408f370b418df9b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 2/5 Pants 2 red.asset using Guid(dff5d63ccfb2124408f370b418df9b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9165d9e91017497bfe895546c2493efa') in 0.002282 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Craft Items/Pants/Pants 2/3 Pants 2 blue.asset
+  artifactKey: Guid(0c77ca632986b2047b9dc27ca3118ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 2/3 Pants 2 blue.asset using Guid(0c77ca632986b2047b9dc27ca3118ac4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdc1fcb68224565f02d2c9347833d07c') in 0.002383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 4.626774 seconds.
+  path: Assets/Craft Items/RIng/RIng 1/2 RIng 1 green.asset
+  artifactKey: Guid(10eb34815abb9f042bf6f6358a61f8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 1/2 RIng 1 green.asset using Guid(10eb34815abb9f042bf6f6358a61f8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02f3bc293473ac88bbce86229564ac99') in 0.016046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Craft Items/RIng/RIng 1/5 RIng 1 red.asset
+  artifactKey: Guid(abe01d07b611aee4081a189f5ad90567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 1/5 RIng 1 red.asset using Guid(abe01d07b611aee4081a189f5ad90567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16fdd2fd885028fa97fb889752aa8622') in 0.012148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.988615 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/1 RIng 1 white.asset
+  artifactKey: Guid(5578f803ed74b8c44bbc4547dce9fe91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/1 RIng 1 white.asset using Guid(5578f803ed74b8c44bbc4547dce9fe91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ee49ccec8e3856967440c07516deba9') in 0.002486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/4 RIng 1 violet.asset
+  artifactKey: Guid(f4843e6e53b97b946aff4bee7320484a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/4 RIng 1 violet.asset using Guid(f4843e6e53b97b946aff4bee7320484a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691151b307c23521542a82614e488c89') in 0.002610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 2.937768 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/1 RIng 1 white.prefab
+  artifactKey: Guid(049d12c11e0b38642ac5915c2b7ff8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/1 RIng 1 white.prefab using Guid(049d12c11e0b38642ac5915c2b7ff8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9662ec0c8df4a38c10ea14f2d166028') in 0.002311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/5 RIng 1 red.prefab
+  artifactKey: Guid(78d1de3ae737d624ea6725da17965537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/5 RIng 1 red.prefab using Guid(78d1de3ae737d624ea6725da17965537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ce02b9ba1869488487a635af4f9aa6') in 0.002596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 5.019601 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/1 RIng 2 white.asset
+  artifactKey: Guid(5578f803ed74b8c44bbc4547dce9fe91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/1 RIng 2 white.asset using Guid(5578f803ed74b8c44bbc4547dce9fe91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd680d83100207913a91f0214bbe094de') in 0.002254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 3.203479 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/2 RIng 2 green.asset
+  artifactKey: Guid(e3aa7ee852a93004a881c945dfd6db6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/2 RIng 2 green.asset using Guid(e3aa7ee852a93004a881c945dfd6db6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a3dfef3e0cf37c54bbf7119532d887') in 0.002040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 2.800023 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/3 RIng 2 blue.asset
+  artifactKey: Guid(5ae71c4a4b5683b4b82a7d03bb2e28e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/3 RIng 2 blue.asset using Guid(5ae71c4a4b5683b4b82a7d03bb2e28e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adfd102c0ed3d505893f5373b9ce16bb') in 0.002141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 3.066606 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/4 RIng 2violet.asset
+  artifactKey: Guid(f4843e6e53b97b946aff4bee7320484a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/4 RIng 2violet.asset using Guid(f4843e6e53b97b946aff4bee7320484a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b7da65d1ef0eef9ce819377d8d563d') in 0.002244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 2.714375 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/5 RIng 2 red.asset
+  artifactKey: Guid(118b6817e7f2a284eaf97fe0dbd3ea1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/5 RIng 2 red.asset using Guid(118b6817e7f2a284eaf97fe0dbd3ea1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53f580fc77be6dff7836ab40b5b5a18d') in 0.002178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 8.286884 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/1 RIng 2 white.prefab
+  artifactKey: Guid(049d12c11e0b38642ac5915c2b7ff8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/1 RIng 2 white.prefab using Guid(049d12c11e0b38642ac5915c2b7ff8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4398ca79076f7e76f712fbd62824b08a') in 0.002345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 5.594945 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/3 RIng 2 blue.prefab
+  artifactKey: Guid(596e22928aa823f449983c5333169ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/3 RIng 2 blue.prefab using Guid(596e22928aa823f449983c5333169ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4cb0194505730fd4ceb861a4c7eec12') in 0.002221 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 3.269688 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/2 RIng 2 green.prefab
+  artifactKey: Guid(231e32182e93c474396cc168efd7b223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/2 RIng 2 green.prefab using Guid(231e32182e93c474396cc168efd7b223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff986959d0438cf55106fec164befb84') in 0.002112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 2.793353 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/4 RIng 2 violet.prefab
+  artifactKey: Guid(0ff6f4b7eea872e4bb8c0a1abeb19c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/4 RIng 2 violet.prefab using Guid(0ff6f4b7eea872e4bb8c0a1abeb19c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec3d79d760c3be8e5e495961a1966a9') in 0.002103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 3.814600 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/5 RIng 2 red.prefab
+  artifactKey: Guid(78d1de3ae737d624ea6725da17965537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/5 RIng 2 red.prefab using Guid(78d1de3ae737d624ea6725da17965537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb1b5edf40b4f650d2ae992c9ab8e13e') in 0.002490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 51.289527 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/5 RIng 2 red.prefab
+  artifactKey: Guid(78d1de3ae737d624ea6725da17965537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/5 RIng 2 red.prefab using Guid(78d1de3ae737d624ea6725da17965537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af21509e9d3db941f3810dcd8b91855') in 0.002643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 9.923962 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/1 RIng 2 white.prefab
+  artifactKey: Guid(049d12c11e0b38642ac5915c2b7ff8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/1 RIng 2 white.prefab using Guid(049d12c11e0b38642ac5915c2b7ff8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '006fe7102e6500764243b7e5a28208c0') in 0.002485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 3.786974 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/2 RIng 2 green.prefab
+  artifactKey: Guid(231e32182e93c474396cc168efd7b223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/2 RIng 2 green.prefab using Guid(231e32182e93c474396cc168efd7b223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75d268543a18a200772f3bd9b1fc7f11') in 0.002439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 2.557260 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/3 RIng 2 blue.prefab
+  artifactKey: Guid(596e22928aa823f449983c5333169ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/3 RIng 2 blue.prefab using Guid(596e22928aa823f449983c5333169ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b36ea6aa9784f0c6b8de4f65637fb508') in 0.002641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 2.837425 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/4 RIng 2 violet.prefab
+  artifactKey: Guid(0ff6f4b7eea872e4bb8c0a1abeb19c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/4 RIng 2 violet.prefab using Guid(0ff6f4b7eea872e4bb8c0a1abeb19c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab7c2898330f9963223f7edb2713ccf') in 0.002287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 4.402047 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/4 RIng 2 violet.prefab
+  artifactKey: Guid(0ff6f4b7eea872e4bb8c0a1abeb19c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/4 RIng 2 violet.prefab using Guid(0ff6f4b7eea872e4bb8c0a1abeb19c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8fc40c762b52dfca9258b8efefb285') in 0.002354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 51.539389 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/1 RIng 2 white.prefab
+  artifactKey: Guid(049d12c11e0b38642ac5915c2b7ff8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/1 RIng 2 white.prefab using Guid(049d12c11e0b38642ac5915c2b7ff8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3519f1d660a000ac0ba3c3a1cee6b5b2') in 0.002570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 4.531844 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/2 RIng 2 green.prefab
+  artifactKey: Guid(231e32182e93c474396cc168efd7b223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/2 RIng 2 green.prefab using Guid(231e32182e93c474396cc168efd7b223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df53689153bcc627d12898a5374e7b0') in 0.002973 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 3.962412 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/3 RIng 2 blue.prefab
+  artifactKey: Guid(596e22928aa823f449983c5333169ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/3 RIng 2 blue.prefab using Guid(596e22928aa823f449983c5333169ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e1f49edaaf46637fb49ccedc78d9d20') in 0.002563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 3.826986 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/4 RIng 2 violet.prefab
+  artifactKey: Guid(0ff6f4b7eea872e4bb8c0a1abeb19c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/4 RIng 2 violet.prefab using Guid(0ff6f4b7eea872e4bb8c0a1abeb19c7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732b597ff2e8e1b99f0b9a2d4f02c5b5') in 0.002555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 3.914645 seconds.
+  path: Assets/Prefabs/Items/RIng/RIng 2/5 RIng 2 red.prefab
+  artifactKey: Guid(78d1de3ae737d624ea6725da17965537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/RIng/RIng 2/5 RIng 2 red.prefab using Guid(78d1de3ae737d624ea6725da17965537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4ffab0c73b81e6b0a828720c5ab0c6') in 0.002596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.739939 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/1 RIng 2 white.asset
+  artifactKey: Guid(5578f803ed74b8c44bbc4547dce9fe91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/1 RIng 2 white.asset using Guid(5578f803ed74b8c44bbc4547dce9fe91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98fb8fccd704d52ed7139b3b779872a') in 0.003025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/4 RIng 2violet.asset
+  artifactKey: Guid(f4843e6e53b97b946aff4bee7320484a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/4 RIng 2violet.asset using Guid(f4843e6e53b97b946aff4bee7320484a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '519f3f3facad0bbde7b051e579965bf7') in 0.002946 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Craft Items/RIng/RIng 2/3 RIng 2 blue.asset
+  artifactKey: Guid(5ae71c4a4b5683b4b82a7d03bb2e28e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 2/3 RIng 2 blue.asset using Guid(5ae71c4a4b5683b4b82a7d03bb2e28e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97493f551c6e3026acf5025e9a293105') in 0.002805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.694 seconds
+Refreshing native plugins compatible for Editor in 2.90 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.253 seconds
+Domain Reload Profiling: 1947ms
+	BeginReloadAssembly (281ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (25ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (60ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (332ms)
+		LoadAssemblies (392ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (90ms)
+			TypeCache.Refresh (16ms)
+				TypeCache.ScanAssembly (3ms)
+			ScanForSourceGeneratedMonoScriptInfo (48ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1254ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (600ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (103ms)
+			ProcessInitializeOnLoadAttributes (381ms)
+			ProcessInitializeOnLoadMethodAttributes (84ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 3.20 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (1.6 MB). Loaded Objects now: 7077.
+Memory consumption went from 239.0 MB to 237.4 MB.
+Total: 4.018000 ms (FindLiveObjects: 0.494100 ms CreateObjectMapping: 0.256900 ms MarkObjects: 3.015400 ms  DeleteObjects: 0.250600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 328.454781 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Preview/Free_1.png
+  artifactKey: Guid(469c47bd988e0d04cae0961995725910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Preview/Free_1.png using Guid(469c47bd988e0d04cae0961995725910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '101b3969e8b12e3fb7567dd650b5958c') in 0.031465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 16.967717 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry
+  artifactKey: Guid(9c14ecf323c370642820af8c8a54678a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry using Guid(9c14ecf323c370642820af8c8a54678a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ebcd8fdc39c4c73c6c0bc5844436e6') in 0.000488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.749477 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_1.png
+  artifactKey: Guid(603e026921ee6c44ab5c48b149bb31e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_1.png using Guid(603e026921ee6c44ab5c48b149bb31e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b124ba3d028fef0f703f56acfd68a8') in 0.001858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_10.png
+  artifactKey: Guid(4849ec8655a39f845ac9bf00a3cdc724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_10.png using Guid(4849ec8655a39f845ac9bf00a3cdc724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf27130020a13f621eb5db240883769') in 0.002016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_9.png
+  artifactKey: Guid(4bf21e1a9ac79f1499cf0b24402aa8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_9.png using Guid(4bf21e1a9ac79f1499cf0b24402aa8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77ea1cc6c3f058750e36f5c90e940f74') in 0.001888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_4.png
+  artifactKey: Guid(f23b908312f9e5248ae3178f2ce53100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_4.png using Guid(f23b908312f9e5248ae3178f2ce53100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62213fe97659cb6ba5efd957640a15e9') in 0.002013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_8.png
+  artifactKey: Guid(9a7ab7ebee44b504e882c98d5d2110fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_8.png using Guid(9a7ab7ebee44b504e882c98d5d2110fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840eda0ac254e39d318a1c9c78e4c9a9') in 0.001471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.735664 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_1.png
+  artifactKey: Guid(a9a73d5e0b4dfb5458b645ccb6382299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_1.png using Guid(a9a73d5e0b4dfb5458b645ccb6382299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4e1bd8782bb30e3327728e9a3416df') in 0.002294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_8.png
+  artifactKey: Guid(9e839408613d0f2489a0116cbd3a0b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_8.png using Guid(9e839408613d0f2489a0116cbd3a0b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0f1f2bb981ea84464e04fe5dc1a9b3') in 0.001881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_7.png
+  artifactKey: Guid(9aaeab259ac13ad408630bf32f00794b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_7.png using Guid(9aaeab259ac13ad408630bf32f00794b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08dd5e59b193eebbeac43a2d38da20f7') in 0.001386 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_3.png
+  artifactKey: Guid(c35dcbf36f80e6e42a59207e19f9d018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_3.png using Guid(c35dcbf36f80e6e42a59207e19f9d018) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3dd214a0b19817bd8d064009b1546e') in 0.001567 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_10.png
+  artifactKey: Guid(6b11b3095215bac4190dee61f7cb70a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_10.png using Guid(6b11b3095215bac4190dee61f7cb70a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d76f15cf7cfbc5a767fc4f16b65ceef') in 0.001638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2845.283842 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_1.png
+  artifactKey: Guid(a9a73d5e0b4dfb5458b645ccb6382299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_1.png using Guid(a9a73d5e0b4dfb5458b645ccb6382299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6016ca16bf0aa4a697e312c3c080322') in 0.003373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.447 seconds
+Refreshing native plugins compatible for Editor in 3.04 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 20.427 seconds
+Domain Reload Profiling: 22874ms
+	BeginReloadAssembly (208ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (62ms)
+	RebuildCommonClasses (122ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (2065ms)
+		LoadAssemblies (2137ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (30ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (20427ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (639ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (404ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 3.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (1.6 MB). Loaded Objects now: 7094.
+Memory consumption went from 239.0 MB to 237.4 MB.
+Total: 4.889200 ms (FindLiveObjects: 0.445900 ms CreateObjectMapping: 0.278800 ms MarkObjects: 3.770500 ms  DeleteObjects: 0.392700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.509 seconds
+Refreshing native plugins compatible for Editor in 2.94 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.336 seconds
+Domain Reload Profiling: 1843ms
+	BeginReloadAssembly (180ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (247ms)
+		LoadAssemblies (308ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (1336ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (596ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (91ms)
+			ProcessInitializeOnLoadAttributes (382ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 3.79 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (1.6 MB). Loaded Objects now: 7111.
+Memory consumption went from 239.0 MB to 237.4 MB.
+Total: 5.369800 ms (FindLiveObjects: 0.794100 ms CreateObjectMapping: 0.298500 ms MarkObjects: 3.992600 ms  DeleteObjects: 0.283200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 122.387840 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_2.png
+  artifactKey: Guid(839905316b03ebe4e81724e502fe964c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_2.png using Guid(839905316b03ebe4e81724e502fe964c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c077a87c562070b2e0a61c4eda0001e2') in 0.022188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001725 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_4.png
+  artifactKey: Guid(e33954b3083337d47b5085c7c805f3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_4.png using Guid(e33954b3083337d47b5085c7c805f3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f5ca80a4320eb72ee3ca778a4ed7847') in 0.002010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_8.png
+  artifactKey: Guid(9e839408613d0f2489a0116cbd3a0b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_8.png using Guid(9e839408613d0f2489a0116cbd3a0b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f88c91dff4ef3b30607a554ade508e4') in 0.002351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_6.png
+  artifactKey: Guid(cd56dbc4f4bba8740be8895fda1b8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_6.png using Guid(cd56dbc4f4bba8740be8895fda1b8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e332fea08055f69bc04c1152f50eef9') in 0.002253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_10.png
+  artifactKey: Guid(6b11b3095215bac4190dee61f7cb70a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Belts/Belt_10.png using Guid(6b11b3095215bac4190dee61f7cb70a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '491e1ec0870c83f8a51dc6da830eff42') in 0.001835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 14.861301 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_2.png
+  artifactKey: Guid(33ecf9ec13a42524cbaed293f19d67c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_2.png using Guid(33ecf9ec13a42524cbaed293f19d67c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf998268bbc06c11fd0684b0ab642ae') in 0.001928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_4.png
+  artifactKey: Guid(61ae31d84fbc12544952f6509ebcd7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_4.png using Guid(61ae31d84fbc12544952f6509ebcd7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30949ced8b519ac2819c6a962be17082') in 0.001558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003947 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_7.png
+  artifactKey: Guid(9da8a3ddb1c46d04f92eceb5b1d814db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_7.png using Guid(9da8a3ddb1c46d04f92eceb5b1d814db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58273a30f9939ada3946a5e8e4d6ca4a') in 0.001819 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001119 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_10.png
+  artifactKey: Guid(49440cba7d094ad42ba19be3e4f0428c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_10.png using Guid(49440cba7d094ad42ba19be3e4f0428c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce57277ff85053a6d5e0565f2735fc46') in 0.001491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.841624 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_2.png
+  artifactKey: Guid(41d512f6762714b4ba45218434190d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_2.png using Guid(41d512f6762714b4ba45218434190d91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293bba5993ac8168fd93bfa0fc48346e') in 0.001621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_5.png
+  artifactKey: Guid(15f306496ab25f3409589b05e4dd0bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_5.png using Guid(15f306496ab25f3409589b05e4dd0bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8da35f2b78140ed420525d5d151ae26') in 0.002010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_6.png
+  artifactKey: Guid(52b21a4cd72343d40b55e08c15db3350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_6.png using Guid(52b21a4cd72343d40b55e08c15db3350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd49f4e90dc16a82e87e505279bb62b') in 0.001235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

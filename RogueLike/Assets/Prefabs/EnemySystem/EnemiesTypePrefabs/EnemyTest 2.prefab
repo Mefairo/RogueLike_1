@@ -838,6 +838,7 @@ GameObject:
   - component: {fileID: 81659036958638318}
   - component: {fileID: 677014493848522263}
   - component: {fileID: 6632073085727106967}
+  - component: {fileID: -7121304607252545346}
   - component: {fileID: 2519089986321393249}
   - component: {fileID: 916447912305714019}
   - component: {fileID: 6920353713248153746}
@@ -950,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b732854dec380af4f8416a37ac66f622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 2
+  _damage: 6
   _critMultiply: 0
   _critChance: 0
   _startTimeBtwShots: 1
@@ -958,8 +959,8 @@ MonoBehaviour:
   _lifeTime: 5
   _armor: 0
   _evasion: 0
-  _lifestealMultiply: 0
-  _lifestealChance: 0
+  _lifestealMultiply: 1
+  _lifestealChance: 100
   _initialDamage: 2
   _initialCritMultiply: 0
   _initialCritChance: 0
@@ -980,6 +981,20 @@ MonoBehaviour:
   _bonusEvasion: 0
   _bonusLifestealMultiply: 0
   _bonusLifestealChance: 0
+--- !u!114 &-7121304607252545346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762070542328839167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a73c4494512bfe24cb7253c87390045e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _minGold: 10
+  _maxGold: 20
 --- !u!114 &2519089986321393249
 MonoBehaviour:
   m_ObjectHideFlags: 0

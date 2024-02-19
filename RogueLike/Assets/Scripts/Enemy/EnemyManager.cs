@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
@@ -54,7 +53,7 @@ public class EnemyManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Instantiate(_enemyList[0], transform.position, Quaternion.identity);
+            //Instantiate(_enemyList[0], transform.position, Quaternion.identity);
             //Instantiate(_enemyList[1], transform.position, Quaternion.identity);
         }
         if (Input.GetKeyDown(KeyCode.T))

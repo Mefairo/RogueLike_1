@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b504e5c1a3c54264db8fd6e5d188794c, type: 3}
+  m_Name: 3 Chest 3 blue
+  m_EditorClassIdentifier: 
+  ID: -1
+  DisplayName: Chest Armor 3
+  Description: 
+  StatsDescription: 
+  Icon: {fileID: 21300000, guid: 00356261c4e7b904788851008a5084ec, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 6131324041524727166, guid: e18b25bfa38b46e4db1ee69cd643b331, type: 3}
+  MaxStackSize: 1
+  GoldValue: 500
+  StatusEffects: {fileID: 0}
+  ItemType: 4
+  ItemTierCount: 2
+  StatsList: []
+  Recipes: []
+  EquipType: 3

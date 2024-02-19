@@ -1,0 +1,733 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'ru' Physical Memory: 16085 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\unity\Unity\2022.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker33
+-projectPath
+D:/Github/RogueLike_1/RogueLike
+-logFile
+Logs/AssetImportWorker33.log
+-srvPort
+62272
+Successfully changed project path to: D:/Github/RogueLike_1/RogueLike
+D:/Github/RogueLike_1/RogueLike
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [7076] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 2134349829 [EditorId] 2134349829 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [7076] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 2134349829 [EditorId] 2134349829 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 5.53 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
+[Subsystems] Discovering subsystems at path D:/unity/Unity/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/RogueLike_1/RogueLike/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3977 MB
+    Driver:   31.0.15.4629
+Initialize mono
+Mono path[0] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56836
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006219 seconds.
+- Loaded All Assemblies, in  0.310 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 224 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.493 seconds
+Domain Reload Profiling: 803ms
+	BeginReloadAssembly (83ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (127ms)
+		LoadAssemblies (83ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (124ms)
+			TypeCache.Refresh (122ms)
+				TypeCache.ScanAssembly (110ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (494ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (442ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (317ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (82ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.624 seconds
+Refreshing native plugins compatible for Editor in 1.97 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.700 seconds
+Domain Reload Profiling: 1324ms
+	BeginReloadAssembly (121ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (430ms)
+		LoadAssemblies (282ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (215ms)
+			TypeCache.Refresh (175ms)
+				TypeCache.ScanAssembly (158ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (701ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (540ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (359ms)
+			ProcessInitializeOnLoadMethodAttributes (80ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.05 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6578 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 115 unused Assets / (1.6 MB). Loaded Objects now: 7058.
+Memory consumption went from 278.6 MB to 277.0 MB.
+Total: 3.813100 ms (FindLiveObjects: 0.464800 ms CreateObjectMapping: 0.243600 ms MarkObjects: 2.826900 ms  DeleteObjects: 0.277100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 373803.124819 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/1 Neck 3 white.prefab
+  artifactKey: Guid(d44b4f0a9f59315409017ad9320f2fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/1 Neck 3 white.prefab using Guid(d44b4f0a9f59315409017ad9320f2fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a31c826aa54dac64066bd27318c7d2a') in 0.016224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 2.938952 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/2 Neck 3 green.prefab
+  artifactKey: Guid(726f3bb4e4118324593f26704c4a4799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/2 Neck 3 green.prefab using Guid(726f3bb4e4118324593f26704c4a4799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '864054c191583393e3c6b9cb4dd6a5cd') in 0.002264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 2.843952 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/3 Neck 3 blue.prefab
+  artifactKey: Guid(e425f78c2558e8a4381798f98a87ea49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/3 Neck 3 blue.prefab using Guid(e425f78c2558e8a4381798f98a87ea49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ffc1e3b4ba4c4c3fe3295ea7706e4cf') in 0.002414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 2.810102 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/4 Neck 3 violet.prefab
+  artifactKey: Guid(ef271c01a6fffc5488a36300be733c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/4 Neck 3 violet.prefab using Guid(ef271c01a6fffc5488a36300be733c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90423e0e26ac63ee48ab87ca74b1a45b') in 0.003193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 3.663323 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/5 Neck 3 red.prefab
+  artifactKey: Guid(5d62f3c73dbf429409e1d2c2ba9e18b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/5 Neck 3 red.prefab using Guid(5d62f3c73dbf429409e1d2c2ba9e18b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d44821338ea994abf30ce03d2786c52') in 0.002257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 10.770002 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/1 Neck 3 white.prefab
+  artifactKey: Guid(d44b4f0a9f59315409017ad9320f2fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/1 Neck 3 white.prefab using Guid(d44b4f0a9f59315409017ad9320f2fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538bfef9bb12ecb99015fd502b661b95') in 0.002873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 2.802011 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/2 Neck 3 green.prefab
+  artifactKey: Guid(726f3bb4e4118324593f26704c4a4799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/2 Neck 3 green.prefab using Guid(726f3bb4e4118324593f26704c4a4799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7b7a73c08b86b7b378ca7ccb994115') in 0.002625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 3.214728 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/3 Neck 3 blue.prefab
+  artifactKey: Guid(e425f78c2558e8a4381798f98a87ea49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/3 Neck 3 blue.prefab using Guid(e425f78c2558e8a4381798f98a87ea49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53afd15ed98b9e6c751ebb073251f6e4') in 0.003084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 2.615870 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/4 Neck 3 violet.prefab
+  artifactKey: Guid(ef271c01a6fffc5488a36300be733c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/4 Neck 3 violet.prefab using Guid(ef271c01a6fffc5488a36300be733c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe912ac0d64b7a43bab8b27f4d47cbf') in 0.002440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 2.435707 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/5 Neck 3 red.prefab
+  artifactKey: Guid(5d62f3c73dbf429409e1d2c2ba9e18b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/5 Neck 3 red.prefab using Guid(5d62f3c73dbf429409e1d2c2ba9e18b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a914a135a8a0e59cc280588de8471d65') in 0.002854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 5.684631 seconds.
+  path: Assets/Craft Items/Neck/Neck 3/1 Neck 3 white.asset
+  artifactKey: Guid(63c83d16d383bdd4ab0aeda3fb9abcfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Neck/Neck 3/1 Neck 3 white.asset using Guid(63c83d16d383bdd4ab0aeda3fb9abcfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4690fac85085c20ad4b1c69773aa3d') in 0.003997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Craft Items/Neck/Neck 3/4 Neck 3 violet.asset
+  artifactKey: Guid(45ece10895d7a494dbf5526d7a00f820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Neck/Neck 3/4 Neck 3 violet.asset using Guid(45ece10895d7a494dbf5526d7a00f820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972e78ac22c8712d6f953604eed4045b') in 0.002301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 2.175360 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/1 Neck 3 white.prefab
+  artifactKey: Guid(d44b4f0a9f59315409017ad9320f2fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/1 Neck 3 white.prefab using Guid(d44b4f0a9f59315409017ad9320f2fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ee9abf9dd2a9881790342b6262ae58') in 0.002890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 46.555227 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/2 Neck 3 green.prefab
+  artifactKey: Guid(726f3bb4e4118324593f26704c4a4799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/2 Neck 3 green.prefab using Guid(726f3bb4e4118324593f26704c4a4799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f8ca83f2ce1ef8e9cdf200c30ec89b') in 0.003270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 7.568183 seconds.
+  path: Assets/Craft Items/Helmets/Helmet 3/3 Helmet 3_blue.asset
+  artifactKey: Guid(f4ff6974ed401734ab46eb4d024cbb3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Helmets/Helmet 3/3 Helmet 3_blue.asset using Guid(f4ff6974ed401734ab46eb4d024cbb3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5b4ff97b5e8110db2bb0fe6bb2c47e') in 0.002575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 3.214185 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/3 Neck 3 blue.prefab
+  artifactKey: Guid(e425f78c2558e8a4381798f98a87ea49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/3 Neck 3 blue.prefab using Guid(e425f78c2558e8a4381798f98a87ea49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3047e01bab7610d85f3493af581ade34') in 0.002698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 2.256866 seconds.
+  path: Assets/Craft Items/Helmets/Helmet 3/4 Helmet 3_violet.asset
+  artifactKey: Guid(eb3661c17c6fb3e46a8043b4470b3f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Helmets/Helmet 3/4 Helmet 3_violet.asset using Guid(eb3661c17c6fb3e46a8043b4470b3f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33802528e4505c97678aed28c78438e') in 0.002549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 5.673661 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/4 Neck 3 violet.prefab
+  artifactKey: Guid(ef271c01a6fffc5488a36300be733c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/4 Neck 3 violet.prefab using Guid(ef271c01a6fffc5488a36300be733c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059577d46edd77b705e3a2e5be26ff47') in 0.002651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 2.262432 seconds.
+  path: Assets/Craft Items/Helmets/Helmet 3/5 Helmet 3_red.asset
+  artifactKey: Guid(5d70b3b1e0eaf6a4a9a4f725354937f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Helmets/Helmet 3/5 Helmet 3_red.asset using Guid(5d70b3b1e0eaf6a4a9a4f725354937f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7fdb8ac3e9f56feda0911ad7541b35') in 0.002052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 3.066806 seconds.
+  path: Assets/Prefabs/Items/Neck/Neck 3/5 Neck 3 red.prefab
+  artifactKey: Guid(5d62f3c73dbf429409e1d2c2ba9e18b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Neck/Neck 3/5 Neck 3 red.prefab using Guid(5d62f3c73dbf429409e1d2c2ba9e18b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67bf974ea81e54e3026889114dd73ca1') in 0.003164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 208.363619 seconds.
+  path: Assets/Sprites/Inventory/Pants/Pants 3/Pants 2 Blue.png
+  artifactKey: Guid(fe5e9917586d34e4a9a83a879776ec0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Pants/Pants 3/Pants 2 Blue.png using Guid(fe5e9917586d34e4a9a83a879776ec0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15bc86feea42f63cc9361d9f1d87dd5b') in 0.002812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Inventory/Pants/Pants 3/Pants 2 Red.png
+  artifactKey: Guid(491af2a58ba81164194d092a599e44bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Pants/Pants 3/Pants 2 Red.png using Guid(491af2a58ba81164194d092a599e44bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632508586844c45f8162367891d629d5') in 0.001835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.113959 seconds.
+  path: Assets/Sprites/Inventory/Pants/Pants 3/Pants 3 blue.png
+  artifactKey: Guid(e45323e518bb71f418efd9e201f373b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Pants/Pants 3/Pants 3 blue.png using Guid(e45323e518bb71f418efd9e201f373b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1889aaf009d6a4ce33f73dbd1fc9e82a') in 0.002918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Inventory/Pants/Pants 3/Pants 3 violet.png
+  artifactKey: Guid(77f9d48839015d34a9918eb4801abb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Pants/Pants 3/Pants 3 violet.png using Guid(77f9d48839015d34a9918eb4801abb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05c1d3dd89b933a2735cb824780c08e') in 0.002326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 10.764990 seconds.
+  path: Assets/Sprites/Inventory/Pants/Pants 3/Pants 3 blue.png
+  artifactKey: Guid(e45323e518bb71f418efd9e201f373b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Pants/Pants 3/Pants 3 blue.png using Guid(e45323e518bb71f418efd9e201f373b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbffce3e935151772184b25843d7821d') in 0.001715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Inventory/Pants/Pants 3/Pants 3 white.png
+  artifactKey: Guid(5253a076574e4054e8b09806983c65f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Pants/Pants 3/Pants 3 white.png using Guid(5253a076574e4054e8b09806983c65f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff17a00049a23e3dc0a1b61a3e4afe3e') in 0.001846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 9.131615 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/1 Pants 2 white.asset
+  artifactKey: Guid(0890c503e040c854fb614a4333b722fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/1 Pants 2 white.asset using Guid(0890c503e040c854fb614a4333b722fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708466d77aabe044917dd91afecc0379') in 0.002608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/4 Pants 2 violet.asset
+  artifactKey: Guid(04a88a3e1847e1144b414dd74430fb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/4 Pants 2 violet.asset using Guid(04a88a3e1847e1144b414dd74430fb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7cadba15999c7e7f394dcd8abbb86ed') in 0.002771 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 3.355072 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/1 Pants 3 white.asset
+  artifactKey: Guid(0890c503e040c854fb614a4333b722fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/1 Pants 3 white.asset using Guid(0890c503e040c854fb614a4333b722fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4cac6a0bd61dfd42bf86c2d640d35cd') in 0.001998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 2.997092 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/2 Pants 3 green.asset
+  artifactKey: Guid(697fb8f4407688a4fb421dd78d14c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/2 Pants 3 green.asset using Guid(697fb8f4407688a4fb421dd78d14c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb3cd07fd6c6f8ed8ae55f3d5094f150') in 0.002077 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 2.739134 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/3 Pants 3 blue.asset
+  artifactKey: Guid(d47faeea78718884284dc1f7cceeb77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/3 Pants 3 blue.asset using Guid(d47faeea78718884284dc1f7cceeb77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94160e71f74b1a3887df77f04d15635f') in 0.002513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 2.678039 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/4 Pants 3 violet.asset
+  artifactKey: Guid(04a88a3e1847e1144b414dd74430fb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/4 Pants 3 violet.asset using Guid(04a88a3e1847e1144b414dd74430fb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c6b84a566310f521c2c311a6672f10') in 0.002222 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 2.682135 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/5 Pants 3red.asset
+  artifactKey: Guid(ecdff38f042f4894da8e811837e4fc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/5 Pants 3red.asset using Guid(ecdff38f042f4894da8e811837e4fc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbeb8e5efb7794cec36f31354bb18128') in 0.002057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 42.297222 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/1 Pants 2 white.prefab
+  artifactKey: Guid(a90d50effc910e349a3170e185f6cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/1 Pants 2 white.prefab using Guid(a90d50effc910e349a3170e185f6cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46fcf7e30d86b4b0afcd340c62a3bb5c') in 0.002845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/1 Pants 3 white.asset
+  artifactKey: Guid(0890c503e040c854fb614a4333b722fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/1 Pants 3 white.asset using Guid(0890c503e040c854fb614a4333b722fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d376ed328aebe27e2e6e339a956a9d') in 0.002796 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 5.038030 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/1 Pants 3 white.prefab
+  artifactKey: Guid(a90d50effc910e349a3170e185f6cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/1 Pants 3 white.prefab using Guid(a90d50effc910e349a3170e185f6cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '711c14af13b29ece472efbb3087d4bc7') in 0.002090 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 2.754965 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/2 Pants 3 green.prefab
+  artifactKey: Guid(ecd9aeebbba4e5c498b1189fa96b3731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/2 Pants 3 green.prefab using Guid(ecd9aeebbba4e5c498b1189fa96b3731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265496edf72b4d8253b205c5644bbed1') in 0.002481 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 5.435286 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/3 Pants 3 blue.prefab
+  artifactKey: Guid(ced5f0a25c34b984491709158ff551a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/3 Pants 3 blue.prefab using Guid(ced5f0a25c34b984491709158ff551a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c4fe50a6aca99a19f2b2d8ea8883f7') in 0.002124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 3.015868 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/4 Pants 3 violet.prefab
+  artifactKey: Guid(7e903228c3c2acd42bf1ba0602e1be8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/4 Pants 3 violet.prefab using Guid(7e903228c3c2acd42bf1ba0602e1be8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727dc90f2eace0c9fd207de01eefc114') in 0.002425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 2.661364 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/5 Pants 3 red.prefab
+  artifactKey: Guid(80d8cbc66513efe44be814bfe45205f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/5 Pants 3 red.prefab using Guid(80d8cbc66513efe44be814bfe45205f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a24e37fffb970216c08c568dbbeab0') in 0.002200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 4.369811 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/1 Pants 3 white.prefab
+  artifactKey: Guid(a90d50effc910e349a3170e185f6cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/1 Pants 3 white.prefab using Guid(a90d50effc910e349a3170e185f6cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f05f05b1192c21882191f7514e37cd1') in 0.002658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 3.295066 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/2 Pants 3 green.prefab
+  artifactKey: Guid(ecd9aeebbba4e5c498b1189fa96b3731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/2 Pants 3 green.prefab using Guid(ecd9aeebbba4e5c498b1189fa96b3731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973ace3fe3260997e673178459e4f4c9') in 0.002554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 3.859184 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/3 Pants 3 blue.prefab
+  artifactKey: Guid(ced5f0a25c34b984491709158ff551a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/3 Pants 3 blue.prefab using Guid(ced5f0a25c34b984491709158ff551a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1577794c0a9dd1577761d938908cea7f') in 0.002769 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 7.290444 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/4 Pants 3 violet.prefab
+  artifactKey: Guid(7e903228c3c2acd42bf1ba0602e1be8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/4 Pants 3 violet.prefab using Guid(7e903228c3c2acd42bf1ba0602e1be8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce18f9d4c9065c2ae1a705a82536e56') in 0.002647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 6.337483 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/5 Pants 3 red.prefab
+  artifactKey: Guid(80d8cbc66513efe44be814bfe45205f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/5 Pants 3 red.prefab using Guid(80d8cbc66513efe44be814bfe45205f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b540798e0022fa8d7fe9eb9f819f5a7') in 0.002994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 87.324309 seconds.
+  path: Assets/Craft Items/Neck/Neck 3/1 Neck 3 white.asset
+  artifactKey: Guid(63c83d16d383bdd4ab0aeda3fb9abcfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Neck/Neck 3/1 Neck 3 white.asset using Guid(63c83d16d383bdd4ab0aeda3fb9abcfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627ff221d2eb1b5b5a302af127a672fe') in 0.002329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.951055 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/2 Pants 3 green.asset
+  artifactKey: Guid(697fb8f4407688a4fb421dd78d14c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/2 Pants 3 green.asset using Guid(697fb8f4407688a4fb421dd78d14c398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b22c995aeb8cbedef34c2464c39f5a9') in 0.002663 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/4 Pants 3 violet.asset
+  artifactKey: Guid(04a88a3e1847e1144b414dd74430fb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/4 Pants 3 violet.asset using Guid(04a88a3e1847e1144b414dd74430fb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc4be21deadfad9f1651f6671ce86481') in 0.002943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 41.747417 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/2 Pants 3 green.prefab
+  artifactKey: Guid(ecd9aeebbba4e5c498b1189fa96b3731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/2 Pants 3 green.prefab using Guid(ecd9aeebbba4e5c498b1189fa96b3731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a2a9fa7fd7ba51d26a3f2b3c5cab1f') in 0.003373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 12.943753 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/1 Pants 3 white.prefab
+  artifactKey: Guid(a90d50effc910e349a3170e185f6cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/1 Pants 3 white.prefab using Guid(a90d50effc910e349a3170e185f6cbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ca368a59e44901cc479d83153201ab') in 0.003050 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 3.034182 seconds.
+  path: Assets/Craft Items/Neck/Neck 3/2 Neck 3 green.asset
+  artifactKey: Guid(95122c270944a194092084d89b790910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Neck/Neck 3/2 Neck 3 green.asset using Guid(95122c270944a194092084d89b790910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb88728450be7872edecb8797d92f3d') in 0.002040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 2.357388 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/2 Pants 3 green.prefab
+  artifactKey: Guid(ecd9aeebbba4e5c498b1189fa96b3731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/2 Pants 3 green.prefab using Guid(ecd9aeebbba4e5c498b1189fa96b3731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7deffbd1a436f9f4824b78fb8e5ab249') in 0.003024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 4.969732 seconds.
+  path: Assets/Craft Items/Neck/Neck 3/3 Neck 3 blue.asset
+  artifactKey: Guid(28c34cdc554576d4099427c7c88f0d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Neck/Neck 3/3 Neck 3 blue.asset using Guid(28c34cdc554576d4099427c7c88f0d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae6fb56618c4f69bce5ac22040b4cf3') in 0.001986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 3.639729 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/3 Pants 3 blue.prefab
+  artifactKey: Guid(ced5f0a25c34b984491709158ff551a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/3 Pants 3 blue.prefab using Guid(ced5f0a25c34b984491709158ff551a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b167f023d1ba5fc0ad769fb3e63486') in 0.002793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 6.640820 seconds.
+  path: Assets/Craft Items/Neck/Neck 3/4 Neck 3 violet.asset
+  artifactKey: Guid(45ece10895d7a494dbf5526d7a00f820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Neck/Neck 3/4 Neck 3 violet.asset using Guid(45ece10895d7a494dbf5526d7a00f820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d029a3de05cf1cc3de3ab8de8647eec') in 0.002307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 2.388865 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/4 Pants 3 violet.prefab
+  artifactKey: Guid(7e903228c3c2acd42bf1ba0602e1be8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/4 Pants 3 violet.prefab using Guid(7e903228c3c2acd42bf1ba0602e1be8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf04be4657f996f1bdad48c968f4330') in 0.003179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 1.498962 seconds.
+  path: Assets/Craft Items/Neck/Neck 3/5 Neck 3 red.asset
+  artifactKey: Guid(0a0f23fadaa187e4b916285b37339a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Neck/Neck 3/5 Neck 3 red.asset using Guid(0a0f23fadaa187e4b916285b37339a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be755e0675f66119325d1c121515f18c') in 0.002092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 1.535890 seconds.
+  path: Assets/Prefabs/Items/Pants/Pants 3/5 Pants 3 red.prefab
+  artifactKey: Guid(80d8cbc66513efe44be814bfe45205f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Pants/Pants 3/5 Pants 3 red.prefab using Guid(80d8cbc66513efe44be814bfe45205f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43b51af5c0cf37ab8b6eb6a9174945f') in 0.002780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 32.419753 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/1 Pants 3 white.asset
+  artifactKey: Guid(0890c503e040c854fb614a4333b722fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/1 Pants 3 white.asset using Guid(0890c503e040c854fb614a4333b722fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24e37686eaa35cb5c9dfe44a53ff7b56') in 0.004092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/4 Pants 3 violet.asset
+  artifactKey: Guid(04a88a3e1847e1144b414dd74430fb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/4 Pants 3 violet.asset using Guid(04a88a3e1847e1144b414dd74430fb71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121fccdb9c4950b91b0834a1bf656fcc') in 0.002874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Craft Items/Pants/Pants 3/5 Pants 3red.asset
+  artifactKey: Guid(ecdff38f042f4894da8e811837e4fc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Pants/Pants 3/5 Pants 3red.asset using Guid(ecdff38f042f4894da8e811837e4fc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad7424a72aed8d00e29332275180e9c') in 0.003776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 218.243136 seconds.
+  path: Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 green.png
+  artifactKey: Guid(c333626db313faf47b3e5b3fbac00fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 green.png using Guid(c333626db313faf47b3e5b3fbac00fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f15f736caeb3e66ad40a394c4f22ef4') in 0.003798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 violet.png
+  artifactKey: Guid(3d99757c83aaaa0459329e2a7fb313ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 violet.png using Guid(3d99757c83aaaa0459329e2a7fb313ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea161b9f9dcdaaf3b20eccd713af7f42') in 0.001959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 white.png
+  artifactKey: Guid(d26f83d19f4146446baa76a9d849ca65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 white.png using Guid(d26f83d19f4146446baa76a9d849ca65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87246a7674ccc7d41a1098f4775ba85') in 0.001961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.915395 seconds.
+  path: Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 green.png
+  artifactKey: Guid(c333626db313faf47b3e5b3fbac00fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 green.png using Guid(c333626db313faf47b3e5b3fbac00fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312d01316f0c6316cba777359bf5d0ef') in 0.002388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 red.png
+  artifactKey: Guid(22be1b22422425e409618373c5c6ba45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Ring/Ring 3/Ring 3 red.png using Guid(22be1b22422425e409618373c5c6ba45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f7808454621dcd1af0760519a40046c') in 0.001877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 44.853820 seconds.
+  path: Assets/Craft Items/RIng/RIng 3/2 RIng 2 green.asset
+  artifactKey: Guid(4698dcf8f49975a4981258128574129d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 3/2 RIng 2 green.asset using Guid(4698dcf8f49975a4981258128574129d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea2ffd9bddb1d681db5536d3968ee3a') in 0.003183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Craft Items/RIng/RIng 3/4 RIng 2violet.asset
+  artifactKey: Guid(3b6d762eb4d0115489d79112b781af10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/RIng/RIng 3/4 RIng 2violet.asset using Guid(3b6d762eb4d0115489d79112b781af10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0c5648a08954522daa67f5c8f1dfd1') in 0.002124 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 311
   DisplayName: Belt 1  r
-  Description: Top Belt
+  Description: 
   StatsDescription: 
   Icon: {fileID: 21300000, guid: aa7074561bef4ec45ab13f1fd157349e, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 8db5266bb992499498bc21af8f6a214a, type: 3}
   MaxStackSize: 1
-  GoldValue: 100
+  GoldValue: 1500
   StatusEffects: {fileID: 0}
   ItemType: 4
   ItemTierCount: 4

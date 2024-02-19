@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 311
   DisplayName: Belt 1
-  Description: Top Belt
+  Description: 
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 8822b482fed3ab34c9b63b51dad285f9, type: 3}
   IconBackground: {fileID: 0}

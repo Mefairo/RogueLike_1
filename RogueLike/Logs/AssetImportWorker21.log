@@ -1,0 +1,477 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'ru' Physical Memory: 16085 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\unity\Unity\2022.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker21
+-projectPath
+D:/Github/RogueLike_1/RogueLike
+-logFile
+Logs/AssetImportWorker21.log
+-srvPort
+62272
+Successfully changed project path to: D:/Github/RogueLike_1/RogueLike
+D:/Github/RogueLike_1/RogueLike
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [27484] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 3961360693 [EditorId] 3961360693 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [27484] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 3961360693 [EditorId] 3961360693 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 6.30 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
+[Subsystems] Discovering subsystems at path D:/unity/Unity/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/RogueLike_1/RogueLike/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3977 MB
+    Driver:   31.0.15.4629
+Initialize mono
+Mono path[0] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003989 seconds.
+- Loaded All Assemblies, in  0.312 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 210 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.470 seconds
+Domain Reload Profiling: 782ms
+	BeginReloadAssembly (84ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (149ms)
+		LoadAssemblies (83ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (147ms)
+			TypeCache.Refresh (146ms)
+				TypeCache.ScanAssembly (133ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (471ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (423ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (296ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (87ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.583 seconds
+Refreshing native plugins compatible for Editor in 2.36 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.696 seconds
+Domain Reload Profiling: 1280ms
+	BeginReloadAssembly (115ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (391ms)
+		LoadAssemblies (238ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (216ms)
+			TypeCache.Refresh (175ms)
+				TypeCache.ScanAssembly (158ms)
+			ScanForSourceGeneratedMonoScriptInfo (29ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (697ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (540ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (365ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.07 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6578 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 115 unused Assets / (1.6 MB). Loaded Objects now: 7058.
+Memory consumption went from 278.6 MB to 277.0 MB.
+Total: 4.012100 ms (FindLiveObjects: 0.510600 ms CreateObjectMapping: 0.269500 ms MarkObjects: 2.953800 ms  DeleteObjects: 0.277000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 370979.872424 seconds.
+  path: Assets/Craft Items/Chest/Chest 3/1 Chest 3 white.asset
+  artifactKey: Guid(14d09557b3c909a4d920beec3457e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Chest/Chest 3/1 Chest 3 white.asset using Guid(14d09557b3c909a4d920beec3457e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50996c7bd9f973bc7fc1d59b243e3664') in 0.017102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 3.643085 seconds.
+  path: Assets/Craft Items/Chest/Chest 3/2 Chest 3 green.asset
+  artifactKey: Guid(55b8032d738c06a49b4682a84f346f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Chest/Chest 3/2 Chest 3 green.asset using Guid(55b8032d738c06a49b4682a84f346f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d173a2cef65924266089381482feaf') in 0.002394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 2.943023 seconds.
+  path: Assets/Craft Items/Chest/Chest 3/3 Chest 3 blue.asset
+  artifactKey: Guid(152e357035530af48bf3322332fa3655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Chest/Chest 3/3 Chest 3 blue.asset using Guid(152e357035530af48bf3322332fa3655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ba33ae3ab158aea82c93e5690bea20') in 0.002321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 6.071523 seconds.
+  path: Assets/Craft Items/Chest/Chest 3/4 Chest 3 violet.asset
+  artifactKey: Guid(7e6ef7e4cd3e36d4fb5eed808e1306f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Chest/Chest 3/4 Chest 3 violet.asset using Guid(7e6ef7e4cd3e36d4fb5eed808e1306f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '915883609b1c120e7ef14d992df7ead9') in 0.002423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 3.581380 seconds.
+  path: Assets/Craft Items/Chest/Chest 3/5 Chest 3 red.asset
+  artifactKey: Guid(c96ae0662a37574448dd9bc74a6418bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Chest/Chest 3/5 Chest 3 red.asset using Guid(c96ae0662a37574448dd9bc74a6418bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b91ddb76233ba3978052f3e48db055') in 0.002364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 4.735576 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Scenes/UI/Background.png
+  artifactKey: Guid(b652df7400d71d949a6b0e69927b87f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Scenes/UI/Background.png using Guid(b652df7400d71d949a6b0e69927b87f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ec91afc06cd6e1a110c5e0389f08e2') in 0.003544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 33.608525 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/1 Chest 2 white.prefab
+  artifactKey: Guid(568d1338f67f4ec4d8c3a8f77dc31f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/1 Chest 2 white.prefab using Guid(568d1338f67f4ec4d8c3a8f77dc31f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76458c6cb68971dd0b4ce2d3b8cc10b1') in 0.002520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/5 Chest 2 red.prefab
+  artifactKey: Guid(230622258f581044086cbd8893b2738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/5 Chest 2 red.prefab using Guid(230622258f581044086cbd8893b2738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f68326fc85c7697acf2190fef0ab57d') in 0.002997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 8.261598 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/1 Chest 3 white.prefab
+  artifactKey: Guid(568d1338f67f4ec4d8c3a8f77dc31f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/1 Chest 3 white.prefab using Guid(568d1338f67f4ec4d8c3a8f77dc31f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f364fb76270214f72a5a02d73ea8ce0') in 0.002117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 3.101063 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/2 Chest 3 green.prefab
+  artifactKey: Guid(356f4e1e2a564074283afe00243d09b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/2 Chest 3 green.prefab using Guid(356f4e1e2a564074283afe00243d09b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3518b88b9b8419ec5773a3050eb049') in 0.002087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 3.220533 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/3 Chest 3 blue.prefab
+  artifactKey: Guid(e18b25bfa38b46e4db1ee69cd643b331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/3 Chest 3 blue.prefab using Guid(e18b25bfa38b46e4db1ee69cd643b331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5736cb132e02d1d651efd7ec506409') in 0.002040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 3.150562 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/4 Chest 3 violet.prefab
+  artifactKey: Guid(cda1c7ef974216e41a477a5e6e71462c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/4 Chest 3 violet.prefab using Guid(cda1c7ef974216e41a477a5e6e71462c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df31729b629625c024b6d43e79329ecf') in 0.002131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 2.993942 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/5 Chest 3 red.prefab
+  artifactKey: Guid(230622258f581044086cbd8893b2738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/5 Chest 3 red.prefab using Guid(230622258f581044086cbd8893b2738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fdd0087de1352534935e00ed80614f') in 0.002190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Import Request.
+  Time since last request: 5.184449 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/1 Chest 3 white.prefab
+  artifactKey: Guid(568d1338f67f4ec4d8c3a8f77dc31f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/1 Chest 3 white.prefab using Guid(568d1338f67f4ec4d8c3a8f77dc31f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395d3b42dd1d8635c7151a622ad17bf5') in 0.002806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 3.242723 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/2 Chest 3 green.prefab
+  artifactKey: Guid(356f4e1e2a564074283afe00243d09b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/2 Chest 3 green.prefab using Guid(356f4e1e2a564074283afe00243d09b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23eacf8d00915546ed4c86d248e97f63') in 0.002445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 4.443193 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/3 Chest 3 blue.prefab
+  artifactKey: Guid(e18b25bfa38b46e4db1ee69cd643b331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/3 Chest 3 blue.prefab using Guid(e18b25bfa38b46e4db1ee69cd643b331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6c45272fbbcca6ce711b7460f8560d') in 0.002575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 2.617751 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/4 Chest 3 violet.prefab
+  artifactKey: Guid(cda1c7ef974216e41a477a5e6e71462c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/4 Chest 3 violet.prefab using Guid(cda1c7ef974216e41a477a5e6e71462c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57f3c160de858e6833cd983f614d83e') in 0.002297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 3.430280 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/5 Chest 3 red.prefab
+  artifactKey: Guid(230622258f581044086cbd8893b2738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/5 Chest 3 red.prefab using Guid(230622258f581044086cbd8893b2738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61b685f508413e3da623004074af866') in 0.002319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 28.491464 seconds.
+  path: Assets/Craft Items/Chest/Chest 3/1 Chest 3 white.asset
+  artifactKey: Guid(14d09557b3c909a4d920beec3457e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Chest/Chest 3/1 Chest 3 white.asset using Guid(14d09557b3c909a4d920beec3457e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25778fc8100ab1f1dacf5809cba75204') in 0.002850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Craft Items/Chest/Chest 3/3 Chest 3 blue.asset
+  artifactKey: Guid(152e357035530af48bf3322332fa3655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Chest/Chest 3/3 Chest 3 blue.asset using Guid(152e357035530af48bf3322332fa3655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beab2b37563dd13eabbc5e8f08cacf56') in 0.002187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 1.879646 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/1 Chest 3 white.prefab
+  artifactKey: Guid(568d1338f67f4ec4d8c3a8f77dc31f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/1 Chest 3 white.prefab using Guid(568d1338f67f4ec4d8c3a8f77dc31f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bff0d3ff33378d8e445be1d44577d2f') in 0.002981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 11.637673 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/2 Chest 3 green.prefab
+  artifactKey: Guid(356f4e1e2a564074283afe00243d09b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/2 Chest 3 green.prefab using Guid(356f4e1e2a564074283afe00243d09b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb45de28f23a7d8f96df6a3eeafa77c2') in 0.002749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 6.771498 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/3 Chest 3 blue.prefab
+  artifactKey: Guid(e18b25bfa38b46e4db1ee69cd643b331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/3 Chest 3 blue.prefab using Guid(e18b25bfa38b46e4db1ee69cd643b331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9c0d3e2c8f11d0a0c5dadc7484cb55') in 0.002698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 7.717746 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/4 Chest 3 violet.prefab
+  artifactKey: Guid(cda1c7ef974216e41a477a5e6e71462c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/4 Chest 3 violet.prefab using Guid(cda1c7ef974216e41a477a5e6e71462c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6dd1bacb5bcf68eaba176fba872045') in 0.002511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 9.947147 seconds.
+  path: Assets/Prefabs/Items/Chest/Chest 3/5 Chest 3 red.prefab
+  artifactKey: Guid(230622258f581044086cbd8893b2738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Chest/Chest 3/5 Chest 3 red.prefab using Guid(230622258f581044086cbd8893b2738c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa399cd1cc56be9cff79ca587a770f8') in 0.002723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 297.332658 seconds.
+  path: Assets/Sprites/Inventory/Belts/Belts 3/Belt 2 Blue.png
+  artifactKey: Guid(8de2fb01909d2c8438a304476f13cc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Belts/Belts 3/Belt 2 Blue.png using Guid(8de2fb01909d2c8438a304476f13cc83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a54f1189e3187f471c2c728cf2b636e') in 0.002642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Inventory/Belts/Belts 3/Belt 2 White.png
+  artifactKey: Guid(b1f56fa26071c32499e7e38482bf2959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Belts/Belts 3/Belt 2 White.png using Guid(b1f56fa26071c32499e7e38482bf2959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e98114503e94eb184a5310e22ce85d') in 0.002068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Inventory/Belts/Belts 3/Belt 2 Red.png
+  artifactKey: Guid(5ae4879100577bc428f269efa75224ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Belts/Belts 3/Belt 2 Red.png using Guid(5ae4879100577bc428f269efa75224ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1110e668bd956e09a3058623ced5a24') in 0.002340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 43.749187 seconds.
+  path: Assets/Sprites/Inventory/Belts/Belts 3/Belt 3 green.png
+  artifactKey: Guid(57aec2f5b16649a428a9e0101e90ed51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Belts/Belts 3/Belt 3 green.png using Guid(57aec2f5b16649a428a9e0101e90ed51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc25d946f78de6c1071919581da35f7a') in 0.001938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Inventory/Belts/Belts 3/Belt 3 violet.png
+  artifactKey: Guid(8ddfe18248cfbac49b99e1c77ad7b879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Belts/Belts 3/Belt 3 violet.png using Guid(8ddfe18248cfbac49b99e1c77ad7b879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3d49454bacae24a707c8b920143dbf1') in 0.001694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.469901 seconds.
+  path: Assets/Sprites/Inventory/Belts/Belts 3/Belt 3 green.png
+  artifactKey: Guid(57aec2f5b16649a428a9e0101e90ed51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Belts/Belts 3/Belt 3 green.png using Guid(57aec2f5b16649a428a9e0101e90ed51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '386164e68b11578f1bb011e42f857b86') in 0.002315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Sprites/Inventory/Belts/Belts 3/Belt 3 violet.png
+  artifactKey: Guid(8ddfe18248cfbac49b99e1c77ad7b879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Inventory/Belts/Belts 3/Belt 3 violet.png using Guid(8ddfe18248cfbac49b99e1c77ad7b879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8bb7625d0cc61f9d7402e2a03c1a53c') in 0.001399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 25.348783 seconds.
+  path: Assets/Craft Items/Belt/Belt 3/2 Belt 2 green.asset
+  artifactKey: Guid(acce25ff8eebb8848b7016264a92e3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Belt/Belt 3/2 Belt 2 green.asset using Guid(acce25ff8eebb8848b7016264a92e3f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056415965d2153f6d942cc4551553433') in 0.052734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 62
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Craft Items/Belt/Belt 3/4 Belt 2 violet.asset
+  artifactKey: Guid(94c8a97079337364a8f09a3ec1bbc4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Belt/Belt 3/4 Belt 2 violet.asset using Guid(94c8a97079337364a8f09a3ec1bbc4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6349c74f68bdd0e639653731bc0f8b9') in 0.022154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 62
+========================================================================
+Received Import Request.
+  Time since last request: 117.728576 seconds.
+  path: Assets/Prefabs/Items/Belts/Belt 3/2 Belt 2 green.prefab
+  artifactKey: Guid(3bb29621c053e95449d236aa96fb499a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Belts/Belt 3/2 Belt 2 green.prefab using Guid(3bb29621c053e95449d236aa96fb499a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d700c8d6c6441f5dcc3902c21ac6b6f') in 0.034544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 71
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Prefabs/Items/Belts/Belt 3/4 Belt 2 violet.prefab
+  artifactKey: Guid(33dbb932265f954408441d82c0a30abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Belts/Belt 3/4 Belt 2 violet.prefab using Guid(33dbb932265f954408441d82c0a30abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b544060837075bef2e44878082c9d38c') in 0.024757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 71
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

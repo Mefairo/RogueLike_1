@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 111
   DisplayName: Helmet 1
-  Description: helmet 1 dasd sa asdsd sad dsdasq sad  sdasd  sadsad asdsa sdaa
+  Description: 
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 3e182177d26368c489671b6e05f377ca, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 2236d8987b366fc4d855eb176b7f0568, type: 3}
   MaxStackSize: 1
-  GoldValue: 200
+  GoldValue: 100
   StatusEffects: {fileID: 0}
   ItemType: 4
   ItemTierCount: 0

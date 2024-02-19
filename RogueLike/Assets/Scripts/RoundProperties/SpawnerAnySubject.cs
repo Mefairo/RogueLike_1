@@ -4,33 +4,31 @@ using UnityEngine;
 
 public abstract class SpawnerAnySubject : MonoBehaviour
 {
-    [SerializeField] private RoundTimer _timer;
-    [SerializeField] private GameObject _subjectSpawn;
-    [SerializeField] private float _speedSubjectSpawn;
+    [SerializeField] protected RoundTimer _timer;
+    [SerializeField] protected GameObject[] _subjectSpawn;
+    [SerializeField] protected float _speedSubjectSpawn;
+    [SerializeField] protected EnemiesRandomiser _enemiesRandomer;
 
     public List<Transform> subjectsSpawnPoints;
 
-    public GameObject SubjectSpawn => _subjectSpawn;
+    public GameObject[] SubjectSpawn => _subjectSpawn;
 
-    private void Start()
+    protected void Start()
     {
         _timer.OnEnemySpawnerActive += StartSpawnEnemy;
     }
 
-    private void StartSpawnEnemy()
+    protected void StartSpawnEnemy()
     {
-        StartCoroutine(StartSpawnEnemy1());
+        StartCoroutine(StartSpawnEnemyCor());
     }
 
-    private IEnumerator StartSpawnEnemy1()
+    protected IEnumerator StartSpawnEnemyCor()
     {
         while (_timer.CurrentTime > 0)
         {
-            Debug.Log("spawnEnemy");
-
             Transform randomEnemyPosition = subjectsSpawnPoints[Random.Range(0, subjectsSpawnPoints.Count)];
-
-            Instantiate(_subjectSpawn, randomEnemyPosition.transform.position, Quaternion.identity);
+            Instantiate(_subjectSpawn[0], randomEnemyPosition.transform.position, Quaternion.identity);
 
             yield return new WaitForSeconds(_speedSubjectSpawn);
         }

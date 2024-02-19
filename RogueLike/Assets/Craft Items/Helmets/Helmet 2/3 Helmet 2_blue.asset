@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 3 Helmet 2_blue
   m_EditorClassIdentifier: 
   ID: 112
-  DisplayName: 222
-  Description: 222
+  DisplayName: Helmet 2
+  Description: 
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 1fc948b453170f84e8aa2ac62c7e0967, type: 3}
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: aaf0e725b93616442ac3bac8b73afc9c, type: 3}
   MaxStackSize: 1
-  GoldValue: 11
+  GoldValue: 500
   StatusEffects: {fileID: 0}
   ItemType: 4
   ItemTierCount: 2

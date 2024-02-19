@@ -1,0 +1,907 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.7f1 (b16b3b16c7a0) revision 11627323'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'ru' Physical Memory: 16085 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\unity\Unity\2022.3.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker15
+-projectPath
+D:/Github/RogueLike_1/RogueLike
+-logFile
+Logs/AssetImportWorker15.log
+-srvPort
+62272
+Successfully changed project path to: D:/Github/RogueLike_1/RogueLike
+D:/Github/RogueLike_1/RogueLike
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [31288] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 326707653 [EditorId] 326707653 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [31288] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 326707653 [EditorId] 326707653 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 102.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
+[Subsystems] Discovering subsystems at path D:/unity/Unity/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Github/RogueLike_1/RogueLike/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3977 MB
+    Driver:   31.0.15.4629
+Initialize mono
+Mono path[0] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004659 seconds.
+- Loaded All Assemblies, in  0.811 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 295 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.583 seconds
+Domain Reload Profiling: 1394ms
+	BeginReloadAssembly (84ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (144ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (521ms)
+		LoadAssemblies (83ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (519ms)
+			TypeCache.Refresh (518ms)
+				TypeCache.ScanAssembly (507ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (583ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (536ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (400ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (88ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.772 seconds
+Refreshing native plugins compatible for Editor in 2.09 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.661 seconds
+Domain Reload Profiling: 1432ms
+	BeginReloadAssembly (140ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (546ms)
+		LoadAssemblies (278ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (348ms)
+			TypeCache.Refresh (307ms)
+				TypeCache.ScanAssembly (247ms)
+			ScanForSourceGeneratedMonoScriptInfo (30ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (661ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (501ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (72ms)
+			ProcessInitializeOnLoadAttributes (333ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 2.11 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6578 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 115 unused Assets / (1.6 MB). Loaded Objects now: 7058.
+Memory consumption went from 278.5 MB to 276.9 MB.
+Total: 4.181700 ms (FindLiveObjects: 0.550700 ms CreateObjectMapping: 0.532300 ms MarkObjects: 2.829900 ms  DeleteObjects: 0.267600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 357866.581586 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_1.png
+  artifactKey: Guid(f8bac558190ebf54a99e3764c03249dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_1.png using Guid(f8bac558190ebf54a99e3764c03249dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046b1394a2987f3e09ebd83f7869e7b3') in 0.018760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_6.png
+  artifactKey: Guid(25978b279a6a29c4582447bb47d70638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_6.png using Guid(25978b279a6a29c4582447bb47d70638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933134d486ac2a9deb8e1c1cf2225cb3') in 0.002175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_9.png
+  artifactKey: Guid(be42db7e0ad42c24685b4d62c9621944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_9.png using Guid(be42db7e0ad42c24685b4d62c9621944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daa7748395c88ccfa03880452ed56183') in 0.001310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.846713 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_1.png
+  artifactKey: Guid(603e026921ee6c44ab5c48b149bb31e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_1.png using Guid(603e026921ee6c44ab5c48b149bb31e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cea834846b21ab3805adbe8343d5833') in 0.001783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_9.png
+  artifactKey: Guid(4bf21e1a9ac79f1499cf0b24402aa8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_9.png using Guid(4bf21e1a9ac79f1499cf0b24402aa8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae78392e1c4003353ea8c3a11691199') in 0.001860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_4.png
+  artifactKey: Guid(f23b908312f9e5248ae3178f2ce53100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_4.png using Guid(f23b908312f9e5248ae3178f2ce53100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c6972e5b9e394eca251a6e3ed8dcdbd') in 0.001273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 26.454517 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_1.png
+  artifactKey: Guid(603e026921ee6c44ab5c48b149bb31e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_1.png using Guid(603e026921ee6c44ab5c48b149bb31e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a745f86db7314b66ede6592123125fe1') in 0.001292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.525 seconds
+Refreshing native plugins compatible for Editor in 3.39 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.320 seconds
+Domain Reload Profiling: 1844ms
+	BeginReloadAssembly (174ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (260ms)
+		LoadAssemblies (320ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (18ms)
+	FinalizeReload (1320ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (600ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (387ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 2.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (1.6 MB). Loaded Objects now: 7077.
+Memory consumption went from 239.0 MB to 237.4 MB.
+Total: 4.490700 ms (FindLiveObjects: 0.703500 ms CreateObjectMapping: 0.610700 ms MarkObjects: 2.828100 ms  DeleteObjects: 0.346900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 107.613010 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_5.png
+  artifactKey: Guid(7d99a1b04132a7c469a1c960bf90f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_5.png using Guid(7d99a1b04132a7c469a1c960bf90f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '710ae8f97a5fb55ba39cd6a01ec3f0f1') in 0.026645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003497 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_1.png
+  artifactKey: Guid(f8bac558190ebf54a99e3764c03249dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_1.png using Guid(f8bac558190ebf54a99e3764c03249dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902d8efb41e0fc6d80019a719bd333ac') in 0.001511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.005331 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_6.png
+  artifactKey: Guid(25978b279a6a29c4582447bb47d70638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_6.png using Guid(25978b279a6a29c4582447bb47d70638) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9449f78cc2645d406e37a9e8e15e11ea') in 0.001888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_7.png
+  artifactKey: Guid(9da8a3ddb1c46d04f92eceb5b1d814db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_7.png using Guid(9da8a3ddb1c46d04f92eceb5b1d814db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a156bc50208047c3bae188505939ec87') in 0.001331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_9.png
+  artifactKey: Guid(be42db7e0ad42c24685b4d62c9621944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_9.png using Guid(be42db7e0ad42c24685b4d62c9621944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2de2c8d1e0c57a26dbcc75192eb45ce7') in 0.002068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_3.png
+  artifactKey: Guid(88e934221cc793949b1536ca0d2cc119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Boots/Boots_3.png using Guid(88e934221cc793949b1536ca0d2cc119) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c867cae5924b1debc47d0ee1c8f30f4a') in 0.002206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 11.676303 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_1.png
+  artifactKey: Guid(04183d213bcf2e64399062987dccd1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_1.png using Guid(04183d213bcf2e64399062987dccd1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe4b60fc2f77afc954ac5b564b33a0e') in 0.001836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001742 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_4.png
+  artifactKey: Guid(e25bdadfdd6d3ad42bdba3f3a8688e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_4.png using Guid(e25bdadfdd6d3ad42bdba3f3a8688e27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d28a9e142ea3779396179bd1f4c2237') in 0.001434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001077 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_6.png
+  artifactKey: Guid(ae1d584e94605a848940b6b613604bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_6.png using Guid(ae1d584e94605a848940b6b613604bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ccbe2a87ec312b9ba7ea4e6c8615136') in 0.002588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_7.png
+  artifactKey: Guid(01bdc5df4104da4419e2020164cb2c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_7.png using Guid(01bdc5df4104da4419e2020164cb2c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd608a5021ca0bebce69cf1f76f6d879') in 0.001723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_10.png
+  artifactKey: Guid(a0f10fff51886204d969ac64b4e84415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Bracers/Bracers_10.png using Guid(a0f10fff51886204d969ac64b4e84415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b69705ea9738ae2bb52719fdae344ba1') in 0.001513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.699464 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_1.png
+  artifactKey: Guid(00fa3cb7ab43a874b8a552ba7bc29aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_1.png using Guid(00fa3cb7ab43a874b8a552ba7bc29aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3b41157a69e34bdcf2a2b645a2889d') in 0.001652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003199 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_4.png
+  artifactKey: Guid(5e04ba78c5eeb8642bd112882bd02539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_4.png using Guid(5e04ba78c5eeb8642bd112882bd02539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '405da9897a82293d0674d0cae011e91b') in 0.001725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.004668 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_7.png
+  artifactKey: Guid(a1996c43bb27de54992ddc336b18b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_7.png using Guid(a1996c43bb27de54992ddc336b18b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b46131d75ed2f79d077c7390ef1c136') in 0.001603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000843 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_9.png
+  artifactKey: Guid(dbf4e2e6d2f4c5442acadf65e7917df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_9.png using Guid(dbf4e2e6d2f4c5442acadf65e7917df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1a4b33c47345999762a3713ad427e52') in 0.001826 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.506936 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_1.png
+  artifactKey: Guid(00fa3cb7ab43a874b8a552ba7bc29aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_1.png using Guid(00fa3cb7ab43a874b8a552ba7bc29aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd391331fe84c1ba398fbaf45d04bd712') in 0.001306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_7.png
+  artifactKey: Guid(a1996c43bb27de54992ddc336b18b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_7.png using Guid(a1996c43bb27de54992ddc336b18b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d3b75eb8afe3a421aca390c06b1482') in 0.001635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_6.png
+  artifactKey: Guid(08f12c3bf813f9f40b8d1da3bb08383c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Earrings/Earrings_6.png using Guid(08f12c3bf813f9f40b8d1da3bb08383c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a2d1711f43159abd58ccbab1f89fe1') in 0.001667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.693432 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Helmets/Helmet_1.png
+  artifactKey: Guid(17cae2ee3c78bf24bb9068925adac2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Helmets/Helmet_1.png using Guid(17cae2ee3c78bf24bb9068925adac2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93b2510115206b559b1da37fa803634') in 0.001722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002613 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Helmets/Helmet_3.png
+  artifactKey: Guid(3a33633e1ba06874694a36a52f144896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Helmets/Helmet_3.png using Guid(3a33633e1ba06874694a36a52f144896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8edbded9cfe2b95e5ed6c081c0d55e18') in 0.001531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001638 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Helmets/Helmet_6.png
+  artifactKey: Guid(e9a8390f5c126fe4ca429f01fb7306c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Helmets/Helmet_6.png using Guid(e9a8390f5c126fe4ca429f01fb7306c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f828e735d80ed376a96d8cf939803e2') in 0.001478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001163 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Helmets/Helmet_8.png
+  artifactKey: Guid(8d1329c12e8c36d4cab86754576408bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Helmets/Helmet_8.png using Guid(8d1329c12e8c36d4cab86754576408bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f56982b943594c3c7f1b4c183cf6093') in 0.001708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.473197 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_1.png
+  artifactKey: Guid(4bb85e9d81dd972438a5d43bf3dd0a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_1.png using Guid(4bb85e9d81dd972438a5d43bf3dd0a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7498a4f46d3d4b8a81fab81e061ebc82') in 0.001852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000955 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_4.png
+  artifactKey: Guid(4534d6bc204de2e499d251a94190c25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_4.png using Guid(4534d6bc204de2e499d251a94190c25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0716bc976788c9e0aca5e188f6162825') in 0.001361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000733 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_6.png
+  artifactKey: Guid(8e3c0765fb790434eb3f2260423da8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_6.png using Guid(8e3c0765fb790434eb3f2260423da8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c6ed84c5522d4a02bdf6b79d7fffa4') in 0.001310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003151 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_9.png
+  artifactKey: Guid(1c026012c3b9f914aa13097b4d9ee9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_9.png using Guid(1c026012c3b9f914aa13097b4d9ee9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf3eb7da123dbc972f23a1e7af6854ad') in 0.001835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.431955 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_1.png
+  artifactKey: Guid(4bb85e9d81dd972438a5d43bf3dd0a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_1.png using Guid(4bb85e9d81dd972438a5d43bf3dd0a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15367f208e0d555d6fada6b285be1e82') in 0.001812 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_7.png
+  artifactKey: Guid(f4db124be0e0b7b47a585b1df79edc52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_7.png using Guid(f4db124be0e0b7b47a585b1df79edc52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ccb45a0234ab96ce046b4396f71cb24') in 0.001752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_6.png
+  artifactKey: Guid(8e3c0765fb790434eb3f2260423da8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Gloves/Gloves_6.png using Guid(8e3c0765fb790434eb3f2260423da8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b13f38e85719064a49297524e18b3b93') in 0.001691 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 12.544017 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_1.png
+  artifactKey: Guid(5ee7b9426bc4cc445926a3b693d98d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_1.png using Guid(5ee7b9426bc4cc445926a3b693d98d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa1414d88d069ac129735b7614d6baa2') in 0.001809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003977 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_4.png
+  artifactKey: Guid(3252c361a003b834dab965200414190b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_4.png using Guid(3252c361a003b834dab965200414190b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472f2f87011c4a399e0dbf26ab1ddab2') in 0.001563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_6.png
+  artifactKey: Guid(a15f9eef18072634fab419257e221e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_6.png using Guid(a15f9eef18072634fab419257e221e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f014f134d0d7c70dacf801a11498490') in 0.002113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000889 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_10.png
+  artifactKey: Guid(d0f8b0c9d531af344a7e406611305de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_10.png using Guid(d0f8b0c9d531af344a7e406611305de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2edd84e7b35667d3bdbfe61a422030b3') in 0.001659 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.812175 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_1.png
+  artifactKey: Guid(5ee7b9426bc4cc445926a3b693d98d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_1.png using Guid(5ee7b9426bc4cc445926a3b693d98d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a038e2c52e96121c0fdeda2ecce764f7') in 0.002040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_8.png
+  artifactKey: Guid(3fe45cc5b469cae44bd818a9d149827b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_8.png using Guid(3fe45cc5b469cae44bd818a9d149827b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a9869c2efd906596fe07af4edacb845') in 0.001500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_10.png
+  artifactKey: Guid(d0f8b0c9d531af344a7e406611305de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Necklaces/Necklace_10.png using Guid(d0f8b0c9d531af344a7e406611305de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb8b078c6373178314d447520f35a88b') in 0.001902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.313856 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_1.png
+  artifactKey: Guid(7d4f9cff490ea9e4e8de620ec2fadcb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_1.png using Guid(7d4f9cff490ea9e4e8de620ec2fadcb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f550c939997737ed2d208eb18e550e3') in 0.001667 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_4.png
+  artifactKey: Guid(9c6dd9d8578e17e4ea242463eec35455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_4.png using Guid(9c6dd9d8578e17e4ea242463eec35455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225f704c2da6ee5d0e5dd7835f85c77d') in 0.001580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_7.png
+  artifactKey: Guid(1a7285669af7b5347b09615f2c49c9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_7.png using Guid(1a7285669af7b5347b09615f2c49c9da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c604761357a1cdd9f26b0068d234fd') in 0.001339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002704 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_10.png
+  artifactKey: Guid(8020903fc1b8a7f4c9b859d773f0c3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_10.png using Guid(8020903fc1b8a7f4c9b859d773f0c3c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d68489e65ea9049d2a813bc241425ae') in 0.001525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.489065 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_1.png
+  artifactKey: Guid(7d4f9cff490ea9e4e8de620ec2fadcb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_1.png using Guid(7d4f9cff490ea9e4e8de620ec2fadcb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b54e1f7ec822058339e11c5df337007') in 0.001930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_6.png
+  artifactKey: Guid(2b8c10f11c4cd2a4588a333aa8b91efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_6.png using Guid(2b8c10f11c4cd2a4588a333aa8b91efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7281a0324e27fe41acc8096aecb3914') in 0.001738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_5.png
+  artifactKey: Guid(f1d3902ea0d0ae54887128a101cebe41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_5.png using Guid(f1d3902ea0d0ae54887128a101cebe41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600d0e34c23bc442d944527a8941513a') in 0.001328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_9.png
+  artifactKey: Guid(c42a86e2f1b2667418ac6399820db2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Pants/Pants_9.png using Guid(c42a86e2f1b2667418ac6399820db2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b055b952d1ae3893045bf54902243c4') in 0.001348 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 13.796205 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_1.png
+  artifactKey: Guid(161d4730f36de6b42ad214d0d33e423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_1.png using Guid(161d4730f36de6b42ad214d0d33e423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbbb3851c6a447177cab57b9e4782817') in 0.001340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_4.png
+  artifactKey: Guid(f2c25ec43a8949a4f97735170fad1e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_4.png using Guid(f2c25ec43a8949a4f97735170fad1e8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d0dd8876dedba7920aa2c93959d5e6') in 0.001748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_7.png
+  artifactKey: Guid(f7781d470d15f244ea5f6e2fe0666371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_7.png using Guid(f7781d470d15f244ea5f6e2fe0666371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '503b727d5cbb7d57277f349c54e40c0d') in 0.001735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002306 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_10.png
+  artifactKey: Guid(dc1846ef57c4e5247a2cd5e71a39cdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_10.png using Guid(dc1846ef57c4e5247a2cd5e71a39cdea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05b2af1184c8d10ce15d717b1752e8f') in 0.001379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.239215 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_1.png
+  artifactKey: Guid(161d4730f36de6b42ad214d0d33e423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_1.png using Guid(161d4730f36de6b42ad214d0d33e423d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3fd29705414b5e29eaab835ef992e07') in 0.001537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_7.png
+  artifactKey: Guid(f7781d470d15f244ea5f6e2fe0666371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_7.png using Guid(f7781d470d15f244ea5f6e2fe0666371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f06963d3be8891a5ccd38dd4753dc1') in 0.001710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_5.png
+  artifactKey: Guid(c4de93e9656ab9049863d0661958483e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Rings/Ring_5.png using Guid(c4de93e9656ab9049863d0661958483e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1282d394e5d73b9a30d26b906a646979') in 0.002197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.201087 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_1.png
+  artifactKey: Guid(37ab19403e5d557408d685eb455cb0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_1.png using Guid(37ab19403e5d557408d685eb455cb0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2283a93f49866b2016f8d68530ccf11f') in 0.001688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002976 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_4.png
+  artifactKey: Guid(1fc676d28652ff445a6b6f15e038061f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_4.png using Guid(1fc676d28652ff445a6b6f15e038061f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b1e151b3ff51c0cbc32508254a26cd') in 0.001831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003993 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_7.png
+  artifactKey: Guid(7967904a51694e149af73d00d1d8c9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_7.png using Guid(7967904a51694e149af73d00d1d8c9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55284ead0cfe2966f342357c12702302') in 0.001628 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003466 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_10.png
+  artifactKey: Guid(274db4fb7e30c2d42b20eae8147e5ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_10.png using Guid(274db4fb7e30c2d42b20eae8147e5ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c01b979fef2f4b68baaf3c7f86a4276') in 0.001472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.309060 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_1.png
+  artifactKey: Guid(37ab19403e5d557408d685eb455cb0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_1.png using Guid(37ab19403e5d557408d685eb455cb0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c917401fad8df0845cce75dcfa983b89') in 0.002149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_10.png
+  artifactKey: Guid(274db4fb7e30c2d42b20eae8147e5ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_10.png using Guid(274db4fb7e30c2d42b20eae8147e5ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '685d4b0ea39b5a43c1f70ceb7e54226c') in 0.001362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_7.png
+  artifactKey: Guid(7967904a51694e149af73d00d1d8c9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/ArmorAndJewelry/Icons/Shoulders/Shoulders_7.png using Guid(7967904a51694e149af73d00d1d8c9ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106683101f94f9b2483aac9f38fd6ec7') in 0.001301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.553 seconds
+Refreshing native plugins compatible for Editor in 3.23 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.379 seconds
+Domain Reload Profiling: 1931ms
+	BeginReloadAssembly (223ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (54ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (244ms)
+		LoadAssemblies (337ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (31ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1380ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (636ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (397ms)
+			ProcessInitializeOnLoadMethodAttributes (107ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 3.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (1.6 MB). Loaded Objects now: 7094.
+Memory consumption went from 239.1 MB to 237.4 MB.
+Total: 4.741100 ms (FindLiveObjects: 0.597800 ms CreateObjectMapping: 0.285400 ms MarkObjects: 3.407800 ms  DeleteObjects: 0.448500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.470 seconds
+Refreshing native plugins compatible for Editor in 12.15 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.435 seconds
+Domain Reload Profiling: 1904ms
+	BeginReloadAssembly (176ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (220ms)
+		LoadAssemblies (289ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1436ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (657ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (428ms)
+			ProcessInitializeOnLoadMethodAttributes (99ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 3.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6380 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (1.6 MB). Loaded Objects now: 7111.
+Memory consumption went from 239.1 MB to 237.5 MB.
+Total: 4.793000 ms (FindLiveObjects: 0.767000 ms CreateObjectMapping: 0.480500 ms MarkObjects: 3.187100 ms  DeleteObjects: 0.356900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: d54d2f2da18e7612c182cf67624b6b12 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

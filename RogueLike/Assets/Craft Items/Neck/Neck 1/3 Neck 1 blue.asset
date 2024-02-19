@@ -20,7 +20,7 @@ MonoBehaviour:
   IconBackground: {fileID: 0}
   ItemPrefab: {fileID: 6131324041524727166, guid: 2f98345adfd8a6248a1b3286d06f7302, type: 3}
   MaxStackSize: 1
-  GoldValue: 100
+  GoldValue: 500
   StatusEffects: {fileID: 0}
   ItemType: 4
   ItemTierCount: 2

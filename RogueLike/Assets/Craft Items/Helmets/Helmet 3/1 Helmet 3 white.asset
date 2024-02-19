@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b504e5c1a3c54264db8fd6e5d188794c, type: 3}
+  m_Name: 1 Helmet 3 white
+  m_EditorClassIdentifier: 
+  ID: 112
+  DisplayName: Helmet 3
+  Description: 
+  StatsDescription: 
+  Icon: {fileID: 21300000, guid: 5216045dc2d6ecf419db578badb3a9e1, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 6131324041524727166, guid: 6e9f61a9e0dfc1445acb52047ce9a6ca, type: 3}
+  MaxStackSize: 1
+  GoldValue: 100
+  StatusEffects: {fileID: 0}
+  ItemType: 4
+  ItemTierCount: 0
+  StatsList:
+  - _stats: 0
+    _valueStat:
+    - 10
+    - 20
+    - 30
+    - 40
+    - 50
+  Recipes:
+  - _requiredItems:
+    - {fileID: 11400000, guid: d91d33a8564ec3c43acb0859f366b90e, type: 2}
+    - {fileID: 11400000, guid: 68e49940d379c114eb2c662222e9d137, type: 2}
+    _amountResources: 0100000003000000
+    _craftPrefab:
+    - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
+    - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
+    _craftedItem: {fileID: 0}
+  EquipType: 1
