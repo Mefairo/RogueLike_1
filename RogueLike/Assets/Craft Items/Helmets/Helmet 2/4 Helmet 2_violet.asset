@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 4 Helmet 2_violet
   m_EditorClassIdentifier: 
   ID: 112
-  DisplayName: Helmet 2
+  DisplayName: Helmet 2 v
   Description: 
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 60b4ff01fb6b59240a9ac11887ee9422, type: 3}

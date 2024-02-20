@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1 Boots 1 white
   m_EditorClassIdentifier: 
   ID: -1
-  DisplayName: Boots 1
+  DisplayName: Boots 1 w
   Description: 
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 1dfe8fa716050bc4789a4dda2ac3627e, type: 3}
@@ -24,6 +24,13 @@ MonoBehaviour:
   StatusEffects: {fileID: 0}
   ItemType: 4
   ItemTierCount: 0
-  StatsList: []
-  Recipes: []
+  StatsList:
+  - _stats: 4
+    _valueStat:
+    - 2
+  Recipes:
+  - _requiredItems: []
+    _amountResources: 
+    _craftPrefab: []
+    _craftedItem: {fileID: 0}
   EquipType: 6

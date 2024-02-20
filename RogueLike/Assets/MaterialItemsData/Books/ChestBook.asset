@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ChestBook
   m_EditorClassIdentifier: 
   ID: 50
-  DisplayName: Book of knowledge
-  Description: Book Chest
+  DisplayName: The manuscript of knowledge
+  Description: With this manuscript, you can create a chest armor
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 07166b68a8abf8244a2f42965694ad79, type: 3}
   IconBackground: {fileID: 0}

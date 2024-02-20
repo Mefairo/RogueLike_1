@@ -303,11 +303,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806377190705243457, guid: 66ab95038fad07f4994211048919e7ae, type: 3}
       propertyPath: _maxSpeedMoving
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4806377190705243457, guid: 66ab95038fad07f4994211048919e7ae, type: 3}
       propertyPath: _minSpeedMoving
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6311896129761605901, guid: 66ab95038fad07f4994211048919e7ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -405,11 +405,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4806377190705243457, guid: 66ab95038fad07f4994211048919e7ae, type: 3}
       propertyPath: _maxSpeedMoving
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4806377190705243457, guid: 66ab95038fad07f4994211048919e7ae, type: 3}
       propertyPath: _minSpeedMoving
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6311896129761605901, guid: 66ab95038fad07f4994211048919e7ae, type: 3}
       propertyPath: m_LocalScale.x
@@ -447,11 +447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2358529324118264397, guid: d6a51050e9aa16f4eb4430fdde76fbf4, type: 3}
       propertyPath: _maxSpeedMoving
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2358529324118264397, guid: d6a51050e9aa16f4eb4430fdde76fbf4, type: 3}
       propertyPath: _minSpeedMoving
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2842976968598876519, guid: d6a51050e9aa16f4eb4430fdde76fbf4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -556,11 +556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2358529324118264397, guid: d6a51050e9aa16f4eb4430fdde76fbf4, type: 3}
       propertyPath: _maxSpeedMoving
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2358529324118264397, guid: d6a51050e9aa16f4eb4430fdde76fbf4, type: 3}
       propertyPath: _minSpeedMoving
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2842976968598876519, guid: d6a51050e9aa16f4eb4430fdde76fbf4, type: 3}
       propertyPath: m_LocalPosition.x

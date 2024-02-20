@@ -187,6 +187,14 @@ PrefabInstance:
       propertyPath: _rotationSpeed
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: _maxSpeedMoving
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: _minSpeedMoving
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -383,6 +391,14 @@ PrefabInstance:
       propertyPath: _rotationSpeed
       value: 325
       objectReference: {fileID: 0}
+    - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: _maxSpeedMoving
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: _minSpeedMoving
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -465,6 +481,14 @@ PrefabInstance:
       propertyPath: _rotationSpeed
       value: 475
       objectReference: {fileID: 0}
+    - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: _maxSpeedMoving
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: _minSpeedMoving
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -538,6 +562,14 @@ PrefabInstance:
     - target: {fileID: 6833183785765369541, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: m_Name
       value: BoxTrap
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: _maxSpeedMoving
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: _minSpeedMoving
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

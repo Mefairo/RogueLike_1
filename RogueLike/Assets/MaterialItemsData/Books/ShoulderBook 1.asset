@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ShoulderBook 1
   m_EditorClassIdentifier: 
   ID: 50
-  DisplayName: Book of knowledge
-  Description: Book Shoulder
+  DisplayName: The manuscript of knowledge
+  Description: With this manuscript, you can create shoulder pads
   StatsDescription: 
   Icon: {fileID: 21300000, guid: e192b89436cfdf54cb0af826d7159400, type: 3}
   IconBackground: {fileID: 0}

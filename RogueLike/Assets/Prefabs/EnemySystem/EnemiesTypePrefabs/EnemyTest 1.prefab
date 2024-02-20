@@ -934,26 +934,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc05b32626ffe83449ffb917c57337be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 5
+  _damage: 3
   _critMultiply: 1
   _critChance: 50
   _startTimeBtwShots: 2
-  _bulletSpeed: 14
+  _bulletSpeed: 10
   _lifeTime: 5
   _armor: 0
   _evasion: 0
   _lifestealMultiply: 1
   _lifestealChance: 100
-  _initialDamage: 3
-  _initialCritMultiply: 1
-  _initialCritChance: 50
+  _initialDamage: 1
+  _initialCritMultiply: 0
+  _initialCritChance: 0
   _initialStartTimeBtwShots: 2
   _initialBulletSpeed: 10
   _initialLifeTime: 5
   _initialArmor: 0
   _initialEvasion: 0
-  _initialLifestealMultiply: 1
-  _initialLifestealChance: 100
+  _initialLifestealMultiply: 0
+  _initialLifestealChance: 0
   _bonusDamage: 0
   _bonusCritMultiply: 0
   _bonusCritChance: 0

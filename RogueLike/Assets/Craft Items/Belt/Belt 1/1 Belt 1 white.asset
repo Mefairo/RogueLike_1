@@ -41,9 +41,13 @@ MonoBehaviour:
     - 5
   Recipes:
   - _requiredItems:
-    - {fileID: 11400000, guid: e5c9ce1bb94df3a4b880e5398ad72d11, type: 2}
-    _amountResources: 02000000
+    - {fileID: 11400000, guid: 2b7e4858ca864b543a08cc2e68692c70, type: 2}
+    - {fileID: 11400000, guid: 14a47d604feda2e4e88ed9faebe58c97, type: 2}
+    - {fileID: 11400000, guid: e41f3662c208989439cfcc6a425d073e, type: 2}
+    _amountResources: 010000000300000001000000
     _craftPrefab:
+    - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
+    - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
     - {fileID: -7248620457914715481, guid: 7fd1e895d1dbdb14495fa7c354835337, type: 3}
     _craftedItem: {fileID: 0}
   EquipType: 9

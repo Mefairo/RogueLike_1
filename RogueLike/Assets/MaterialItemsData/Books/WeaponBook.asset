@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: WeaponBook
   m_EditorClassIdentifier: 
   ID: 50
-  DisplayName: Book of knowledge
-  Description: Book weapon
+  DisplayName: The manuscript of knowledge
+  Description: With this manuscript, you can create a weapon modifier
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 409264093b826e04aa401152db0254e6, type: 3}
   IconBackground: {fileID: 0}

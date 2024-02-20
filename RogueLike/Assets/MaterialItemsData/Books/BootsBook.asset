@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BootsBook
   m_EditorClassIdentifier: 
   ID: 50
-  DisplayName: Book of knowledge
-  Description: Book Boots
+  DisplayName: The manuscript of knowledge
+  Description: With this manuscript, you can create boots
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 1de56c79969bc9f47933a42b5044d9a0, type: 3}
   IconBackground: {fileID: 0}

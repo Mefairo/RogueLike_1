@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1 Chest 1 white
   m_EditorClassIdentifier: 
   ID: -1
-  DisplayName: Chest Armor 1
+  DisplayName: Chest Armor 1 w
   Description: 
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 8b9dbbbfed677604bbb3973ad0e4a3eb, type: 3}

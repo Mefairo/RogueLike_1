@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: RingBook
   m_EditorClassIdentifier: 
   ID: 50
-  DisplayName: Book of knowledge
-  Description: Book Ring
+  DisplayName: The manuscript of knowledge
+  Description: With this manuscript, you can create a ring
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 99e123de15b501e42a1cace3e816c669, type: 3}
   IconBackground: {fileID: 0}

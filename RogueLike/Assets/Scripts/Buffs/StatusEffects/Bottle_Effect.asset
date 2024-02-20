@@ -16,8 +16,8 @@ MonoBehaviour:
   Name: BottleEffect
   Description: 111
   Icon: {fileID: 21300000, guid: 6afe883fefec04446a8e55813324e158, type: 3}
-  Duration: 10
-  VOTAmount: 10
+  Duration: 5
+  VOTAmount: 5
   TickSpeed: 0
   TickAmount: 0
   Stackable: 1

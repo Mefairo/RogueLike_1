@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: BeltBook
   m_EditorClassIdentifier: 
   ID: 50
-  DisplayName: Book of knowledge
-  Description: Book Belt
+  DisplayName: The manuscript of knowledge
+  Description: With this manuscript, you can create a belt
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 45d123ec813a68143ba8e1102e0eda6f, type: 3}
   IconBackground: {fileID: 0}

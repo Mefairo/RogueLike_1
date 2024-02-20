@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: NeckBook
   m_EditorClassIdentifier: 
   ID: 50
-  DisplayName: Book of knowledge
-  Description: Book Neck
+  DisplayName: The manuscript of knowledge
+  Description: With this manuscript, you can create a amulet
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 568268b6bf3b4cd4ca13ffdbf9fa5b2c, type: 3}
   IconBackground: {fileID: 0}

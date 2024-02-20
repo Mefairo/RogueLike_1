@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: GlovesBook
   m_EditorClassIdentifier: 
   ID: 50
-  DisplayName: Book of knowledge
-  Description: Book Gloves
+  DisplayName: The manuscript of knowledge
+  Description: With this manuscript, you can create gloves
   StatsDescription: 
   Icon: {fileID: 21300000, guid: 53dc9652a902f764eb7f19ffdf9c8fa5, type: 3}
   IconBackground: {fileID: 0}

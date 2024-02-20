@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3aaedcd8c87834690fb2ca7fac8638, type: 3}
+  m_Name: Finger 1
+  m_EditorClassIdentifier: 
+  ID: 50
+  DisplayName: Finger 1
+  Description: Alchemy Ing
+  StatsDescription: 
+  Icon: {fileID: 21300000, guid: 8aac7a31778f722499e6b21dd87c3300, type: 3}
+  IconBackground: {fileID: 0}
+  ItemPrefab: {fileID: 6131324041524727166, guid: 1518eeb001e279d459629e29ea7fc3eb, type: 3}
+  MaxStackSize: 1
+  GoldValue: 100
+  StatusEffects: {fileID: 0}
+  ItemType: 2
+  ItemTierCount: 0
+  StatsList: []

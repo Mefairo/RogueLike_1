@@ -951,7 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b732854dec380af4f8416a37ac66f622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 6
+  _damage: 2
   _critMultiply: 0
   _critChance: 0
   _startTimeBtwShots: 1
@@ -959,8 +959,8 @@ MonoBehaviour:
   _lifeTime: 5
   _armor: 0
   _evasion: 0
-  _lifestealMultiply: 1
-  _lifestealChance: 100
+  _lifestealMultiply: 0
+  _lifestealChance: 0
   _initialDamage: 2
   _initialCritMultiply: 0
   _initialCritChance: 0

@@ -15,7 +15,7 @@ D:/Github/RogueLike_1/RogueLike
 -logFile
 Logs/AssetImportWorker7.log
 -srvPort
-52119
+62272
 Successfully changed project path to: D:/Github/RogueLike_1/RogueLike
 D:/Github/RogueLike_1/RogueLike
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/Github/RogueLike_1/RogueLike
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2476] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 3094955379 [EditorId] 3094955379 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [24688] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 1043398814 [EditorId] 1043398814 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [2476] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 3094955379 [EditorId] 3094955379 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [24688] Host "[IP] 192.168.0.101 [Port] 0 [Flags] 2 [Guid] 1043398814 [EditorId] 1043398814 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6VIK7N9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 8.30 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 8.02 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.7f1 (b16b3b16c7a0)
 [Subsystems] Discovering subsystems at path D:/unity/Unity/2022.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -69,49 +69,49 @@ Initialize mono
 Mono path[0] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity/Unity/2022.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/unity/Unity/2022.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003943 seconds.
-- Loaded All Assemblies, in  0.317 seconds
+Registered in 0.003838 seconds.
+- Loaded All Assemblies, in  0.295 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 229 ms
+Android Extension - Scanning For ADB Devices 183 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.578 seconds
-Domain Reload Profiling: 895ms
-	BeginReloadAssembly (94ms)
+- Finished resetting the current domain, in  0.458 seconds
+Domain Reload Profiling: 753ms
+	BeginReloadAssembly (84ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (125ms)
-		LoadAssemblies (94ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (124ms)
+		LoadAssemblies (84ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (123ms)
 			TypeCache.Refresh (121ms)
-				TypeCache.ScanAssembly (110ms)
+				TypeCache.ScanAssembly (107ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (579ms)
+	FinalizeReload (458ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (524ms)
+		SetupLoadedEditorAssemblies (410ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (343ms)
+			InitializePlatformSupportModulesInManaged (281ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (113ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (86ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -121,53 +121,53 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.747 seconds
-Refreshing native plugins compatible for Editor in 2.13 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.617 seconds
+Refreshing native plugins compatible for Editor in 3.06 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.715 seconds
-Domain Reload Profiling: 1461ms
-	BeginReloadAssembly (145ms)
+- Finished resetting the current domain, in  0.676 seconds
+Domain Reload Profiling: 1293ms
+	BeginReloadAssembly (124ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (510ms)
-		LoadAssemblies (373ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (411ms)
+		LoadAssemblies (246ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (220ms)
-			TypeCache.Refresh (176ms)
-				TypeCache.ScanAssembly (157ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (715ms)
+		AnalyzeDomain (231ms)
+			TypeCache.Refresh (178ms)
+				TypeCache.ScanAssembly (161ms)
+			ScanForSourceGeneratedMonoScriptInfo (41ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (677ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (556ms)
+		SetupLoadedEditorAssemblies (500ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (368ms)
-			ProcessInitializeOnLoadMethodAttributes (72ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (324ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 2.35 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.11 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6575 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 115 unused Assets / (1.6 MB). Loaded Objects now: 7055.
-Memory consumption went from 278.3 MB to 276.7 MB.
-Total: 4.787400 ms (FindLiveObjects: 0.511200 ms CreateObjectMapping: 0.335800 ms MarkObjects: 3.595200 ms  DeleteObjects: 0.343900 ms)
+Memory consumption went from 278.5 MB to 276.9 MB.
+Total: 4.396100 ms (FindLiveObjects: 0.428800 ms CreateObjectMapping: 0.487600 ms MarkObjects: 3.214600 ms  DeleteObjects: 0.264100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -183,64 +183,56 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 302630.297721 seconds.
-  path: Assets/RGP icons free start pack/items/mushroom_big_red.png
-  artifactKey: Guid(6270d46c6c1104b448fb5bac5bede74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/mushroom_big_red.png using Guid(6270d46c6c1104b448fb5bac5bede74d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b155f6fec14f52eca51558f42ef73dcc') in 0.016358 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Github\RogueLike_1\RogueLike\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.521 seconds
-Refreshing native plugins compatible for Editor in 2.07 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.572 seconds
+Refreshing native plugins compatible for Editor in 2.80 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.596 seconds
-Domain Reload Profiling: 2116ms
-	BeginReloadAssembly (189ms)
+- Finished resetting the current domain, in  1.372 seconds
+Domain Reload Profiling: 1943ms
+	BeginReloadAssembly (222ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (236ms)
-		LoadAssemblies (297ms)
+		CreateAndSetChildDomain (67ms)
+	RebuildCommonClasses (52ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (256ms)
+		LoadAssemblies (347ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (26ms)
-			TypeCache.Refresh (9ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (8ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1597ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1373ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (613ms)
+		SetupLoadedEditorAssemblies (645ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (48ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (97ms)
-			ProcessInitializeOnLoadAttributes (372ms)
-			ProcessInitializeOnLoadMethodAttributes (85ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (118ms)
+			ProcessInitializeOnLoadAttributes (414ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 3.64 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 4.75 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6377 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 61 unused Assets / (1.6 MB). Loaded Objects now: 7074.
-Memory consumption went from 239.0 MB to 237.3 MB.
-Total: 8.465900 ms (FindLiveObjects: 0.953600 ms CreateObjectMapping: 0.898600 ms MarkObjects: 5.917600 ms  DeleteObjects: 0.693500 ms)
+Unloading 61 unused Assets / (1.6 MB). Loaded Objects now: 7073.
+Memory consumption went from 239.0 MB to 237.4 MB.
+Total: 6.136000 ms (FindLiveObjects: 0.657700 ms CreateObjectMapping: 0.491900 ms MarkObjects: 4.649200 ms  DeleteObjects: 0.336000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -258,76 +250,60 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 120.438633 seconds.
-  path: Assets/RGP icons free start pack/items/bottle_standard_empty.png
-  artifactKey: Guid(c257574b1b8ee104582a93ecac457485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/bottle_standard_empty.png using Guid(c257574b1b8ee104582a93ecac457485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3cd02c9aa98c60a9a18ad474f906afb') in 0.018479 seconds
+  Time since last request: 353765.651112 seconds.
+  path: Assets/Craft Items/Gloves/Gloves 1/3 Gloves 1 blue.asset
+  artifactKey: Guid(c659854ca3ecdd241bafa2b3e18c6c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Gloves/Gloves 1/3 Gloves 1 blue.asset using Guid(c659854ca3ecdd241bafa2b3e18c6c94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4715d42bd5efb30ccac0c8f57257a46f') in 0.039068 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 15
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/RGP icons free start pack/items/gem_diamond_red.png
-  artifactKey: Guid(1200fd4c89ff9654483fdc0805358f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/gem_diamond_red.png using Guid(1200fd4c89ff9654483fdc0805358f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb9427df81d288f5e3b0b431023b48d') in 0.001617 seconds
+  Time since last request: 0.000021 seconds.
+  path: Assets/Craft Items/Gloves/Gloves 1/4 Gloves 1 violet.asset
+  artifactKey: Guid(4fc640c9695564546a5326fb435bb70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Gloves/Gloves 1/4 Gloves 1 violet.asset using Guid(4fc640c9695564546a5326fb435bb70f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fbf607938e4e4059a9ccb8314069a1b') in 0.007877 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 15
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/RGP icons free start pack/items/bow_wood1.png
-  artifactKey: Guid(8f908a0041a1aee4c8b02d9449ebd224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/bow_wood1.png using Guid(8f908a0041a1aee4c8b02d9449ebd224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa710c91ac0b806ba1ad7cd1bf6c9844') in 0.001696 seconds
+  Time since last request: 3.458526 seconds.
+  path: Assets/Craft Items/Gloves/Gloves 2/2 Gloves 1 green.asset
+  artifactKey: Guid(b8faa7e4469cd1f4bab2addd0ab403c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Gloves/Gloves 2/2 Gloves 1 green.asset using Guid(b8faa7e4469cd1f4bab2addd0ab403c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b9d8abae15c3f2f56efffe60aa08bf2') in 0.004113 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 16
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/RGP icons free start pack/items/bottle_standard_green.png
-  artifactKey: Guid(0edcb30428af9c34b9114c75ee984bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/bottle_standard_green.png using Guid(0edcb30428af9c34b9114c75ee984bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc677ff1484811e0bc0e36cf8e1fd6b') in 0.001987 seconds
+  Time since last request: 0.000023 seconds.
+  path: Assets/Craft Items/Gloves/Gloves 2/5 Gloves 1 red.asset
+  artifactKey: Guid(08e63bc616fd0104389030e015186598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Gloves/Gloves 2/5 Gloves 1 red.asset using Guid(08e63bc616fd0104389030e015186598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae19d1b17243b058b8a6aa528e7308b8') in 0.002193 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 16
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/RGP icons free start pack/items/cape_hood_darkyellow.png
-  artifactKey: Guid(9d7e931295e92b8419dde467e5f709b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/cape_hood_darkyellow.png using Guid(9d7e931295e92b8419dde467e5f709b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6dfc1441883a73a5a3300ebb3379eee') in 0.001403 seconds
+  Time since last request: 0.000033 seconds.
+  path: Assets/Craft Items/Gloves/Gloves 2/3 Gloves 1 blue.asset
+  artifactKey: Guid(a704a2a58d7edd8409495260d865158d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Craft Items/Gloves/Gloves 2/3 Gloves 1 blue.asset using Guid(a704a2a58d7edd8409495260d865158d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c4ed79e932eb5dbb5c67eb99a79fca') in 0.002391 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 16
 ========================================================================
 Received Import Request.
-  Time since last request: 7.306740 seconds.
-  path: Assets/RGP icons free start pack/items/shield_basic_metal.png
-  artifactKey: Guid(f270ae2815e437842921f264c20b5271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/shield_basic_metal.png using Guid(f270ae2815e437842921f264c20b5271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b9b64cde1b23bdae101a9a4d4c0e4e') in 0.002010 seconds
+  Time since last request: 53.310082 seconds.
+  path: Assets/Prefabs/Items/Gloves/Gloves 2/3 Gloves 1 blue.prefab
+  artifactKey: Guid(75d2d3cf15112ca47ad3f781a106f62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Gloves/Gloves 2/3 Gloves 1 blue.prefab using Guid(75d2d3cf15112ca47ad3f781a106f62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32fde10b20592fdb45715fde3c90dc87') in 0.003246 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 25
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/RGP icons free start pack/items/wood_log.png
-  artifactKey: Guid(65c59ccc59b5690458cb9e5324edc5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/wood_log.png using Guid(65c59ccc59b5690458cb9e5324edc5dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d82ef01e4628b8822cd47c2b1d57852') in 0.001436 seconds
+  Time since last request: 0.000013 seconds.
+  path: Assets/Prefabs/Items/Gloves/Gloves 2/5 Gloves 1 red.prefab
+  artifactKey: Guid(42446dcc5895fd94ca583ca335a148ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Items/Gloves/Gloves 2/5 Gloves 1 red.prefab using Guid(42446dcc5895fd94ca583ca335a148ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c32919ac948686a385ede75b7cc1d2') in 0.002654 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/RGP icons free start pack/items/sword_basic_blue.png
-  artifactKey: Guid(08d5ec2d201ece949a5e428ba3ea0e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/sword_basic_blue.png using Guid(08d5ec2d201ece949a5e428ba3ea0e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1dd241ae919828c7d2b0f6377a23142') in 0.001905 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/RGP icons free start pack/items/wood_logs_three.png
-  artifactKey: Guid(63af52b5b92b10c4594f1085a1a0ab94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RGP icons free start pack/items/wood_logs_three.png using Guid(63af52b5b92b10c4594f1085a1a0ab94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16af7f1954b1f244752cb27965d0b5d9') in 0.001612 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 25
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
 AssetImportWorker is now disconnected from the server
