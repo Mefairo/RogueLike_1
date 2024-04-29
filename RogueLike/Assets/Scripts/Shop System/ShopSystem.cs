@@ -34,27 +34,79 @@ public class ShopSystem
 
         for (int i = 0; i < size; i++)
         {
-            _shopInventory.Add(new ShopSlot());
+            ShopSlot newSlot = new ShopSlot();
+            newSlot.AssignEquipSlot(); // Инициализация EquipSlot
+            _shopInventory.Add(newSlot);
+
+            //_shopInventory.Add(new ShopSlot());
         }
     }
 
     public void AddToShop(InventoryItemData data, int amount)
     {
-        if(ContainsItem(data, out ShopSlot shopSlot))
+        if (data.ItemType != ItemType.Equipment)
         {
-            shopSlot.AddToStack(amount);
-            return;
+            if (ContainsItem(data, out ShopSlot shopSlot))
+            {
+                shopSlot.AddToStack(amount);
+                return;
+            }
+
+            var freeSlot = GetFreeSlot();
+            freeSlot.AssignItem(data, amount);
+        }
+    }
+
+    public void AddToShop(InventoryItemData data, ShopSlot slot, int amount)
+    {
+        if (data.ItemType != ItemType.Equipment)
+        {
+            if (ContainsItem(data, out ShopSlot shopSlot))
+            {
+                shopSlot.AddToStack(amount);
+                return;
+            }
+
+            var freeSlot = GetFreeSlot();
+            freeSlot.AssignItem(data, amount);
         }
 
-        var freeSlot = GetFreeSlot();
-        freeSlot.AssignItem(data, amount);
+        else
+        {
+            if (ContainsEquipItem(data, slot.EquipSlot.ItemTier, out ShopSlot shopSlot))
+            {
+                shopSlot.AddToStack(amount);
+                return;
+            }
+
+            var freeSlot = GetFreeEquipSlot();
+
+            if (freeSlot != null)
+            {
+                freeSlot.AssignEquipItem(data, slot, amount);
+
+            }
+        }
     }
 
     private ShopSlot GetFreeSlot()
     {
         var freeSlot = _shopInventory.FirstOrDefault(i => i.ItemData == null);
 
-        if(freeSlot == null)
+        if (freeSlot == null)
+        {
+            freeSlot = new ShopSlot();
+            _shopInventory.Add(freeSlot);
+        }
+
+        return freeSlot;
+    }
+
+    private ShopSlot GetFreeEquipSlot()
+    {
+        var freeSlot = _shopInventory.FirstOrDefault(i => i.ItemData == null && i.EquipSlot != null && i.EquipSlot.ItemTier <= 0);
+
+        if (freeSlot == null)
         {
             freeSlot = new ShopSlot();
             _shopInventory.Add(freeSlot);
@@ -67,7 +119,13 @@ public class ShopSystem
     {
         //Debug.Log("21");
         shopSlot = _shopInventory.Find(i => i.ItemData == itemToAdd);
+        return shopSlot != null;
+    }
 
+    public bool ContainsEquipItem(InventoryItemData itemToAdd, int itemTier, out ShopSlot shopSlot)
+    {
+        //Debug.Log("21");
+        shopSlot = _shopInventory.Find(i => i.ItemData == itemToAdd && i.EquipSlot.ItemTier == itemTier);
         return shopSlot != null;
     }
 

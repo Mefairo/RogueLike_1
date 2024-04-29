@@ -15,10 +15,40 @@ MonoBehaviour:
   _items:
   - ItemData: {fileID: 11400000, guid: 54316f0dbcdaf6e4abb3311cf218d21d, type: 2}
     Amount: 500
+    Slot:
+      itemData: {fileID: 0}
+      stackSize: -1
+      _itemID: -1
+      _equipSlot:
+        ItemData: {fileID: 0}
+        ItemTier: 0
   - ItemData: {fileID: 11400000, guid: bbc7098bbcd032a4b99f51d9c72d9e45, type: 2}
     Amount: 500
-  - ItemData: {fileID: 11400000, guid: 1585b014d5e1ac64c8e100248702db07, type: 2}
+    Slot:
+      itemData: {fileID: 0}
+      stackSize: -1
+      _itemID: -1
+      _equipSlot:
+        ItemData: {fileID: 0}
+        ItemTier: 0
+  - ItemData: {fileID: 11400000, guid: 02a1225ff8b1a474dbe601b23e93580a, type: 2}
     Amount: 500
+    Slot:
+      itemData: {fileID: 11400000, guid: 02a1225ff8b1a474dbe601b23e93580a, type: 2}
+      stackSize: -1
+      _itemID: -1
+      _equipSlot:
+        ItemData: {fileID: 11400000, guid: 02a1225ff8b1a474dbe601b23e93580a, type: 2}
+        ItemTier: 1
+  - ItemData: {fileID: 11400000, guid: 02a1225ff8b1a474dbe601b23e93580a, type: 2}
+    Amount: 500
+    Slot:
+      itemData: {fileID: 11400000, guid: 02a1225ff8b1a474dbe601b23e93580a, type: 2}
+      stackSize: -1
+      _itemID: -1
+      _equipSlot:
+        ItemData: {fileID: 11400000, guid: 02a1225ff8b1a474dbe601b23e93580a, type: 2}
+        ItemTier: 2
   _maxAllowedGold: 10000
   _sellMarkUp: 0
   _buyMarkUp: 0

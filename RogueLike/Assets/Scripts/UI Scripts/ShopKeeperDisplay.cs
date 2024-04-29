@@ -30,7 +30,7 @@ public class ShopKeeperDisplay : MonoBehaviour
     [Space]
     [Header("Item Preview Section")]
     [SerializeField] private Image _itemPreviewSprite;
-    //[SerializeField] private Image _backgroundPreviewSprite;
+    [SerializeField] private Image _backgroundPreviewSprite;
     [SerializeField] private TextMeshProUGUI _itemPreviewName;
     [SerializeField] private TextMeshProUGUI _itemPreviewDescription;
     [Space]
@@ -144,6 +144,15 @@ public class ShopKeeperDisplay : MonoBehaviour
         var tempSlot = new ShopSlot();
         tempSlot.AssignItem(item.Key, item.Value);
 
+        //if (tempSlot.ItemData.ItemType == ItemType.Equipment)
+        //{
+        //    tempSlot.AssignEquipSlot();
+        //    tempSlot.AssignEquipItem(tempSlot.ItemData, tempSlot, 1);
+        //}
+
+        //else
+        //    tempSlot.AssignItem(item.Key, item.Value);
+
         ShopSlotUI shopSlot = Instantiate(_shopSlotPrefab, _itemListContentPanel.transform);
         shopSlot.Init(tempSlot, _shopSystem.SellMarkUp);
     }
@@ -232,7 +241,7 @@ public class ShopKeeperDisplay : MonoBehaviour
 
             string newAmount = $"x{_shoppingCart[data]}";
             ShoppingCartItemUI shoppongCartSlot = _shoppingCartUI[data];
-            //var backgroundImage = data.IconBackground;/////////////////////////////
+            var backgroundImage = data.IconBackground;/////////////////////////////
 
             shoppongCartSlot.SetItemText(data, newAmount);
 
@@ -264,8 +273,8 @@ public class ShopKeeperDisplay : MonoBehaviour
         _itemPreviewSprite.sprite = null;
         _itemPreviewSprite.color = Color.clear;
 
-        //_backgroundPreviewSprite.sprite = null;
-        //_backgroundPreviewSprite.color = Color.clear;
+        _backgroundPreviewSprite.sprite = null;
+        _backgroundPreviewSprite.color = Color.clear;
 
         _itemPreviewName.text = "";
         _itemPreviewDescription.text = "";
@@ -286,7 +295,7 @@ public class ShopKeeperDisplay : MonoBehaviour
 
             string newAmount = $"x{_shoppingCart[data]}";
             ShoppingCartItemUI shoppongCartSlot = _shoppingCartUI[data];
-            //var backgroundImage = data.IconBackground;////////////////////////////
+            var backgroundImage = data.IconBackground;////////////////////////////
 
             shoppongCartSlot.SetItemText(data, newAmount);
         }
@@ -298,7 +307,7 @@ public class ShopKeeperDisplay : MonoBehaviour
             ShoppingCartItemUI shoppingCartTextObj = Instantiate(shoppongCartItem, _shoppingCartContentPanel.transform);
 
             string newAmount = $"x1";
-            //var backgroundImage = data.IconBackground;//////////////////////////////
+            var backgroundImage = data.IconBackground;//////////////////////////////
 
             shoppingCartTextObj.SetItemText(data, newAmount);
 
@@ -344,14 +353,14 @@ public class ShopKeeperDisplay : MonoBehaviour
         _itemPreviewSprite.sprite = data.Icon;
         _itemPreviewSprite.color = Color.white;
 
-        //if(data.IconBackground != null)
-        //{
-        //    _backgroundPreviewSprite.sprite = data.IconBackground;
-        //    _backgroundPreviewSprite.color = Color.white;
-        //}
+        if (data.IconBackground != null)
+        {
+            _backgroundPreviewSprite.sprite = data.IconBackground;
+            _backgroundPreviewSprite.color = Color.white;
+        }
 
-        //else
-        //    _backgroundPreviewSprite.color = _backgroundPreviewSprite.color.WithAlpha(0);
+        else
+            _backgroundPreviewSprite.color = _backgroundPreviewSprite.color.WithAlpha(0);
 
         _itemPreviewName.text = data.DisplayName;
         _itemPreviewDescription.text = data.Description;

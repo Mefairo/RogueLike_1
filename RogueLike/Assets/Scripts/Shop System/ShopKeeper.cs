@@ -31,7 +31,11 @@ public class ShopKeeper : MonoBehaviour, IInteractable
 
         foreach (var item in _shopItemsHeld.Items)
         {
-            _shopSystem.AddToShop(item.ItemData, item.Amount);
+            if (item.ItemData.ItemType == ItemType.Equipment)
+                _shopSystem.AddToShop(item.ItemData, item.Slot, item.Amount);
+
+            else
+                _shopSystem.AddToShop(item.ItemData, item.Amount);
         }
 
         SetRandomItems();

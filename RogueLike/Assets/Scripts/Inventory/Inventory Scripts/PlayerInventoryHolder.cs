@@ -42,4 +42,14 @@ public class PlayerInventoryHolder : InventoryHolder
 
         return false;
     }
+
+    public bool AddToInventory(ItemPrefabData data, int amount)
+    {
+        if (primaryInventorySystem.AddToInventory(data, amount))
+        {
+            return true;
+        }
+
+        return false;
+    }
 }

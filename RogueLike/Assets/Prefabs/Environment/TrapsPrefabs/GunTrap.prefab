@@ -72,10 +72,10 @@ MonoBehaviour:
   _lifestealMultiply: 0
   _lifestealChance: 0
   _initialDamage: 1
-  _initialCritMultiply: 1
-  _initialCritChance: 100
+  _initialCritMultiply: 0
+  _initialCritChance: 0
   _initialStartTimeBtwShots: 1
-  _initialBulletSpeed: 15
+  _initialBulletSpeed: 10
   _initialLifeTime: 10
   _initialArmor: 0
   _initialEvasion: 0

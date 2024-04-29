@@ -8,25 +8,52 @@ public abstract class ItemSlot : ISerializationCallbackReceiver
     [SerializeField] protected InventoryItemData itemData;
     [SerializeField] protected int stackSize;
     [SerializeField] protected int _itemID = -1;
+    [Header("Equipment Parameters")]
+    [SerializeField] protected EquipSlot _equipSlot;
 
     public InventoryItemData ItemData => itemData;
+    public EquipSlot EquipSlot => _equipSlot;
     public int StackSize => stackSize;
 
     public void ClearSlot()
     {
-        //Debug.Log("3");
         itemData = null;
         _itemID = -1;
         stackSize = -1;
+        _equipSlot = null;
+
+        if (_equipSlot != null)
+            _equipSlot.ItemTier = -1;
     }
 
+    public void AssignEquipSlot()
+    {
+        _equipSlot = new EquipSlot();
+    }
 
-    public void AssignItem(InventorySlot invSlot)
+    public void AssignEquipItem(InventorySlot invSlot)
     {
         if (itemData == invSlot.ItemData)
         {
             //Debug.Log("4");
-            AddToStack(invSlot.stackSize);
+            if (_equipSlot.ItemTier != invSlot.EquipSlot.ItemTier)
+            {
+                itemData = invSlot.itemData;
+                _itemID = itemData.ID;
+
+                _equipSlot = invSlot.EquipSlot;
+                if (_equipSlot != null)
+                {
+                    _equipSlot.ItemData = invSlot.EquipSlot.ItemData;
+                    _equipSlot.ItemTier = invSlot.EquipSlot.ItemTier;
+                }
+            }
+
+            else
+            {
+                AddToStack(invSlot.stackSize);
+            }
+
         }
 
         else
@@ -35,6 +62,63 @@ public abstract class ItemSlot : ISerializationCallbackReceiver
             itemData = invSlot.itemData;
             _itemID = itemData.ID;
             stackSize = 0;
+
+            _equipSlot = invSlot.EquipSlot;
+            if (_equipSlot != null)
+            {
+                _equipSlot.ItemData = invSlot.EquipSlot.ItemData;
+                _equipSlot.ItemTier = invSlot.EquipSlot.ItemTier;
+            }
+
+            AddToStack(invSlot.stackSize);
+        }
+    }
+
+    public void AssignEquipItem(InventoryItemData data, ShopSlot slot, int amount)
+    {
+        if (itemData == data && _equipSlot == slot.EquipSlot)
+            AddToStack(amount);
+
+        else
+        {
+            itemData = data;
+            _itemID = data.ID;
+            stackSize = 0;
+
+            if (_equipSlot != null)
+            {
+                _equipSlot.ItemData = data;
+                _equipSlot.ItemTier = slot.EquipSlot.ItemTier;
+            }
+
+            else
+                Debug.Log("eq null");
+
+            AddToStack(amount);
+        }
+
+
+    }
+
+    public void AssignItem(InventorySlot invSlot)
+    {
+        if (itemData == invSlot.ItemData)
+            AddToStack(invSlot.stackSize);
+
+        else
+        {
+            //Debug.Log("5");
+            itemData = invSlot.itemData;
+            _itemID = itemData.ID;
+            stackSize = 0;
+
+            _equipSlot = invSlot.EquipSlot;
+            if (_equipSlot != null)
+            {
+                _equipSlot.ItemData = invSlot.EquipSlot.ItemData;
+                _equipSlot.ItemTier = invSlot.EquipSlot.ItemTier;
+            }
+
             AddToStack(invSlot.stackSize);
         }
     }
@@ -63,7 +147,7 @@ public abstract class ItemSlot : ISerializationCallbackReceiver
     {
         //Debug.Log("11");
         stackSize -= amount;
-        if(stackSize <= 0)
+        if (stackSize <= 0)
             ClearSlot();
     }
 

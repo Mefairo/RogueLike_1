@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -29,6 +30,7 @@ public class ItemsSpawner : SpawnerAnySubject
             if (totalGroupChance < _itemsRandomer[i].RandomSpawn)
             {
                 var randomItemIndex = Random.Range(0, _itemsRandomer[i].Item.Length);
+                Debug.Log(randomItemIndex);
                 return _itemsRandomer[i].Item[randomItemIndex];
             }
         }
@@ -40,7 +42,7 @@ public class ItemsSpawner : SpawnerAnySubject
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            GetRandomItem();
+            //GetRandomItem();
         }
     }
 }

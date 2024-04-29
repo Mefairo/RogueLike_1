@@ -10,7 +10,7 @@ using Unity.VisualScripting;
 public class MouseItemData : MonoBehaviour
 {
     public Image ItemSprite;
-    //public Image BackgroundSprite;
+    public Image BackgroundSprite;
     public TextMeshProUGUI ItemCount;
     public InventorySlot AssignedInventorySlot;
 
@@ -23,8 +23,8 @@ public class MouseItemData : MonoBehaviour
         ItemSprite.color = Color.clear;
         ItemSprite.preserveAspect = true;
 
-        //BackgroundSprite.color = Color.clear;
-        //BackgroundSprite.preserveAspect = true;
+        BackgroundSprite.color = Color.clear;
+        BackgroundSprite.preserveAspect = true;
 
         ItemCount.text = "";
     }
@@ -33,30 +33,66 @@ public class MouseItemData : MonoBehaviour
     {
         //Debug.Log("23");
         AssignedInventorySlot.AssignItem(invSlot);
+
         UpdateMouseSlot();
-    } 
-    
-    public void UpdateMouseSlot()
+    }
+
+    public void UpdateMouseEquipItem(InventorySlot invSlot)
     {
         //Debug.Log("23");
+        AssignedInventorySlot.AssignEquipItem(invSlot);
+
+        UpdateMouseSlot();
+    }
+
+    public void UpdateMouseSlot()
+    {
         ItemSprite.sprite = AssignedInventorySlot.ItemData.Icon;
         ItemSprite.color = Color.white;
 
-        //if(AssignedInventorySlot.ItemData.IconBackground != null)
-        //{
-        //    BackgroundSprite.sprite = AssignedInventorySlot.ItemData.IconBackground;
-        //    BackgroundSprite.color = Color.white;
-        //}
-       
-        //else
-        //    BackgroundSprite.color = BackgroundSprite.color.WithAlpha(0);
+        if (AssignedInventorySlot.ItemData.IconBackground != null)
+            ChangeBackgroundColor();
+
+        else
+            BackgroundSprite.color = BackgroundSprite.color.WithAlpha(0);
 
         ItemCount.text = AssignedInventorySlot.StackSize.ToString();
 
     }
 
+    private void ChangeBackgroundColor()
+    {
+        if (AssignedInventorySlot.ItemData.IconBackground != null)
+        {
+            BackgroundSprite.sprite = AssignedInventorySlot.ItemData.IconBackground;
+
+            if (AssignedInventorySlot.EquipSlot.ItemTier == 2)
+            {
+                BackgroundSprite.color = Color.blue;
+            }
+
+            else if (AssignedInventorySlot.EquipSlot.ItemTier == 1)
+            {
+                BackgroundSprite.color = Color.green;
+            }
+
+            else if (AssignedInventorySlot.EquipSlot.ItemTier == 0)
+            {
+                BackgroundSprite.color = Color.white;
+            }
+        }
+
+        else
+            BackgroundSprite.color = BackgroundSprite.color.WithAlpha(0);
+    }
+
 
     private void Update()
+    {
+        DropItem();
+    }
+
+    private void DropItem()
     {
         if (AssignedInventorySlot.ItemData != null)
         {
@@ -64,21 +100,36 @@ public class MouseItemData : MonoBehaviour
 
             if (Mouse.current.leftButton.wasPressedThisFrame && !IsPointerOverUIObject())
             {
-                if (AssignedInventorySlot.ItemData.ItemPrefab != null)
-                    Instantiate(AssignedInventorySlot.ItemData.ItemPrefab, _pointDrop.position, Quaternion.identity);
+                //if (AssignedInventorySlot.ItemData.ItemPrefab != null)
+                //{
+                //    Instantiate(AssignedInventorySlot.ItemData.ItemPrefab, _pointDrop.position, Quaternion.identity);
+                //}
 
-                if(AssignedInventorySlot.StackSize > 1)
+                if (AssignedInventorySlot.ItemData.ItemPrefab != null)
+                {
+                    if (AssignedInventorySlot.ItemData.ItemType == ItemType.Equipment)
+                    {
+                        var dropItem = AssignedInventorySlot;
+                        dropItem.ItemData.ItemPrefab1.EquipSlot.ItemTier = dropItem.EquipSlot.ItemTier;
+                        Instantiate(dropItem.ItemData.ItemPrefab1, _pointDrop.position, Quaternion.identity);
+                    }
+
+                    else
+                        Instantiate(AssignedInventorySlot.ItemData.ItemPrefab, _pointDrop.position, Quaternion.identity);
+
+                }
+
+                if (AssignedInventorySlot.StackSize > 1)
                 {
                     AssignedInventorySlot.AddToStack(-1);
                     UpdateMouseSlot();
                 }
                 else
                 {
-                ClearSlot();
+                    ClearSlot();
                 }
             }
         }
-
     }
 
     public void ClearSlot()
@@ -90,8 +141,8 @@ public class MouseItemData : MonoBehaviour
         ItemSprite.sprite = null;
         ItemSprite.color = Color.clear;
 
-        //BackgroundSprite.sprite = null;
-        //BackgroundSprite.color = Color.clear;
+        BackgroundSprite.sprite = null;
+        BackgroundSprite.color = Color.clear;
     }
 
     public static bool IsPointerOverUIObject()

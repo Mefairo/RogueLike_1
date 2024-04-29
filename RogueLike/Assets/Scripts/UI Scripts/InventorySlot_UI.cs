@@ -9,11 +9,11 @@ using UnityEngine.Events;
 public class InventorySlot_UI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] protected Image itemSprite;
-    //[SerializeField] protected Image _backgroundSprite;
+    [SerializeField] protected Image _backgroundSprite;
     [SerializeField] protected TextMeshProUGUI itemCount;
     [SerializeField] protected InventorySlot assignedInventorySlot;
+    [Space]
     [SerializeField] protected GameObject _slotHighlight;
-
     [SerializeField] protected ItemsShowInfo _panelInfo;
 
     protected Button button;
@@ -42,30 +42,20 @@ public class InventorySlot_UI : MonoBehaviour, IPointerEnterHandler, IPointerExi
             _panelInfo.gameObject.SetActive(false);
     }
 
-    public void Init(InventorySlot slot)
+    public virtual void Init(InventorySlot slot)
     {
-        //Debug.Log("26");
         assignedInventorySlot = slot;
         UpdateUISlot(slot);
     }
 
     public void UpdateUISlot(InventorySlot slot)
     {
-        //Debug.Log("27");
         if (slot.ItemData != null)
         {
-            //Debug.Log("28");
             itemSprite.sprite = slot.ItemData.Icon;
             itemSprite.color = Color.white;
 
-            //if(slot.ItemData.IconBackground != null)
-            //{
-            //    _backgroundSprite.sprite = slot.ItemData.IconBackground;
-            //    _backgroundSprite.color = Color.white;
-            //}
-
-            //else
-            //    _backgroundSprite.color = _backgroundSprite.color.WithAlpha(0);
+            ChangeBackgroundColor(slot);
 
             if (slot.StackSize > 1)
             {
@@ -92,14 +82,40 @@ public class InventorySlot_UI : MonoBehaviour, IPointerEnterHandler, IPointerExi
         }
     }
 
+    private void ChangeBackgroundColor(InventorySlot slot)
+    {
+        if (slot.ItemData.IconBackground != null)
+        {
+            _backgroundSprite.sprite = slot.ItemData.IconBackground;
+
+            if (slot.EquipSlot.ItemTier == 2)
+            {
+                _backgroundSprite.color = Color.blue;
+            }
+
+            else if (slot.EquipSlot.ItemTier == 1)
+            {
+                _backgroundSprite.color = Color.green;
+            }
+
+            else if (slot.EquipSlot.ItemTier == 0)
+            {
+                _backgroundSprite.color = Color.white;
+            }
+        }
+
+        else
+            _backgroundSprite.color = _backgroundSprite.color.WithAlpha(0);
+    }
+
     public void ClearSlot()
     {
         //Debug.Log("33");
         itemSprite.sprite = null;
         itemSprite.color = Color.clear;
 
-        //_backgroundSprite.sprite = null;
-        //_backgroundSprite.color = Color.clear;
+        _backgroundSprite.sprite = null;
+        _backgroundSprite.color = Color.clear;
 
         itemCount.text = "";
     }

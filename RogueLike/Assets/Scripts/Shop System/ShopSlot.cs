@@ -9,4 +9,15 @@ public class ShopSlot : ItemSlot
     {
         ClearSlot();
     }
+
+    //public void UpdateShopSlot(ItemPrefabData data, int amount)
+    //{
+    //    _equipSlot = data.EquipSlot;
+    //    _equipSlot.ItemData = data.EquipSlot.ItemData;
+    //    _equipSlot.ItemTier = data.EquipSlot.ItemTier;
+
+    //    itemData = data.EquipSlot.ItemData;
+    //    stackSize = amount;
+    //    _itemID = itemData.ID;
+    //}
 }

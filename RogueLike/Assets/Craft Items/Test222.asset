@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0526485f855d748ba8a867800937b9, type: 3}
+  m_Name: Test222
+  m_EditorClassIdentifier: 
+  ID: 777
+  DisplayName: Test item 222
+  Description: z2
+  StatsDescription: 
+  Icon: {fileID: 21300000, guid: 3e182177d26368c489671b6e05f377ca, type: 3}
+  IconBackground: {fileID: 21300000, guid: 5be94715699a33c47be608698bed1bba, type: 3}
+  ItemPrefab: {fileID: 410310754035291883, guid: 5765bfe37b9cafc41a1b68016ce497c9, type: 3}
+  ItemPrefab1: {fileID: 4948624819541964541, guid: 5765bfe37b9cafc41a1b68016ce497c9, type: 3}
+  MaxStackSize: 0
+  GoldValue: 10
+  StatusEffects: {fileID: 0}
+  ItemType: 4
+  ItemTierCount: 0
+  StatsList:
+  - _stats: 0
+    _valueStat:
+    - 100
+    - 200
+    - 300
+    - 400
+    - 500
+  Recipes: []
+  EquipType: 1

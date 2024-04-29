@@ -23,4 +23,5 @@ public struct ShopInventoryItem
 {
     public InventoryItemData ItemData;
     public int Amount;
+    public ShopSlot Slot;
 }

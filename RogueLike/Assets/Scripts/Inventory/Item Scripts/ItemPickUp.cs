@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(UniqueID))]
@@ -8,6 +9,7 @@ public class ItemPickUp : MonoBehaviour
 {
     public InventoryItemData ItemData;
 
+    private ItemPrefabData _itemPrefab;
     private bool canPickUp = true;
 
     [SerializeField] private ItemPickUpSaveData itemSaveData;
@@ -17,6 +19,8 @@ public class ItemPickUp : MonoBehaviour
     {
         SaveLoad.OnLoadGame += LoadGame;
         itemSaveData = new ItemPickUpSaveData(ItemData, transform.position, transform.rotation);
+
+        _itemPrefab = GetComponentInParent<ItemPrefabData>();
     }
 
     private void Start()
@@ -57,10 +61,29 @@ public class ItemPickUp : MonoBehaviour
 
             if (!inventory) return;
 
-            if (inventory.AddToInventory(ItemData, 1))
+            if (_itemPrefab == null)
             {
-                SaveGameManager.data.collectedItems.Add(id);
-                Destroy(this.gameObject);
+                if (inventory.AddToInventory(ItemData, 1))
+                {
+                    SaveGameManager.data.collectedItems.Add(id);
+
+                    Destroy(this.gameObject);
+                    //Destroy(this._itemPrefab.gameObject);
+                }
+            }
+
+            else
+            {
+                if (_itemPrefab.EquipSlot.ItemData.ItemType == ItemType.Equipment)
+                {
+                    if (inventory.AddToInventory(_itemPrefab, 1))
+                    {
+                        SaveGameManager.data.collectedItems.Add(id);
+
+                        Destroy(this.gameObject);
+                        Destroy(this._itemPrefab.gameObject);
+                    }
+                }
             }
         }
     }

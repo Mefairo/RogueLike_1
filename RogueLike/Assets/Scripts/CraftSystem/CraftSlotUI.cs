@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class CraftSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private Image _itemSprite;
-    //[SerializeField] private Image _backgroundSprite;
+    [SerializeField] private Image _backgroundSprite;
     [SerializeField] private TextMeshProUGUI _itemName;
     [SerializeField] private CraftSlot _assignedItemSlot;
     [SerializeField] private ItemsShowInfo _panelInfo;
@@ -25,9 +25,9 @@ public class CraftSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         _itemSprite.preserveAspect = true;
         _itemSprite.color = Color.clear;
 
-        //_backgroundSprite.sprite = null;
-        //_backgroundSprite.preserveAspect = true;
-        //_backgroundSprite.color = Color.clear;
+        _backgroundSprite.sprite = null;
+        _backgroundSprite.preserveAspect = true;
+        _backgroundSprite.color = Color.clear;
 
         _itemName.text = "";
 
@@ -58,14 +58,14 @@ public class CraftSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             _itemSprite.sprite = _assignedItemSlot.ItemData.Icon;
             _itemSprite.color = Color.white;
 
-            //if(_assignedItemSlot.ItemData.IconBackground != null)
-            //{
-            //    _backgroundSprite.sprite = _assignedItemSlot.ItemData.IconBackground;
-            //    _backgroundSprite.color = Color.white;
-            //}
+            if (_assignedItemSlot.ItemData.IconBackground != null)
+            {
+                _backgroundSprite.sprite = _assignedItemSlot.ItemData.IconBackground;
+                _backgroundSprite.color = Color.white;
+            }
 
-            //else
-            //    _backgroundSprite.color = _backgroundSprite.color.WithAlpha(0);
+            else
+                _backgroundSprite.color = _backgroundSprite.color.WithAlpha(0);
 
 
             _itemName.text = $"{AssignedItemSlot.ItemData.DisplayName}";

@@ -6,8 +6,11 @@ using UnityEngine.UI;
 public class EquipSlot_UI : InventorySlot_UI
 {
     [SerializeField] private EquipType _itemType;
+    [SerializeField] private int _itemTier;
+    //[SerializeField] private ItemPrefabData _itemPrefabData;
 
     public EquipType ItemType  => _itemType;
+    //public ItemPrefabData ItemPrefabData => _itemPrefabData;
 
     public EquipDisplay ParentEquipmentDisplay { get; private set; }
 
@@ -27,4 +30,11 @@ public class EquipSlot_UI : InventorySlot_UI
     {
         ParentEquipmentDisplay?.SlotClicked(this);
     }
+
+    //public override void Init(InventorySlot slot)
+    //{
+    //    base.Init(slot);
+    //    Debug.Log("eq");
+    //    //_itemTier++;
+    //}
 }

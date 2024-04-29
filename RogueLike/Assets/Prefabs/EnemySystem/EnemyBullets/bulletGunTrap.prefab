@@ -99,11 +99,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 2
   _critMultiply: 0
-  _chanceCrit: 0
+  _critChance: 0
   _bulletSpeed: 1
   _lifeTime: 100
   _distance: 0
   _whatIsSolid:
     serializedVersion: 2
     m_Bits: 192
-  _tag: 2

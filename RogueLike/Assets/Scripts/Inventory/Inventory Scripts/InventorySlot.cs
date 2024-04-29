@@ -7,12 +7,21 @@ using TMPro;
 [System.Serializable]
 public class InventorySlot : ItemSlot
 {
+
     public InventorySlot(InventoryItemData source, int amount)
     {
         //Debug.Log("1");
         itemData = source;
-        _itemID = itemData.ID;
         stackSize = amount;
+        _itemID = itemData.ID;
+    }
+
+    public InventorySlot(EquipSlot source, int amount)
+    {
+        _equipSlot = source;
+        itemData = source.ItemData;
+        stackSize= amount;
+        _itemID = itemData.ID;
     }
 
     public InventorySlot()
@@ -21,14 +30,21 @@ public class InventorySlot : ItemSlot
         ClearSlot();
     }
 
-
-
-
-
     public void UpdateInventorySlot(InventoryItemData data, int amount)
     {
         //Debug.Log("6");
         itemData = data;
+        stackSize = amount;
+        _itemID = itemData.ID;
+    }
+
+    public void UpdateInventorySlot(ItemPrefabData data, int amount)
+    {
+        _equipSlot = data.EquipSlot;
+        _equipSlot.ItemData = data.EquipSlot.ItemData;
+        _equipSlot.ItemTier = data.EquipSlot.ItemTier;
+
+        itemData = data.EquipSlot.ItemData;
         stackSize = amount;
         _itemID = itemData.ID;
     }

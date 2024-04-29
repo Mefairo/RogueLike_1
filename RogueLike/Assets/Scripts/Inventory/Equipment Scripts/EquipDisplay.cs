@@ -10,7 +10,7 @@ public class EquipDisplay : InventoryDisplay
     public UnityAction<Player, EquipSlot_UI> OnPlayerEquip;
     public UnityAction<Player, EquipSlot_UI> OnPlayerTakeOfEquip;
 
-    private EquipSlot _equipSlot = new EquipSlot();
+    private EquipItem _equipSlot = new EquipItem();
 
 
     private void Awake()

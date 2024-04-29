@@ -1033,6 +1033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemSprite: {fileID: 5134064492111587098}
+  _backgroundSprite: {fileID: 4767588884130155976}
   _itemName: {fileID: 5234653988002242905}
   _itemCount: {fileID: 340645627729040126}
   _itemPrice: {fileID: 1754802020589595345}
@@ -1040,6 +1041,9 @@ MonoBehaviour:
     itemData: {fileID: 0}
     stackSize: -1
     _itemID: -1
+    _equipSlot:
+      ItemData: {fileID: 0}
+      ItemTier: 0
   _addItemToCartButton: {fileID: 3737160326781495188}
   _removeItemFromCartButton: {fileID: 5328456455455186601}
   _updatePreviewButton: {fileID: 8013329519713029199}
@@ -1061,7 +1065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5099721332313176763
 RectTransform:
   m_ObjectHideFlags: 0

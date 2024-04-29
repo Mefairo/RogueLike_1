@@ -17,7 +17,7 @@ public class CraftKeeperDisplay : MonoBehaviour
     [Space]
     [Header("Item Preview Section")]
     [SerializeField] private Image _itemPreviewSprite;
-    //[SerializeField] private Image _itemPreviewBackground;
+    [SerializeField] private Image _itemPreviewBackground;
     [SerializeField] private TextMeshProUGUI _itemPreviewName;
     [SerializeField] private TextMeshProUGUI _itemPreviewDescription;
     [Space]
@@ -152,14 +152,14 @@ public class CraftKeeperDisplay : MonoBehaviour
         _itemPreviewSprite.sprite = data.Icon;
         _itemPreviewSprite.color = Color.white;
 
-        //if (data.IconBackground != null)
-        //{
-        //    _itemPreviewBackground.sprite = data.IconBackground;
-        //    _itemPreviewBackground.color = Color.white;
-        //}
+        if (data.IconBackground != null)
+        {
+            _itemPreviewBackground.sprite = data.IconBackground;
+            _itemPreviewBackground.color = Color.white;
+        }
 
-        //else
-        //    _itemPreviewBackground.color = _itemPreviewBackground.color.WithAlpha(0);
+        else
+            _itemPreviewBackground.color = _itemPreviewBackground.color.WithAlpha(0);
 
         _itemPreviewName.text = data.DisplayName;
         _itemPreviewDescription.text = data.Description;
@@ -179,14 +179,14 @@ public class CraftKeeperDisplay : MonoBehaviour
         _itemPreviewSprite.sprite = data.Icon;
         _itemPreviewSprite.color = Color.white;
 
-        //if (data.IconBackground != null)
-        //{
-        //    _itemPreviewBackground.sprite = data.IconBackground;
-        //    _itemPreviewBackground.color = Color.white;
-        //}
+        if (data.IconBackground != null)
+        {
+            _itemPreviewBackground.sprite = data.IconBackground;
+            _itemPreviewBackground.color = Color.white;
+        }
 
-        //else
-        //    _itemPreviewBackground.color = _itemPreviewBackground.color.WithAlpha(0);
+        else
+            _itemPreviewBackground.color = _itemPreviewBackground.color.WithAlpha(0);
 
         _itemPreviewName.text = data.DisplayName;
         _itemPreviewDescription.text = data.Description;
@@ -230,7 +230,7 @@ public class CraftKeeperDisplay : MonoBehaviour
             var requiredItem = data.RequiredItems[i];
             var requiredAmount = data.AmountResources[i];
             var requiredImage = data.RequiredItems[i].Icon;
-            //var requiredImageBackground = data.RequiredItems[i].IconBackground;
+            var requiredImageBackground = data.RequiredItems[i].IconBackground;
             var requiredPrefab = data.CraftPrefab[i];
 
 

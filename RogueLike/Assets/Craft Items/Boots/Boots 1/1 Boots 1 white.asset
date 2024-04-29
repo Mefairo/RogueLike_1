@@ -27,7 +27,7 @@ MonoBehaviour:
   StatsList:
   - _stats: 4
     _valueStat:
-    - 2
+    - 1
   Recipes:
   - _requiredItems: []
     _amountResources: 

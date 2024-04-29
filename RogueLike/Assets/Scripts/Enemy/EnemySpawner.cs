@@ -29,6 +29,7 @@ public class EnemySpawner : SpawnerAnySubject
             if (totalGroupChance < _enemiesRandomer[i].RandomSpawn)
             {
                 var randomItemIndex = Random.Range(0, _enemiesRandomer[i].Enemy.Length);
+                Debug.Log(randomItemIndex);
                 return _enemiesRandomer[i].Enemy[randomItemIndex];
             }
         }

@@ -183,17 +183,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxTrap (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6833183785765369541, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7176700542005573175, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: _rotationSpeed
       value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: _maxSpeedMoving
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: _minSpeedMoving
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -393,11 +397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: _maxSpeedMoving
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: _minSpeedMoving
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -483,11 +487,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: _maxSpeedMoving
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: _minSpeedMoving
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -563,13 +567,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxTrap
       objectReference: {fileID: 0}
+    - target: {fileID: 6833183785765369541, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: _maxSpeedMoving
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8696723845735524695, guid: 59df7ec70b4ba764fb09b4be59c5f6db, type: 3}
       propertyPath: _minSpeedMoving
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -88,7 +88,49 @@ public class InventorySystem
 
     }
 
+    public bool AddToInventory(ItemPrefabData itemToAdd, int amountToAdd)
+    {
+        //Debug.Log("16");
+        if (ContainsItem(itemToAdd, out List<InventorySlot> invSlot))  //Существует ли предмет в инвентаре
+        {
+            //Debug.Log("17");
+            foreach (var slot in invSlot)
+            {
+                if (slot.EnoughRoomLeftInStack(amountToAdd))
+                {
+                    //Debug.Log("18");
+                    slot.AddToStack(amountToAdd);
+                    OnInventorySlotChanged?.Invoke(slot);
+                    return true;
+                }
+            }
+
+        }
+        if (HasFreeSlot(out InventorySlot freeSlot))  // Получает первый доступный слот
+        {
+            //Debug.Log("19");
+            if (freeSlot.EnoughRoomLeftInStack(amountToAdd))
+            {
+                //Debug.Log("20");
+                freeSlot.UpdateInventorySlot(itemToAdd, amountToAdd);
+                OnInventorySlotChanged?.Invoke(freeSlot);
+                return true;
+            }
+        }
+
+        return false;
+
+    }
+
     public bool ContainsItem(InventoryItemData itemToAdd, out List<InventorySlot> invSlot)
+    {
+        //Debug.Log("21");
+        invSlot = InventorySlots.Where(i => i.ItemData == itemToAdd).ToList();
+
+        return invSlot == null ? false : true;
+    }
+
+    public bool ContainsItem(ItemPrefabData itemToAdd, out List<InventorySlot> invSlot)
     {
         //Debug.Log("21");
         invSlot = InventorySlots.Where(i => i.ItemData == itemToAdd).ToList();
@@ -147,6 +189,30 @@ public class InventorySystem
         }
 
         return distinctItems;
+    }
+
+    public List<(InventorySlot slot, int stacksize)> GetAllItemHeld1()
+    {
+        Dictionary<InventoryItemData, int> inventoryItems = GetAllItemHeld();
+        List<(InventorySlot slot, int itemTier)> equipmentItems = new List<(InventorySlot slot, int itemTier)>();
+
+        foreach (var item in _inventorySlots)
+        {
+            if (item.ItemData.ItemType == ItemType.Equipment)
+            {
+                if (inventoryItems.ContainsKey(item.ItemData) && equipmentItems.Any(e => e.slot == item && e.itemTier == item.EquipSlot.ItemTier))
+                {
+
+                }
+            }
+
+            else
+            {
+
+            }
+        }
+
+        return equipmentItems;
     }
 
     public void GainGold(int price)

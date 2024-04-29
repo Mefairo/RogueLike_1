@@ -134,14 +134,28 @@ public abstract class InventoryDisplay : MonoBehaviour
     private void SwapSlots(InventorySlot_UI clickedUISlot)
     {
         // Получаем предметы в слотах
-        var itemInClickedSlot = clickedUISlot.AssignedInventorySlot;
-        var itemOnMouse = mouseInventoryItem.AssignedInventorySlot;
+        InventorySlot itemInClickedSlot = clickedUISlot.AssignedInventorySlot;
+        InventorySlot itemOnMouse = mouseInventoryItem.AssignedInventorySlot;
 
         // Если предметы одинаковые (тот же тип)
         if (itemInClickedSlot.ItemData == itemOnMouse.ItemData)
         {
             int spaceLeftInClickedSlot = itemInClickedSlot.ItemData.MaxStackSize - itemInClickedSlot.StackSize;
             int remainingOnMouse = itemOnMouse.StackSize - spaceLeftInClickedSlot;
+
+            // Если предмет в слоте и рна мышке "ЭКИПИРОВКА"
+            if(itemInClickedSlot.ItemData.ItemType == ItemType.Equipment && itemOnMouse.ItemData.ItemType == ItemType.Equipment)
+            {
+                if (itemInClickedSlot.EquipSlot.ItemTier != itemOnMouse.EquipSlot.ItemTier)
+                {
+                    InventorySlot clonedClickedSlot = new InventorySlot(itemInClickedSlot.EquipSlot, itemInClickedSlot.StackSize);
+                    clickedUISlot.ClearSlot();
+                    clickedUISlot.AssignedInventorySlot.AssignEquipItem(itemOnMouse);
+                    clickedUISlot.UpdateUISlot();
+
+                    mouseInventoryItem.UpdateMouseEquipItem(clonedClickedSlot);
+                }
+            }
 
             // Если можно объединить стаки полностью
             if (spaceLeftInClickedSlot >= itemOnMouse.StackSize)
@@ -168,12 +182,25 @@ public abstract class InventoryDisplay : MonoBehaviour
         // Если предметы разные, меняем их местами
         else if (itemInClickedSlot.ItemData != itemOnMouse.ItemData)
         {
-            var clonedClickedSlot = new InventorySlot(itemInClickedSlot.ItemData, itemInClickedSlot.StackSize);
-            clickedUISlot.ClearSlot();
-            clickedUISlot.AssignedInventorySlot.AssignItem(itemOnMouse);
-            clickedUISlot.UpdateUISlot();
+            if(itemInClickedSlot.ItemData.ItemType == ItemType.Equipment)
+            {
+                InventorySlot clonedClickedSlot = new InventorySlot(itemInClickedSlot.EquipSlot, itemInClickedSlot.StackSize);
+                clickedUISlot.ClearSlot();
+                clickedUISlot.AssignedInventorySlot.AssignEquipItem(itemOnMouse);
+                clickedUISlot.UpdateUISlot();
 
-            mouseInventoryItem.UpdateMouseSlot(clonedClickedSlot);
+                mouseInventoryItem.UpdateMouseEquipItem(clonedClickedSlot);
+            }
+
+            else
+            {
+                InventorySlot clonedClickedSlot = new InventorySlot(itemInClickedSlot.ItemData, itemInClickedSlot.StackSize);
+                clickedUISlot.ClearSlot();
+                clickedUISlot.AssignedInventorySlot.AssignItem(itemOnMouse);
+                clickedUISlot.UpdateUISlot();
+
+                mouseInventoryItem.UpdateMouseSlot(clonedClickedSlot);
+            }
         }
     }
 
